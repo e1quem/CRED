@@ -1,0 +1,193 @@
+\documentclass[10pt]{article}
+\usepackage[style=authoryear, maxcitenames=2, mincitenames=1]{biblatex} % format citations auteurs
+\usepackage{amsmath, amssymb} % better maths
+\usepackage[draft]{graphicx} % Required for inserting images
+\usepackage{geometry}
+\usepackage{hyperref} %links
+\usepackage{setspace} % spacing
+\usepackage{dsfont} % pour le mathbb{1}
+
+\addbibresource{references.bib} % references
+\geometry{a4paper, margin=2.5cm} % format
+\renewcommand{\figurename}{\textsc{Figure}} % figure format
+
+\begin{document}
+\begin{setstretch}{1.1} % spacing
+\setlength{\parindent}{0pt} % no indent
+
+
+\section{Introduction}
+
+\section{Data}
+
+
+\subsection{Market data}
+
+Binance, the world’s largest cryptocurrency exchange by trading volume, provides an exceptionally dense and \href{https://github.com/binance/binance-public-data}{well documented} \href{https://data.binance.vision}{public dataset} for all of its trading pairs. It includes tick-by-tick trade history and candlestick data down to a 1-second resolution dating back to 2017. For our observation window, we store aggregated trades (3.7B rows) and 1-second price data (231M rows) into a DuckDB database for Ethereum-Tether (ETHUSDT) and Bitcoin-Tether (BTCUSDT) pairs. Tether pairs selection is justified by this stablecoin's market capitalization -- ranked third behind Bitcoin and Ethereum -- and the substantial historical data available for these pairs on Binance. \bigskip
+%DuckDB table BTCUSDT_aggTrades: 2,645,406,584 rows
+% DuckDB table BTCUSDT_1s_control: 115,825,966 rows, same for ETHUSDT
+% DuckDB table ETHUSDT_aggTrades: 1,054,372,816 rows
+
+In theory, aggregated trade data allows us to reconstruct precise higher-level aggregations by grouping trades over intervals of duration $N$. The effectiveness of this approach however depends on raw trades feeds fidelity. In practice, a 100\% Pearson correlation and a zero median discrepancy between downloaded and reconstructed 1-second data confirm the reliability of this method. \bigskip
+
+Unlike traditional financial markets where prices are centralized, the cryptocurrency system is characterized by its fragmentation across multiple exchanges of varying volumes, listing closely aligned prices that would otherwise offer arbitrage opportunities (\cite{Makarov2020} \cite{Crepelliere2023}). For cross-validation of our Binance dataset, we use Coinbase, the second-largest exchange by volume. Its \href{https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/public/get-public-product-candles}{API} provides 1-minute historical candlestick data, which we extract via iterated request for both USDT and USD pairs. Coinbase's USDT and USD candlesticks are seemingly interchangeables, as underlined by a ~100\% Pearson correlation and a median absolute price difference below 0.05\% (below 0.3\% at the 99th percentile). However, their trading activity differ significantly: USD volumes are 25 to 35 times higher then those of USDT and we therefore select the former pairs for subsequent inter-exchange comparisons. \bigskip
+
+Binance-Coinbase comparison reveals a ~100\% Pearson correlation and a median price difference below 0.02\% for candlestick data. Fewer than 0.01\% of closing prices exhibiting a discrepancy greater than 1\%, emphasizing limited upfront arbitrage opportunities. Given that Binance's USDT pairs have 78 to 128 times the volume of Coinbase USD contracts, we retain the former as our default data source from now on, unless mentioned otherwise. Other major exchanges (\href{https://support.kraken.com/articles/360047543791-downloadable-historical-market-data-time-and-sales-}{Kraken}, \href{https://public.bybit.com}{ByBit}) were evaluated as alternative data sources, but either lacked directly comparable trading pairs or provided limited historical coverage.\bigskip
+
+
+\subsection{Market Events}
+
+To provide context for our empirical analysis, we compile a timeline of significant events affecting Ethereum and Bitcoin markets in the period surrounding The Merge. Sources include \href{https://ethereum.org/ethereum-forks/}{Ethereum Project's forks timeline} that lists major milestones of the blockahin, \href{https://blog.ethereum.org}{Ethereum Foundation's blog} discussing exogenous events affecting the crypto environment during Ethereum's lifespan, CoinMarketCap's all-time Ethereum and Bitcoin plots listing news and milestones, as well as Binance archived announcements for fees regime. We also list \href{https://www.strategy.com/ledger}{Strategy's} Bitcoin purchases. Events span two main categories: Ethereum's protocol upgrades (e.g. the Merge), and global market shocks (e.g. regulatory changes). All events can be found in Appendix A. For further financial context, we obtain 5-minute interval S\&P500 OHLC data from a \href{https://www.kaggle.com/datasets/salaheddineelkhirani/5-year-data-for-s-and-p-500-and-nasdaq-100/data}{Kaggle dataset} matching our observation period and weekly risk-free rate from \href{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html}{Kenneth R. French's website}. 
+
+
+\section{Metrics}
+We compute intraday metrics to measure both volatility and liquidity. For each pair, metrics are derived from aggregated trade data grouped at given intraday frequencies ranging from 10ms to 1-hour bins, subsequently aggregated at a daily level. Considering the size of our dataset would overcome short term memory limitations, we compute our metrics on a day-to-day basis instead of all at once. This process takes over an hour.  \bigskip
+
+For returns, we choose a close-to-close measure over an open-to-close alternative, as the latter sometimes misses price movements occurring between the close of one bin and the open of the next. \bigskip
+
+Intraday volatility is not directly observable; only prices sampled ad a given frequency $\Delta \tau$ can be observed. For day $t$ divided into $M$ intervals $t=t_0<t_1<...<t_M$, let $r_{t_i}$ denote intraday logarithmic return over the $i$-th interval. We consider several estimators for this metric We first use the Realized Variance ($RV_t$, 1) as a benchmark estimator of daily variance. In the absence of jumps, it converges toward integrated volatility as $M \rightarrow \infty$. For a jump-robust alternative, we implement the Bipower Variation ($BV_t^{\left\{ 1,1 \right\}}$, 2) presented by \textcite{Barndorff2004}. Realized Semi-variance ($RS^+$, $RS^-$, 3) captures variance asymmetry based on sign returns in order to distinguish the respective contributions of upside and downside risk to total volatility (\cite{Barndorff2010}). Finally, in order to leverage full candlestick data rather than log-returns alone, we include the Garman-Klass estimator ($G\text{-}K_t$, 4) as an efficient zero-drift variance proxy (\cite{Garman1980}), alongside the Rogers-Satchell alternative ($R\text{-}S_t$, 5) which provides an unbiased variance estimate in case of price trends (\cite{Rogers1991}).
+
+\begin{align}
+RV_t&=\sum\limits^M_{i=1}r^2_{t_i}\\
+BV_t^{\{ 1,1 \}}&=BV_T=\frac{\pi}{2}\sum\limits^M_{j=2}|r_{t_j}||r_{t_{j-1}}|\\
+RS_t^{+}&=\sum\limits^M_{i=1}r^2_{t_1}\mathds{1}_{rt_i\geq0}\quad\text{and}\quad RS_t^{-}=\sum\limits^M_{i=1}r^2_{t_1}\mathds{1}_{rt_i\leq0}\\
+G\text{-}K_t &= 0.5\left[ \ln\left(\frac{H_t}{L_t}\right)\right]^2 - (2\ln 2-1)\left[\ln\left(\frac{C_t}{O_T}\right)\right]^2\tag{4}\\
+R\text{-}S_t &= \ln\left(\frac{H_t}{C_t}\right)\ln\left(\frac{H_t}{O_t}\right)/\ln\left(\frac{L_t}{C_t}\right)\ln\left(\frac{L_t}{O_t}\right) \tag{5}
+\end{align} \medskip
+
+Where $O_t, H_t, L_t, C_t$ represent open, high, low and close values for day $t$, respectively. \bigskip
+
+For illiquidity estimations, we rely on three different estimators. First, Amihud's illiquidity ratio (\cite{Amihud2002}) (6) is the standard reference, measuring illiquidity as a ratio of absolute percentage return to dollar volume over a given period. Its main appeal is its simplicity and availability, requiring only price and volume data. \textcite{Ranaldo2022} recently proposed a Realized Amihud (7), alternative realized version of this indicator exploiting intraday returns rather than a single daily return, by aggregating absolute intraday log-returns before dividing by daily volume. This refinement captures intraday variation that the tradition Amihud ratio would otherwise average out. Finally, Kyle’s lambda (\cite{Kyle1985}) (8) offers an alternative price-impact measure derived from the linear relationship between trade-induced order flow and price change. Unlike the previous two illiquidity estimators, it requires trade-by-trade data in order to obtain signed volume, which our tick-level dataset provides. \bigskip
+
+\begin{align}
+Amihud_t&=\frac{|R_t|}{V_t}\tag{6}\\
+RAmihud_t&=\frac{\sum\limits^M_{i=1}|r_{t_i}|}{V_t}\tag{7}\\
+\Delta p_{t_i} &= \lambda_t \cdot x_{t_i} + \varepsilon_{t_i} \tag{8}
+\end{align}
+
+Where $R_t$ is daily return and $V_t$ is the daily dollar volume. \bigskip
+
+Signature plots (Fig.~\ref{fig:signaturePlot}) allow us to observe the evolution of our metrics as bin size increases from 10ms to 1h. Microstructure noise is noticeable at the 10ms and 100ms intervals for return-based volatility metrics, while Garman-Klass and Rogers-Satchell, which rely on OHLC prices rather than successive log-returns, are less affected by bid-ask bounce at these frequencies. A clear convergence emerges from 1s onward, with all volatility metrics giving tight readings at the 5m interval. This suggests that at the 5-minute frequency, choice of estimator matters little as they yield comparable results for later analysis. This high correlation in between estimators is confirmed by our heatmap analysis (Appendix~\ref{fig:AppendixHeatmap}). For sided metrics, realized semi-variance show no marked asymmetry, consistent with rather balanced sided price movements. We therefore select 5m as the default bin size for subsequent plots and analysis, in a trade off between granularity fine enough to capture true volatility while remaining free of microstructure noise and light to compute. Liquidity metrics are less sensitive to this choice: Realized Amihud is the only one affected by bin size, since the standard Amihud ratio is computed daily and Kyle's lambda relies on aggregated trades before their aggregation in bins. \bigskip
+
+
+\begin{figure}[!]
+\centering
+\caption{Signature plot of volatility and liquidity metrics (10ms to 1h)}
+\vspace{8pt}
+\label{fig:signaturePlot}
+\includegraphics[width=1\textwidth]{media/signaturePlot.png}
+\end{figure}
+
+
+
+\section{Analysis and Hypothesis Testing}
+
+\subsection{Events and Market Phases}
+
+Using our 5m data, we begin by ploting price and dollar volume of both Ethereum and Bitcoin pairs, alongside all events explaining major volume spikes. We also add Binance's fee regime changes and Merge related announcements to the chart. Figure ~\ref{fig:events} underlines a difference in absolute price over the period (mean price of \$2460.23 against \$42055.25) as well as a factor 2 difference in volume (mean ETH daily volume is \$1.2B while it is \$2.7B for BTC). From a purely visual perspective, Merge announcements (13, 14) are linked to little volume change, and Merge execution (16) is linked to a small-scale volume spike for ETH, but has no observable effect for BTC, on the contrary of event 15 (US inflation announcement higher than forecasted) a few days before for example. For Bitcoin, events 12 and 21, respectively Binance's removal then reintroduction of fees on Bitcoin pairs, are directly linked to a period of sustained increased volume as trading becomes frictionless. For Bitcoin, mean volume increases 160\% compared to before and after trading volumes on the overall sample, while such effect is not to be observed for Ethereum, with a mean -26.4\% decrease during the period. \bigskip
+
+Figure ~\ref{fig:feeRegime} illustrates this volume shift as fees regime change. Period 1 corresponds to normal trading fees; period 2 begins when Binance removed fees on 13 Bitcoin pairs; period 3 starts when this zero-fee promotion was withdrawn from all pairs except BTCTUSDT; finally period 4 represents the full reintroduction of fees. BTCUSDT volume rises sharply during period 2 and drops immediately once fees are reinstated, underlining how fee regime impacts trading behavior. BTCTUSD shows a volume spike as well once it becomes the only fee-free Bitcoin pair listed on Binance. Coinbase volume analysis shows a stable trend throughout these periods, underlining how these volumes changes are linked to Binance promotional-stunt and not to global market condition. It is omitted from the figure due to its different scale. \bigskip
+
+\begin{figure}[!]
+\centering
+\caption{Price and volume plot alongside major events}
+\vspace{8pt}
+\label{fig:events}
+\includegraphics[width=1\textwidth]{media/events.png}
+\end{figure}
+
+\begin{figure}[!]
+\centering
+\caption{Fee regime change}
+\vspace{8pt}
+\label{fig:feeRegime}
+\includegraphics[width=1\textwidth]{media/feeRegime.png}
+\end{figure}
+
+
+Plotting these context events allows us to define three defined market phases shared by both assets, indicated by background grey shade. Phase one (405 days), following the DeFi summer and the crypto hype, is characterized by increased volatility as prices peak before plummeting as crypto exchanges go bankrupt. Phase 2 (from event 11 to 26, 577 days) is characterized by regulatory changes, as the market moves more horizontally. Finally, BTC spot ETFs approval mark the beginning of phase 3 (356 days), where institutional investors get to invest in a more choppy market defined by the beginning of the Trump administration. Beyond these shared contextual phases (53\% of BTC-relevant events also affect ETH, and 72\% of events hold in the opposite direction) and the visual impression of joint movement, we test whether this apparent co-dependence holds statistically using cointegration tests. \bigskip
+ 
+
+\subsection{Cointegration testing}
+
+Cointegration allows us to verify if two assets share a long-term equilibrium relation while individual prices remain non-stationary. We use Engle-Granger (\cite{Engle1987}) which regresses one price series on the other and tests the residual for stationarity via an Augmented Dickey-Fuller test: 
+
+\begin{align}
+y_t &= \alpha + \beta x_t + u_t \\
+\Delta \hat u_t &= \rho \hat u_{t-1} + \sum_{i=1}^k \phi_i \Delta \hat u_{t-i} + \varepsilon_t
+\end{align}
+
+with $H_0:\rho=0$ (no cointegration). As this approach depends on which variable is chosen as a regressor and only handles a single cointegration relation, we complement it using the Johansen trace test (\cite{Johansen1988}), based on a vector error-correction representation which is symmetric by construction:
+
+\begin{align}
+\Delta Y_t &= \Pi Y_{t-1} + \sum_{i=1}^{k-1}\Gamma_i \Delta Y_{t-i} + \varepsilon_t
+\end{align}
+
+where $\Pi=\alpha\beta '$ and rank $(\Pi)=r$ gives the number of cointegrating vectors, tested via
+
+\begin{align}
+\lambda_{trace}(r) = -T\sum_{i=r+1}^{n}\ln(1-\hat\lambda_i)
+\end{align}
+
+with $\hat{\lambda_i}$ the ordered eigenvalues of $\Pi$. \bigskip
+
+Results indicate no significant cointegration on the overall sample despite a 0.81 price correlation, which seems to indicate that long-term correlated movements are destabilized by asymmetric shocks. This is observed in our event plots: despite over half of the events being shared by both pairs, events impacting Ethereum are missing from the Bitcoin plot, and vice-versa. Phase 1 shows a Engle-Granger cointegration significant at 5\% and a Johansen cointegration significant for both rank 0 (at 1\%) and rank 1 (at 5\%) tests. This strong cointegration is highlighted by a 0.94 correlation. For phase 2, cointegration weakens but remains present, with Engle-Granger significant at 5\% and Johansen rank 0 test significant at 10\%. Phase 3 presents no cointegration and a 0.62 correlation, coherent with a "BTC decoupling" hypothesis: this period is defined by the arrival of ETFs, as early as January of 2024 for BTC and only six months later, in July of 2024, for ETH, leading to a a temporary mismatch in institutional investment vehicles between the two assets. 
+
+
+\subsection{Flight of capital from PoW to PoS}
+
+
+hypothèse: le merge entraîne une fuite des capitaux from PoS to PoW. On vérifie avec les market caps des 20 premières crypto, et leur prix et volume autour de la période du merge. Rien n'apparaît.
+
+\subsection{Financial context correlation}
+
+Tester corrélation S\&P and ETH/BTC
+
+On vérifie aussi avec RF et S\&P: rien de spécial. 
+
+\subsection{Model}
+
+\appendix
+\section{Appendix}
+
+List of events linked to main volume spikes for Ethereum and Bitcoin USDT pairs on Binance, from 2021-05 to 2024-12.
+
+\begin{description}
+    \item[2021] \hfill \\ 1. 2021-05-19 -- Major crypto market crash amplified by high leverage and cascading liquidations \\ 2. 2021-06-22 -- China steps up efforts against Bitcoin \\ 3. 2021-07-26 -- Amazon's Bitcoin rumors skyrocket prices, liquidating \$1B in short BTC positions \\ 4. 2021-08-05 -- Ethereum network; London hard fork \\ 5. 2021-09-07 -- Bitcoin becomes legal currency in El Salvador \\ 6. 2021-12-04 -- Spot selling drives price drop, triggering a long squeeze in the derivatives market 
+
+    \item[2022] \hfill \\ 7. 2022-01-21 -- Anticipation of Fed rates hike \\ 8. 2022-02-24 -- Market-wide selloff following Ukraine invasion \\ 9. 2022-05-09 -- Beginning of the LUNA/UST depeg and Terra collapse \\ 10. 2022-05-12 -- LUNA/UST depeg, Terra ecosystem collapse \\ 11. 2022-06-13 -- Celsius blocks customer withdrawals \\ 12. 2022-07-08 -- Binance launches zero fee bitcoin trading \\ 13. 2022-08-12 -- Ethereum network; Mainnet Merge incoming (blog announcement) \\ 14. 2022-08-24 -- Ethereum network; Mainnet Merge Announcement (official announcement) \\ 15. 2022-09-13 -- US inflation higher than expected, reinforcing fear of Fed rates hike \\ 16. 2022-09-15 -- Ethereum network; Paris upgrade (the Merge) \\ 17. 2022-09-27 -- Bank of England stabilizing UK bond market fuels hopes of eased rates hike \\ 18. 2022-11-08 -- FTX halts withdrawals, Binance announces then cancels FTX acquisition 
+    
+
+
+    \item [2023] \hfill \\ 19. 2023-01-12 -- US slowing inflation drives prices up \\ 20. 2023-03-14 -- Fed protecting SVB and Signature Bank deposits eases banking contagion fears \\ 21. 2023-03-22 -- Binance stops zero fee bitcoin trading \\ 22. 2023-06-21 -- BlackRocks's Bitcoin ETF sparks institutional buying \\ 23. 2023-08-17 -- Crypto sinks on rising US bond yields \\ 24. 2023-10-24 -- Growing anticipation of imminent BlackRock spot ETF approval \\ 25. 2023-11-09 -- Rally fueled by anticipation of spot Bitcoin ETF approval
+    
+
+
+    \item [2024] \hfill \\ 26. 2024-01-10 -- SEC approves first US spot Bitcoin ETFs \\ 27. 2024-01-10 -- Inflows into new spot Bitcoin ETFs outpace Bitcoin supply \\ 28. 2024-03-05 -- Bitcoin reaches ATH, followed by profit-taking \\ 29. 2024-03-20 -- Rates are maintained but rate cuts are projected \\ 30. 2024-04-13 -- Iranian drone attack on Israel \\ 31. 2024-05-23 -- SEC approves filing for spot Ethereum ETFs \\ 32. 2024-07-05 -- Mt. Gox exchange starts repaying \$9B in Bitcoin to creditors \\ 33. 2024-08-05 -- Unwinding of the yen carry trade: VIX spike, Ethereum sales by Jump Trading \\ 34. 2024-11-06 -- Trump's election sparks a crypto rally \\ 35. 2024-11-11 -- Market rally pricing friendlier Trump administration after elections win \\ 36. 2024-12-05 -- Bitcoin crosses \$100,00 after Trump names Paul Atkin as next SEC chair
+    
+\end{description} 
+
+\section{Appendix}
+
+
+\begin{figure}[!]
+\centering
+\caption{Correlation heatmap of volatility and liquidity metrics across intraday frequencies}
+\vspace{8pt}
+\label{fig:AppendixHeatmap}
+\includegraphics[width=1\textwidth]{media/correlationHeatmap.png}
+\end{figure}
+
+Daily metrics correlation are measured over 1338 days, with each day's estimate built from multiple intraday bin sizes (10ms, 1s and 5m). \bigskip
+
+Across both assets, realized and range-based volatility estimators converge at 10ms then split into trade-based and range-based families capturing distinct volatility components at 1s, before reconverging at 5m. This behavior is consistent with high frequency microstructure noise imposing a common variance structure independent of estimator type (\cite{Hansen2006}; \cite{Bandi2008}). Once this noise disapears, a mild upside/downside asymmetry is observed for BTCUSDT only. Volatility and liquidity correlation flips as scale increases, from Realized Amihud at 10ms bins to Kyle's lambda at 5m bins, while Amihud remains uncorrelated. Relationship with price is nonexistant at every scale, and link to volume peaks at 1s. \bigskip
+
+Liquidity measures show a similar granularity dependence depending on asset. For BTCUSDT, correlation between Amihud and Realized Amihud strengthens as bin size increases and more trades are aggregated within each bin. Correlation of Amihud remains negative for all illiquidity measures for ETHUSDT. For both assets, Kyle's lambda moves closer to realized Amihud as bin size reduces, suggesting price impact and realized illiquidity reflect the same phenomenon at the trade level but diverge over longer intervals. As expected, Amihud and Kyle's lambda have a stabel relationship with price and volume (both are computed independently of bin size), while Realized Amihud becomes negatively correlated with volume as bin size increases. \bigskip
+
+
+
+\setlength{\bibitemsep}{1em}
+\printbibliography
+
+\end{setstretch}
+\end{document}

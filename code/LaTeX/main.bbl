@@ -1,0 +1,656 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{Amihud2002}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd253d257e16edd4bdace17cf72df10c}{%
+           family={Amihud},
+           familyi={A\bibinitperiod},
+           given={Yakov},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{fullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{bibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorbibnamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authornamehash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhash}{fd253d257e16edd4bdace17cf72df10c}
+      \strng{authorfullhashraw}{fd253d257e16edd4bdace17cf72df10c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper shows that over time, expected market illiquidity positively affects ex ante stock excess return, suggesting that expected stock excess return partly represents an illiquidity premium. This complements the cross-sectional positive return–illiquidity relationship. Also, stock returns are negatively related over time to contemporaneous unexpected illiquidity. The illiquidity measure here is the average across stocks of the daily ratio of absolute stock return to dollar volume, which is easily obtained from daily stock data for long time series in most stock markets. Illiquidity affects more strongly small firm stocks, thus explaining time series variations in their premiums over time.}
+      \field{issn}{1386-4181}
+      \field{journaltitle}{Journal of Financial Markets}
+      \field{number}{1}
+      \field{title}{Illiquidity and stock returns: cross-section and time-series effects}
+      \field{volume}{5}
+      \field{year}{2002}
+      \field{pages}{31\bibrangedash 56}
+      \range{pages}{26}
+      \verb{doi}
+      \verb https://doi.org/10.1016/S1386-4181(01)00024-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1386418101000246
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1386418101000246
+      \endverb
+      \keyw{Liquidity and asset pricing,Liquidity premium}
+    \endentry
+    \entry{Bandi2008}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=073ec1658bb88e781cf7b4f5ae383909}{%
+           family={Bandi},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi M.},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70e83759e7cc955096475600f96ce2eb}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Oxford University Press, Review of Economic Studies, Ltd.]}%
+      }
+      \strng{namehash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{fullhash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{fullhashraw}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{bibnamehash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{authorbibnamehash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{authornamehash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{authorfullhash}{6bda4daf2e9c346e3856477ffdd60a78}
+      \strng{authorfullhashraw}{6bda4daf2e9c346e3856477ffdd60a78}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A recent and extensive literature has pioneered the summing of squared observed intra-daily returns, "realized variance", to estimate the daily integrated variance of financial asset prices, a traditional object of economic interest. We show that, in the presence of market microstructure noise, realized variance does not identify the daily integrated variance of the frictionless equilibrium price. However, we demonstrate that the noise-induced bias at very high sampling frequencies can be appropriately traded off with the variance reduction obtained by high-frequency sampling and derive a mean-squared-error (MSE) optimal sampling theory for the purpose of integrated variance estimation. We show how our theory naturally leads to an identification procedure, which allows us to recover the moments of the unobserved noise; this procedure may be useful in other applications. Finally, using the profits obtained by option traders on the basis of alternative variance forecasts as our economic metric, we find that explicit optimization of realized variance's finite sample MSE properties results in accurate forecasts and considerable economic gains.}
+      \field{issn}{00346527, 1467937X}
+      \field{journaltitle}{The Review of Economic Studies}
+      \field{number}{2}
+      \field{title}{Microstructure Noise, Realized Variance, and Optimal Sampling}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{75}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \field{pages}{339\bibrangedash 369}
+      \range{pages}{31}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/20185035
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/20185035
+      \endverb
+    \endentry
+    \entry{Barndorff2010}{inbook}{}{}
+      \name{author}{3}{ul=2}{%
+        {{un=0,uniquepart=base,hash=1673a6a52bfddf8207b1d59916d02229}{%
+           family={Barndorff-Nielsen},
+           familyi={B\bibinithyphendelim N\bibinitperiod},
+           given={Ole\bibnamedelima E.},
+           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dd85f04c39ff09b90de452c4409847d8}{%
+           family={Kinnebrouk},
+           familyi={K\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=297d9c8d6a4dcfbed876803d5cbba67b}{%
+           family={Shephard},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{a3fd7693b140f395adfa424c696b35ee}
+      \strng{fullhash}{b5838b3a9d8789aa5850b509bd403767}
+      \strng{fullhashraw}{b5838b3a9d8789aa5850b509bd403767}
+      \strng{bibnamehash}{b5838b3a9d8789aa5850b509bd403767}
+      \strng{authorbibnamehash}{b5838b3a9d8789aa5850b509bd403767}
+      \strng{authornamehash}{a3fd7693b140f395adfa424c696b35ee}
+      \strng{authorfullhash}{b5838b3a9d8789aa5850b509bd403767}
+      \strng{authorfullhashraw}{b5838b3a9d8789aa5850b509bd403767}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{(Edited by T. Bollerslev, J. Russell and M. Watson)}
+      \field{journaltitle}{Volatility and Time Series Econometrics: Essays in Honor of Robert F. Engle}
+      \field{title}{Measuring downside risk: realised semivariance}
+      \field{year}{2010}
+      \field{pages}{117\bibrangedash 136}
+      \range{pages}{20}
+    \endentry
+    \entry{Barndorff2004}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1673a6a52bfddf8207b1d59916d02229}{%
+           family={Barndorff-Nielsen},
+           familyi={B\bibinithyphendelim N\bibinitperiod},
+           given={Ole\bibnamedelima E.},
+           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=297d9c8d6a4dcfbed876803d5cbba67b}{%
+           family={Shephard},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \strng{namehash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{fullhash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{fullhashraw}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{bibnamehash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{authorbibnamehash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{authornamehash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{authorfullhash}{6fac0bce0813dc31d3ba299be93b66fc}
+      \strng{authorfullhashraw}{6fac0bce0813dc31d3ba299be93b66fc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{(with discussion) Journal of Financial Econometrics}
+      \field{note}{Reprinted in "Financial Risk Measurement and Management" (editor Frank X. Diebold), in Edward Elgar Publishers, 2012.}
+      \field{title}{Power and bipower variation with stochastic volatility and jumps}
+      \field{volume}{2}
+      \field{year}{2004}
+      \field{pages}{1\bibrangedash 48}
+      \range{pages}{48}
+    \endentry
+    \entry{Crepelliere2023}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=74dcbf85844222dfcbe279efa5dad1d5}{%
+           family={Crépellière},
+           familyi={C\bibinitperiod},
+           given={Tommy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6d1ac1e5635779cbfea0233d1ce85655}{%
+           family={Pelster},
+           familyi={P\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8f7bacb949e8791ae4beb2a35db1dec6}{%
+           family={Zeisberger},
+           familyi={Z\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{202ef4135cc916a2c7aec52852793dc9}
+      \strng{fullhash}{75f210b665120fe0fd5400645005af7d}
+      \strng{fullhashraw}{75f210b665120fe0fd5400645005af7d}
+      \strng{bibnamehash}{75f210b665120fe0fd5400645005af7d}
+      \strng{authorbibnamehash}{75f210b665120fe0fd5400645005af7d}
+      \strng{authornamehash}{202ef4135cc916a2c7aec52852793dc9}
+      \strng{authorfullhash}{75f210b665120fe0fd5400645005af7d}
+      \strng{authorfullhashraw}{75f210b665120fe0fd5400645005af7d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Arbitrage opportunities in markets for cryptocurrencies are well-documented. In this paper, we confirm that they exist; however, their magnitude decreased greatly from April 2018 onward. Analyzing various trading strategies, we show that it is barely possible to exploit existing price differences since then. We discuss and test several mechanisms that may be responsible for the increased market efficiency and find that informed trading is correlated with a reduction in arbitrage opportunities.}
+      \field{issn}{1386-4181}
+      \field{journaltitle}{Journal of Financial Markets}
+      \field{title}{Arbitrage in the market for cryptocurrencies}
+      \field{volume}{64}
+      \field{year}{2023}
+      \field{pages}{100817}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.finmar.2023.100817
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1386418123000150
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1386418123000150
+      \endverb
+      \keyw{Arbitrage,Law of one price,Cryptocurrencies,Bitcoin,FinTech}
+    \endentry
+    \entry{Engle1987}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d491df6781389ebb4ef255c1ec0ca7ed}{%
+           family={Engle},
+           familyi={E\bibinitperiod},
+           given={Robert\bibnamedelima F.},
+           giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=90c4f36411724ec312077a54a0f71d60}{%
+           family={Granger},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi W.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{fullhash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{fullhashraw}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{bibnamehash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{authorbibnamehash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{authornamehash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{authorfullhash}{dd8df6c93e06c74f74a730192afa1433}
+      \strng{authorfullhashraw}{dd8df6c93e06c74f74a730192afa1433}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The relationship between co-integration and error correction models, first suggested in Granger (1981), is here extended and used to develop estimation procedures, tests, and empirical examples. If each element of a vector of time series xt first achieves stationarity after differencing, but a linear combination $\alpha ^{\prime }x_{t}$ is already stationary, the time series xt are said to be co-integrated with co-integrating vector α. There may be several such co-integrating vectors so that α becomes a matrix. Interpreting $\alpha ^{\prime }x_{t}=0$ as a long run equilibrium, co-integration implies that deviations from equilibrium are stationary, with finite variance, even though the series themselves are nonstationary and have infinite variance. The paper presents a representation theorem based on Granger (1983), which connects the moving average, autoregressive, and error correction representations for co-integrated systems. A vector autoregression in differenced variables is incompatible with these representations. Estimation of these models is discussed and a simple but asymptotically efficient two-step estimator is proposed. Testing for co-integration combines the problems of unit root tests and tests with parameters unidentified under the null. Seven statistics are formulated and analyzed. The critical values of these statistics are calculated based on a Monte Carlo simulation. Using these critical values, the power properties of the tests are examined and one test procedure is recommended for application. In a series of examples it is found that consumption and income are co-integrated, wages and prices are not, short and long interest rates are, and nominal GNP is co-integrated with M2, but not M1, M3, or aggregate liquid assets.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{2}
+      \field{title}{Co-Integration and Error Correction: Representation, Estimation, and Testing}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{55}
+      \field{year}{1987}
+      \field{urldateera}{ce}
+      \field{pages}{251\bibrangedash 276}
+      \range{pages}{26}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1913236
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1913236
+      \endverb
+    \endentry
+    \entry{Garman1980}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1fb1e1b1c539ebf6691196df83a48798}{%
+           family={Garman},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=645e9be68d71096aadb9aed18307338e}{%
+           family={Klass},
+           familyi={K\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {University of Chicago Press}%
+      }
+      \strng{namehash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{fullhash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{fullhashraw}{7c21979027c87defa7a73ac4a183f816}
+      \strng{bibnamehash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{authorbibnamehash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{authornamehash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{authorfullhash}{7c21979027c87defa7a73ac4a183f816}
+      \strng{authorfullhashraw}{7c21979027c87defa7a73ac4a183f816}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Improved estimators of security price volatilities are formulated. These estimators employ data of the type commonly found in the financial pages of a newspaper: the high, low, opening, and closing prices and the transaction volume. The new estimators are seen to have relative efficiencies that are considerably higher than the standard estimators.}
+      \field{issn}{00219398, 15375374}
+      \field{journaltitle}{The Journal of Business}
+      \field{number}{1}
+      \field{title}{On the Estimation of Security Price Volatilities from Historical Data}
+      \field{urlday}{24}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{53}
+      \field{year}{1980}
+      \field{urldateera}{ce}
+      \field{pages}{67\bibrangedash 78}
+      \range{pages}{12}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2352358
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2352358
+      \endverb
+    \endentry
+    \entry{Hansen2006}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1b69f8d059ca7b024817e06b9be0fda6}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima R.},
+           giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8d526c5bfbc93e7d59acb3e0d9853324}{%
+           family={Lunde},
+           familyi={L\bibinitperiod},
+           given={Asger},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[American Statistical Association, Taylor & Francis, Ltd.]}%
+      }
+      \strng{namehash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{fullhash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{fullhashraw}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{bibnamehash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{authorbibnamehash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{authornamehash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{authorfullhash}{938766e2ed127e1c0c61a8b9084ade36}
+      \strng{authorfullhashraw}{938766e2ed127e1c0c61a8b9084ade36}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study market microstructure noise in high-frequency data and analyze its implications for the realized variance (RV) under a general specification for the noise. We show that kernel-based estimators can unearth important characteristics of market microstructure noise and that a simple kernel-based estimator dominates the RV for the estimation of integrated variance (IV). An empirical analysis of the Dow Jones Industrial Average stocks reveals that market microstructure noise is time-dependent and correlated with increments in the efficient price. This has important implications for volatility estimation based on highfrequency data. Finally, we apply cointegration techniques to decompose transaction prices and bid-ask quotes into an estimate of the efficient price and noise. This framework enables us to study the dynamic effects on transaction prices and quotes caused by changes in the efficient price.}
+      \field{issn}{07350015}
+      \field{journaltitle}{Journal of Business \& Economic Statistics}
+      \field{number}{2}
+      \field{title}{Realized Variance and Market Microstructure Noise}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{24}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \field{pages}{127\bibrangedash 161}
+      \range{pages}{35}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/27638860
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/27638860
+      \endverb
+    \endentry
+    \entry{Johansen1988}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fa1655c028c92b8ef87d909112f82026}{%
+           family={Johansen},
+           familyi={J\bibinitperiod},
+           given={Søren},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{fullhash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{fullhashraw}{fa1655c028c92b8ef87d909112f82026}
+      \strng{bibnamehash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{authorbibnamehash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{authornamehash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{authorfullhash}{fa1655c028c92b8ef87d909112f82026}
+      \strng{authorfullhashraw}{fa1655c028c92b8ef87d909112f82026}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We consider a nonstationary vector autoregressive process which is integrated of order 1, and generated by i.i.d. Gaussian errors. We then derive the maximum likelihood estimator of the space of cointegration vectors and the likelihood ratio test of the hypothesis that it has a given number of dimensions. Further we test linear hypotheses about the cointegration vectors. The asymptotic distribution of these test statistics are found and the first is described by a natural multivariate version of the usual test for unit root in an autoregressive process, and the other is a χ2 test.}
+      \field{issn}{0165-1889}
+      \field{journaltitle}{Journal of Economic Dynamics and Control}
+      \field{number}{2}
+      \field{title}{Statistical analysis of cointegration vectors}
+      \field{volume}{12}
+      \field{year}{1988}
+      \field{pages}{231\bibrangedash 254}
+      \range{pages}{24}
+      \verb{doi}
+      \verb https://doi.org/10.1016/0165-1889(88)90041-3
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0165188988900413
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0165188988900413
+      \endverb
+    \endentry
+    \entry{Kyle1985}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c27b33d3d72dfe885b8f12ffd9f8840c}{%
+           family={Kyle},
+           familyi={K\bibinitperiod},
+           given={Albert\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Econometric Society]}%
+      }
+      \strng{namehash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{fullhash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{fullhashraw}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{bibnamehash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{authorbibnamehash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{authornamehash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{authorfullhash}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \strng{authorfullhashraw}{c27b33d3d72dfe885b8f12ffd9f8840c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A dynamic model of insider trading with sequential auctions, structured to resemble a sequential equilibrium, is used to examine the informational content of prices, the liquidity characteristics of a speculative market, and the value of private information to an insider. The model has three kinds of traders: a single risk neutral insider, random noise traders, and competitive risk neutral market makers. The insider makes positive profits by exploiting his monopoly power optimally in a dynamic context, where noise trading provides camouflage which conceals his trading from market makers. As the time interval between auctions goes to zero, a limiting model of continuous trading is obtained. In this equilibrium, prices follow Brownian motion, the depth of the market is constant over time, and all private information is incorporated into prices by the end of trading.}
+      \field{issn}{00129682, 14680262}
+      \field{journaltitle}{Econometrica}
+      \field{number}{6}
+      \field{title}{Continuous Auctions and Insider Trading}
+      \field{urlday}{24}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{53}
+      \field{year}{1985}
+      \field{urldateera}{ce}
+      \field{pages}{1315\bibrangedash 1335}
+      \range{pages}{21}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1913210
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1913210
+      \endverb
+    \endentry
+    \entry{Makarov2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b66d967f1b4d160ab2af5d4fb46fbd31}{%
+           family={Makarov},
+           familyi={M\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fef22905d62024d45fe52823eb2c78d}{%
+           family={Schoar},
+           familyi={S\bibinitperiod},
+           given={Antoinette},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{fullhash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{fullhashraw}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{bibnamehash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{authorbibnamehash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{authornamehash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{authorfullhash}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \strng{authorfullhashraw}{785a5108f23d07c3b3a4b1916e3d9b57}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cryptocurrency markets exhibit periods of large, recurrent arbitrage opportunities across exchanges. These price deviations are much larger across than within countries, and smaller between cryptocurrencies, highlighting the importance of capital controls for the movement of arbitrage capital. Price deviations across countries co-move and open up in times of large bitcoin appreciation. Countries with higher bitcoin premia over the US bitcoin price see widening arbitrage deviations when bitcoin appreciates. Finally, we decompose signed volume on each exchange into a common and an idiosyncratic component. The common component explains 80\% of bitcoin returns. The idiosyncratic components help explain arbitrage spreads between exchanges.}
+      \field{issn}{0304-405X}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{2}
+      \field{title}{Trading and arbitrage in cryptocurrency markets}
+      \field{volume}{135}
+      \field{year}{2020}
+      \field{pages}{293\bibrangedash 319}
+      \range{pages}{27}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jfineco.2019.07.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X19301746
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X19301746
+      \endverb
+      \keyw{Cryptocurrencies,Bitcoin,Arbitrage,Price impact,Capital controls}
+    \endentry
+    \entry{Ranaldo2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=9f7229a3033bdb98d9e1d931e71b341a}{%
+           family={Ranaldo},
+           familyi={R\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=25893373734c7a3bf00479834d70387f}{%
+           family={{de Magistris}},
+           familyi={d\bibinitperiod},
+           given={Paolo\bibnamedelima Santucci},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{fullhash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{fullhashraw}{c3e629c2b61452a153f51033ccd70146}
+      \strng{bibnamehash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{authorbibnamehash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{authornamehash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{authorfullhash}{c3e629c2b61452a153f51033ccd70146}
+      \strng{authorfullhashraw}{c3e629c2b61452a153f51033ccd70146}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study the liquidity of the global currency market by analyzing the price impact of trading volume. We analyze a decade of CLS intraday data representative of global foreign exchange (FX) trading by developing a refinement of the popular Amihud (2002) illiquidity measure that we call realized Amihud, which is the ratio between realized volatility and trading volume. Inversely related to market depth, price impact increases with transaction costs, money market stress, uncertainty, and risk aversion. Furthermore, we analyze whether and how liquidity begets price efficiency by looking at violations of the “triangular” no-arbitrage condition. We find that dollar-based currencies offer a lower trading impact supporting price efficiency.}
+      \field{issn}{0304-405X}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{number}{3}
+      \field{title}{Liquidity in the global currency market}
+      \field{volume}{146}
+      \field{year}{2022}
+      \field{pages}{859\bibrangedash 883}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jfineco.2022.09.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X22001891
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304405X22001891
+      \endverb
+      \keyw{Currency market,Foreign exchange,Global liquidity,Price impact,Arbitrage}
+    \endentry
+    \entry{Rogers1991}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=59e81ab5f62166747d2d31966612496a}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={L.\bibnamedelimi C.\bibnamedelimi G.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e33b901a6047fc7ef88c0801d8c936ee}{%
+           family={Satchell},
+           familyi={S\bibinitperiod},
+           given={S.\bibnamedelimi E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Mathematical Statistics}%
+      }
+      \strng{namehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{fullhash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{fullhashraw}{f2c762855f359abdb8b86e4610e91815}
+      \strng{bibnamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorbibnamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authornamehash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorfullhash}{f2c762855f359abdb8b86e4610e91815}
+      \strng{authorfullhashraw}{f2c762855f359abdb8b86e4610e91815}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The log of the price of a share is commonly modelled as a Brownian motion with drift, σ Bt + ct, where the constants c and σ are unknown. In order to use the Black-Scholes option pricing formula, one needs an estimate of σ, though not of c. In this paper, we propose a new estimator of σ based on the high, low, and closing prices in a day's trading. This estimator has the merit of being unbiased whatever the drift c. In common with other estimators of σ, the approximation of the true high and low values of the drifting Brownian motion by the high and low values of a random walk introduces error, often quite a serious error. We shall show how a simple correction can overcome this error almost completely.}
+      \field{issn}{10505164}
+      \field{journaltitle}{The Annals of Applied Probability}
+      \field{number}{4}
+      \field{title}{Estimating Variance From High, Low and Closing Prices}
+      \field{urlday}{24}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{volume}{1}
+      \field{year}{1991}
+      \field{urldateera}{ce}
+      \field{pages}{504\bibrangedash 512}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2959703
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2959703
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
