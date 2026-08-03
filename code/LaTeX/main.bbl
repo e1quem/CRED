@@ -63,7 +63,7 @@
       \keyw{Liquidity and asset pricing,Liquidity premium}
     \endentry
     \entry{AmoussouGuenou2024}{article}{}{}
-      \name{author}{4}{ul=3}{%
+      \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=99c2f8229e3958893de0e6d13e85f2b7}{%
            family={Amoussou-Guenou},
            familyi={A\bibinithyphendelim G\bibinitperiod},
@@ -89,14 +89,15 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{078c252c1b018ddf3e3cf95dd6542805}
+      \strng{namehash}{03d092dfc8afcfb8db071d9d22f968d2}
       \strng{fullhash}{aa6dd29d8381c1129ce7106bbc719016}
       \strng{fullhashraw}{aa6dd29d8381c1129ce7106bbc719016}
       \strng{bibnamehash}{aa6dd29d8381c1129ce7106bbc719016}
       \strng{authorbibnamehash}{aa6dd29d8381c1129ce7106bbc719016}
-      \strng{authornamehash}{078c252c1b018ddf3e3cf95dd6542805}
+      \strng{authornamehash}{03d092dfc8afcfb8db071d9d22f968d2}
       \strng{authorfullhash}{aa6dd29d8381c1129ce7106bbc719016}
       \strng{authorfullhashraw}{aa6dd29d8381c1129ce7106bbc719016}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -127,7 +128,7 @@
       \endverb
     \endentry
     \entry{AmoussouGuenou2026}{report}{}{}
-      \name{author}{3}{ul=3}{%
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=99c2f8229e3958893de0e6d13e85f2b7}{%
            family={Amoussou-Guenou},
            familyi={A\bibinithyphendelim G\bibinitperiod},
@@ -154,14 +155,15 @@
         {Paris}%
         {London}%
       }
-      \strng{namehash}{788d5a89d8f6b8874b00844858107db6}
+      \strng{namehash}{03d092dfc8afcfb8db071d9d22f968d2}
       \strng{fullhash}{788d5a89d8f6b8874b00844858107db6}
       \strng{fullhashraw}{788d5a89d8f6b8874b00844858107db6}
       \strng{bibnamehash}{788d5a89d8f6b8874b00844858107db6}
       \strng{authorbibnamehash}{788d5a89d8f6b8874b00844858107db6}
-      \strng{authornamehash}{788d5a89d8f6b8874b00844858107db6}
+      \strng{authornamehash}{03d092dfc8afcfb8db071d9d22f968d2}
       \strng{authorfullhash}{788d5a89d8f6b8874b00844858107db6}
       \strng{authorfullhashraw}{788d5a89d8f6b8874b00844858107db6}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -228,7 +230,7 @@
       \endverb
     \endentry
     \entry{Andersen2007}{article}{}{}
-      \name{author}{3}{ul=3}{%
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=09c85c9c10e1f8f0e62363a927495479}{%
            family={Andersen},
            familyi={A\bibinitperiod},
@@ -248,14 +250,15 @@
            giveni={F\bibinitperiod\bibinitdelim X\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{3cdc87177c9c65d6c82cbb521aedb4ee}
+      \strng{namehash}{9272a1c6d168447aacb6c6349cd85cab}
       \strng{fullhash}{3cdc87177c9c65d6c82cbb521aedb4ee}
       \strng{fullhashraw}{3cdc87177c9c65d6c82cbb521aedb4ee}
       \strng{bibnamehash}{3cdc87177c9c65d6c82cbb521aedb4ee}
       \strng{authorbibnamehash}{3cdc87177c9c65d6c82cbb521aedb4ee}
-      \strng{authornamehash}{3cdc87177c9c65d6c82cbb521aedb4ee}
+      \strng{authornamehash}{9272a1c6d168447aacb6c6349cd85cab}
       \strng{authorfullhash}{3cdc87177c9c65d6c82cbb521aedb4ee}
       \strng{authorfullhashraw}{3cdc87177c9c65d6c82cbb521aedb4ee}
+      \field{extraname}{1}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -286,7 +289,7 @@
       \endverb
     \endentry
     \entry{Andersen2001}{article}{}{}
-      \name{author}{4}{ul=4}{%
+      \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=09c85c9c10e1f8f0e62363a927495479}{%
            family={Andersen},
            familyi={A\bibinitperiod},
@@ -315,14 +318,15 @@
       \list{publisher}{1}{%
         {[American Statistical Association, Taylor & Francis, Ltd.]}%
       }
-      \strng{namehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{namehash}{9272a1c6d168447aacb6c6349cd85cab}
       \strng{fullhash}{0b66d427f86ffe531c2d3ee63ee443a0}
       \strng{fullhashraw}{0b66d427f86ffe531c2d3ee63ee443a0}
       \strng{bibnamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
       \strng{authorbibnamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
-      \strng{authornamehash}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \strng{authornamehash}{9272a1c6d168447aacb6c6349cd85cab}
       \strng{authorfullhash}{0b66d427f86ffe531c2d3ee63ee443a0}
       \strng{authorfullhashraw}{0b66d427f86ffe531c2d3ee63ee443a0}
+      \field{extraname}{2}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
@@ -459,7 +463,7 @@
       \keyw{Volatility,Volatility timing,Microstructure noise,High frequency data}
     \endentry
     \entry{Barndorff2010}{inbook}{}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=1673a6a52bfddf8207b1d59916d02229}{%
            family={Barndorff-Nielsen},
            familyi={B\bibinithyphendelim N\bibinitperiod},
@@ -482,12 +486,12 @@
       \list{publisher}{1}{%
         {Oxford University Press}%
       }
-      \strng{namehash}{a3fd7693b140f395adfa424c696b35ee}
+      \strng{namehash}{5ba7d964a9bf8ff4fe26ade6ecca5d7d}
       \strng{fullhash}{b5838b3a9d8789aa5850b509bd403767}
       \strng{fullhashraw}{b5838b3a9d8789aa5850b509bd403767}
       \strng{bibnamehash}{b5838b3a9d8789aa5850b509bd403767}
       \strng{authorbibnamehash}{b5838b3a9d8789aa5850b509bd403767}
-      \strng{authornamehash}{a3fd7693b140f395adfa424c696b35ee}
+      \strng{authornamehash}{5ba7d964a9bf8ff4fe26ade6ecca5d7d}
       \strng{authorfullhash}{b5838b3a9d8789aa5850b509bd403767}
       \strng{authorfullhashraw}{b5838b3a9d8789aa5850b509bd403767}
       \field{sortinit}{B}
@@ -612,27 +616,27 @@
     \endentry
     \entry{Bogousslavsky2023}{article}{}{}
       \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=604f102a2c1a07f11830c5ed27712d79}{%
-           family={BOGOUSSLAVSKY},
+        {{un=0,uniquepart=base,hash=11cf11b6566e97b3a792c85508d5535a}{%
+           family={Bogousslavsky},
            familyi={B\bibinitperiod},
-           given={VINCENT},
+           given={Vincent},
            giveni={V\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=37fa34e6581bd4173022256fcd0d3d1a}{%
-           family={COLLIN-DUFRESNE},
+        {{un=0,uniquepart=base,hash=9572d38db00c2951b7e0e1a3a2c2e6e6}{%
+           family={Collin-Dufresne},
            familyi={C\bibinithyphendelim D\bibinitperiod},
-           given={PIERRE},
+           given={Pierre},
            giveni={P\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{870534af9babf500faa06b752936ea34}
-      \strng{fullhash}{870534af9babf500faa06b752936ea34}
-      \strng{fullhashraw}{870534af9babf500faa06b752936ea34}
-      \strng{bibnamehash}{870534af9babf500faa06b752936ea34}
-      \strng{authorbibnamehash}{870534af9babf500faa06b752936ea34}
-      \strng{authornamehash}{870534af9babf500faa06b752936ea34}
-      \strng{authorfullhash}{870534af9babf500faa06b752936ea34}
-      \strng{authorfullhashraw}{870534af9babf500faa06b752936ea34}
+      \strng{namehash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{fullhash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{fullhashraw}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{bibnamehash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{authorbibnamehash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{authornamehash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{authorfullhash}{4461c2bc2853f3aee09a78e584a6a86f}
+      \strng{authorfullhashraw}{4461c2bc2853f3aee09a78e584a6a86f}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -734,7 +738,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The paper proposes an additive cascade model of volatility components defined over different time periods. This volatility cascade leads to a simple AR-type model in the realized volatility with the feature of considering different volatility components realized over different time horizons and thus termed Heterogeneous Autoregressive model of Realized Volatility (HAR-RV). In spite of the simplicity of its structure and the absence of true long-memory properties, simulation results show that the HAR-RV model successfully achieves the purpose of reproducing the main empirical features of financial returns (long memory, fat tails, and self-similarity) in a very tractable and parsimonious way. Moreover, empirical results show remarkably good forecasting performance. Copyright The Author 2009. Published by Oxford University Press. All rights reserved. For Permissions, please e-mail: journals.permissions@oupjournals.org, Oxford University Press.}
       \field{journaltitle}{Journal of Financial Econometrics}
-      \field{month}{Spring}
+      \field{month}{1}
       \field{number}{2}
       \field{title}{A Simple Approximate Long-Memory Model of Realized Volatility}
       \field{volume}{7}
@@ -804,6 +808,38 @@
       \verb https://www.sciencedirect.com/science/article/pii/S1386418123000150
       \endverb
       \keyw{Arbitrage,Law of one price,Cryptocurrencies,Bitcoin,FinTech}
+    \endentry
+    \entry{Dumitrescu2025}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=219da62df7ea4bb2d5917687cba64787}{%
+           family={Dumitrescu},
+           familyi={D\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Paris-Panthéon-Assas University}%
+      }
+      \strng{namehash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{fullhash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{fullhashraw}{219da62df7ea4bb2d5917687cba64787}
+      \strng{bibnamehash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{authorbibnamehash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{authornamehash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{authorfullhash}{219da62df7ea4bb2d5917687cba64787}
+      \strng{authorfullhashraw}{219da62df7ea4bb2d5917687cba64787}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Lecture slides}
+      \field{note}{Academic year 2025--2026}
+      \field{subtitle}{Course Slides}
+      \field{title}{Applied Financial Econometrics}
+      \field{year}{2025}
     \endentry
     \entry{Engle1987}{article}{}{}
       \name{author}{2}{}{%
@@ -1029,7 +1065,7 @@
       \endverb
     \endentry
     \entry{Hansen2024}{article}{}{}
-      \name{author}{3}{ul=2}{%
+      \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=851986f5b859aa8517f12b14968c618d}{%
            family={Hansen},
            familyi={H\bibinitperiod},
@@ -1049,12 +1085,12 @@
            giveni={W\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{7588c4c45c5e45f187fe7c8d67bc1a90}
+      \strng{namehash}{ce6d9f4265e1a2f6cfeaee806eb87e74}
       \strng{fullhash}{13845fb769294deab5202d04f84b0d65}
       \strng{fullhashraw}{13845fb769294deab5202d04f84b0d65}
       \strng{bibnamehash}{13845fb769294deab5202d04f84b0d65}
       \strng{authorbibnamehash}{13845fb769294deab5202d04f84b0d65}
-      \strng{authornamehash}{7588c4c45c5e45f187fe7c8d67bc1a90}
+      \strng{authornamehash}{ce6d9f4265e1a2f6cfeaee806eb87e74}
       \strng{authorfullhash}{13845fb769294deab5202d04f84b0d65}
       \strng{authorfullhashraw}{13845fb769294deab5202d04f84b0d65}
       \field{sortinit}{H}

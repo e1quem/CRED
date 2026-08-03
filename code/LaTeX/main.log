@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  3 AUG 2026 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  3 AUG 2026 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -480,30 +480,37 @@ Package: longtable 2026-01-28 v4.27 Multi-page Table package (DPC)
 \c@LT@tables=\count441
 \c@LT@chunks=\count442
 \LT@p@ftn=\toks24
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count443
+\float@exts=\toks25
+\float@box=\box61
+\@float@everytoks=\toks26
+\@floatcapt=\box62
 )
-\@quotelevel=\count443
-\@quotereset=\count444
+\@quotelevel=\count444
+\@quotereset=\count445
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -517,21 +524,21 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 19.
-Package biblatex Info: Reference segment=0 on input line 19.
+Package biblatex Info: Reference section=0 on input line 25.
+Package biblatex Info: Reference segment=0 on input line 25.
  (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count445
+\scratchcounter=\count446
 \scratchdimen=\dimen175
-\scratchbox=\box61
-\nofMPsegments=\count446
-\nofMParguments=\count447
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count448
+\scratchbox=\box63
+\nofMPsegments=\count447
+\nofMParguments=\count448
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count449
 \MPscratchDim=\dimen176
-\MPnumerator=\count449
-\makeMPintoPDFobject=\count450
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count450
+\makeMPintoPDFobject=\count451
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -572,7 +579,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 25.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -580,82 +587,118 @@ Package hyperref Info: Link coloring OFF on input line 19.
  [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 73.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 94.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [3]
-<media/signaturePlot.png, id=178, 1075.8594pt x 458.31226pt>
+) [3] [4]
+<media/signaturePlot.png, id=195, 1075.8594pt x 458.31226pt>
 File: media/signaturePlot.png Graphic file (type png)
 <use media/signaturePlot.png>
-Package pdftex.def Info: media/signaturePlot.png  used on input line 100.
+Package pdftex.def Info: media/signaturePlot.png  used on input line 129.
 (pdftex.def)             Requested size: 455.24411pt x 193.93044pt.
- [4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<media/events.png, id=199, 2016.333pt x 570.81255pt>
+<media/events.png, id=199, 2016.333pt x 570.933pt>
 File: media/events.png Graphic file (type png)
 <use media/events.png>
-Package pdftex.def Info: media/events.png  used on input line 119.
-(pdftex.def)             Requested size: 455.24411pt x 128.87148pt.
+Package pdftex.def Info: media/events.png  used on input line 148.
+(pdftex.def)             Requested size: 455.24411pt x 128.89867pt.
 <media/feeRegime.png, id=200, 1293.633pt x 281.853pt>
 File: media/feeRegime.png Graphic file (type png)
 <use media/feeRegime.png>
-Package pdftex.def Info: media/feeRegime.png  used on input line 127.
+Package pdftex.def Info: media/feeRegime.png  used on input line 156.
 (pdftex.def)             Requested size: 455.24411pt x 99.1876pt.
- [5 <./media/signaturePlot.png> <./media/events.png>] [6 <./media/feeRegime.png>] [7]
-<media/volume.png, id=249, 1004.553pt x 570.933pt>
+ [5
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.161 
+      {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./media/signaturePlot.png>] [6
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.174 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.174 \end{align}
+                  <./media/events.png> <./media/feeRegime.png>] [7
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.209 
+      ]
+<media/volume.png, id=251, 1004.553pt x 570.933pt>
 File: media/volume.png Graphic file (type png)
 <use media/volume.png>
-Package pdftex.def Info: media/volume.png  used on input line 206.
+Package pdftex.def Info: media/volume.png  used on input line 235.
 (pdftex.def)             Requested size: 455.24411pt x 258.73822pt.
- [8 <./media/volume.png>] [9] [10] [11] [12] [13]
-
-Package biblatex Warning: Month out of range or not an integer
-(biblatex)                at entry 'Corsi2009' on input line 375.
-
-[14] [15]
-<media/correlationHeatmap.png, id=365, 1293.633pt x 715.473pt>
-File: media/correlationHeatmap.png Graphic file (type png)
-<use media/correlationHeatmap.png>
-Package pdftex.def Info: media/correlationHeatmap.png  used on input line 404.
-(pdftex.def)             Requested size: 455.24411pt x 251.78395pt.
- [16
+ [8] [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.266 
+       <./media/volume.png>] [10
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.340 
+      ] [11
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.340 
+      ] [12
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.390 
+      ] [13] [14] [15] [16
 
 ]
-Overfull \hbox (205.6786pt too wide) in paragraph at lines 419--419
-[]\OT1/cmr/m/sc/9 Table \OT1/cmr/m/n/9 5: [] 
- []
+<media/correlationHeatmap.png, id=376, 1293.633pt x 715.473pt>
+File: media/correlationHeatmap.png Graphic file (type png)
+<use media/correlationHeatmap.png>
+Package pdftex.def Info: media/correlationHeatmap.png  used on input line 437.
+(pdftex.def)             Requested size: 455.24411pt x 251.78395pt.
+ [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.440     \clearpage
+                     % new page <./media/correlationHeatmap.png>] [18
 
-[17 <./media/correlationHeatmap.png>] [18] [19] [20] (./main.aux)
+] [19] [20] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 21B2495D9C1F1B7A45BF5D7FA654A1C6;3226.
+(rerunfilecheck)             Checksum: 414D0389CCE1296A968F2DC287F22997;3221.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18207 strings out of 467168
- 318181 string characters out of 5409462
- 1232613 words of memory out of 5000000
- 47177 multiletter control sequences out of 15000+600000
- 638640 words of font info for 85 fonts, out of 8000000 for 9000
+ 18288 strings out of 467168
+ 319553 string characters out of 5409462
+ 1231098 words of memory out of 5000000
+ 47252 multiletter control sequences out of 15000+600000
+ 638939 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,67p,1914b,1610s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,10n,67p,1914b,1619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (20 pages, 8533429 bytes).
+Output written on main.pdf (20 pages, 8771498 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 533 PDF objects out of 1000 (max. 8388607)
+ 444 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

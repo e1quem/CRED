@@ -180,7 +180,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>true</bcf:value>
+      <bcf:value>false</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
@@ -395,7 +395,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>true</bcf:value>
+      <bcf:value>false</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
@@ -2386,37 +2386,38 @@
     <bcf:citekey order="10" intorder="1">Ranaldo2022</bcf:citekey>
     <bcf:citekey order="11" intorder="1">Makarov2020</bcf:citekey>
     <bcf:citekey order="12" intorder="1">Crepelliere2023</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">Barndorff2004</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">Barndorff2010</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">Garman1980</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">Rogers1991</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">Amihud2002</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">Ranaldo2022</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">Kyle1985</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">Andersen2001</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">Bandi2006</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">Andersen2007</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">Patton2011</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">Haugom2014</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">Engle1987</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">Johansen1988</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">AmoussouGuenou2024</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">Corsi2009</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">Andersen2007</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">Tseng2015</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">Clark1973</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">Gallant1992</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">Andersen1996</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">Hansen2024</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">Andersen2007</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Tseng2015</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">Patton2011</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">Dumitrescu2025</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">Barndorff2004</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">Barndorff2010</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">Garman1980</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">Rogers1991</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">Amihud2002</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">Ranaldo2022</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">Kyle1985</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Andersen2001</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">Bandi2006</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">Andersen2007</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">Patton2011</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">Haugom2014</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">Engle1987</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">Johansen1988</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">AmoussouGuenou2024</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">Corsi2009</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">Andersen2007</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">Tseng2015</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">Clark1973</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">Gallant1992</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">Andersen1996</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">Hansen2024</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">Andersen2007</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">Tseng2015</bcf:citekey>
     <bcf:citekey order="38" intorder="1">Patton2011</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">Patton2009</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">Corsi2009</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">John2025</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">Hansen2006</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">Bandi2008</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">Patton2011</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">Patton2009</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">Corsi2009</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">John2025</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">Hansen2006</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">Bandi2008</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
