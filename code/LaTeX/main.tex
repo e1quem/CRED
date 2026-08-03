@@ -34,7 +34,7 @@
     Research Internship Report -- July 2026 \bigskip
     
     Under the supervision of Elena Dumitrescu and Yackolley Amoussou-Guenou \\
-    Economics and Law Research Center (CRED) - Paris-Panthéon-Assas University \\
+    Economics and Law Research Center (CRED) -- Paris-Panthéon-Assas University \\
     Notebooks, sources and data are available on \href{https://github.com/e1quem/CRED}{Github}
     \vspace{1cm}
 \end{center}
@@ -58,7 +58,7 @@ This report is organized as follows. Section~\ref{sec:data} describes data sourc
 
 \section{Data}
 \label{sec:data}
-    \subsection{Market data}
+    \subsection{Market Data}
 
 Binance, the world’s largest cryptocurrency exchange by trading volume, provides an exceptionally dense and \href{https://github.com/binance/binance-public-data}{well-documented} \href{https://data.binance.vision}{public dataset} for all of its trading pairs. For spot, it includes tick-by-tick trade history and candlestick data down to a 1s resolution dating back to 2017. For our observation window, we store aggregated trades (3.7B rows) and 1s price data (231M rows) into a DuckDB database for Ethereum-Tether (ETHUSDT) and Bitcoin-Tether (BTCUSDT) pairs. The choice of Tether pairs is justified by the market capitalization of this stablecoin -- ranked third behind Bitcoin and Ethereum -- and the substantial historical data available for these pairs on Binance. 
 %DuckDB table BTCUSDT_aggTrades: 2,645,406,584 rows
@@ -160,7 +160,7 @@ Figure~\ref{fig:feeRegime} illustrates this fee-related volume shift. Phase 1 co
 Plotting these events allows us to define three market periods shared by both assets, indicated by the grey shading in Figure~\ref{fig:events}. Period 1 (405 days) follows the DeFi summer and is characterized by increased volatility, as prices reach all-time-highs before plummeting, followed by coin collapses (Terra/LUNA, UST) and multiple crypto lenders and exchanges (Celsius Network, Voyager Digital) filing for bankruptcy. Period 2 (from event 11 to event 26, 577 days), is more stable and characterized by regulatory changes as the market moves more horizontally. Finally, the approval of Bitcoin spot ETFs marks the beginning of period 3 (356 days), during which institutional investors gain access to a more volatile market influenced by the beginning of the Trump administration. Beyond these shared contextual periods (53\% of Bitcoin-relevant events also affect Ethereum, and 72\% of events in the opposite direction), we verify whether this visual impression of joint price movement holds statistically using cointegration tests. 
  
 
-        \subsubsection{Cointegration testing}
+        \subsubsection{Cointegration Testing}
 
 Cointegration allows to verify if two assets share a long-term equilibrium relation while individual prices remain non-stationary. We use the Engle-Granger test (\cite{Engle1987}) which regresses one price series on the other and tests the residuals for stationarity via an Augmented Dickey-Fuller test: 
 \begin{align}
@@ -201,7 +201,7 @@ Period 3 & Not significant                         & Not significant & Not signi
 \end{table}
 
 
-        \subsubsection{Flight of capital from PoW to PoS}
+        \subsubsection{Flight of Capital From PoW to PoS}
 
 We hypothesize that the Merge might have initiated, or been preceded by, a flight of capital from networks that underwent the PoW-to-PoS transition towards networks that remained PoW throughout this period. Ethereum falls in the former category while Bitcoin fits the latter, yet we also download Binance data for this period's top cryptocurrencies (BNB, XRP, DOGE, ADA, MATIC, DOT, LTC, SOL, SHIB, TRX, UNI, AVAX, BUSD). We obtain historical weekly market capitalization from \href{https://coinmarketcap.com/historical/}{CoinMarketCap's Cryptocurrency Historical Data Snapshot}, ranging from 2022-07-03 to 2022-11-27. We cover the entirety of the Merge period: before \href{https://blog.ethereum.org/2022/08/12/finalized-no-36}{the first Merge announcement} on 2022-08-12, throughout, and after the Merge (2022-09-15). We also base our analysis on consensus mechanism evolution for these coins, obtained as of November 27, 2022 through \textcite{AmoussouGuenou2024} supplementary appendix. 
 
@@ -209,7 +209,7 @@ A visual study of volume and price for coins with varying consensus mechanism in
 
     \subsection{HAR-RV Model}
     \label{sec:harrv}
-        \subsubsection{Model design and adaptation to cryptocurrency characteristics}
+        \subsubsection{Model Design and Adaptation to Cryptocurrency Characteristics}
 
 To explore the dynamics linking volatility to volume, fees and liquidity, we use the Heterogeneous Autoregressive model of Realized Volatility (HAR-RV) introduced by \textcite{Corsi2009} to study how these variables affect models' performances. HAR-RV is a three factor stochastic volatility model with a simple autoregressive structure enabling treatment of cascading volatilities realized over intervals of respectively one day, one week and one month. According to \textcite{Andersen2007}, it has shown remarkably good forecasting performance comparable to more complicated long-memory ARFIMA model since its varying horizons represent fluctuating expectations over different timeframes for next period's volatility. Realized volatility over a period of $x$ trading days is defined as the average of daily quantities
 \begin{align}
@@ -326,7 +326,7 @@ BIC & \hfil -14063.15 & \hfil -14047.33 & \hfil -14041.25 & \hfil -14043.01 & \h
 \end{tablenotes}
 \end{table}
 
-        \subsubsection{Proxy and loss functions for volatility forecasting}
+        \subsubsection{Proxy and Loss Functions for Volatility Forecasting}
 
 The evaluation of volatility forecasts is impeded by the fact that the variable of interest itself -- conditional variance -- is never directly observed. \textcite{Patton2011} shows that the choice of a proxy matters in this case, as certain loss functions can lead to distorted ranking of competing forecasts. He derives conditions for a loss function to be robust to such distortion and shows that only mean squared-error (MSE, Eq.~\ref{eq:MSE}) and QLIKE (Eq.~\ref{eq:QLIKE}) loss functions satisfy them.
 \begin{align}
