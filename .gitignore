@@ -7,3 +7,5 @@ code/data.db
 code/data.db.wal
 admin/
 slides/
+.DS_Store
+**/.DS_Store
