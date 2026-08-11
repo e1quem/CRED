@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  3 AUG 2026 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  11 AUG 2026 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -594,88 +594,89 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 94.
+) [2] [3]
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 92.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [3] [4]
-<media/signaturePlot.png, id=195, 1075.8594pt x 458.31226pt>
+) [4]
+<media/signaturePlot.png, id=190, 1075.8594pt x 458.31226pt>
 File: media/signaturePlot.png Graphic file (type png)
 <use media/signaturePlot.png>
-Package pdftex.def Info: media/signaturePlot.png  used on input line 129.
+Package pdftex.def Info: media/signaturePlot.png  used on input line 121.
 (pdftex.def)             Requested size: 455.24411pt x 193.93044pt.
-<media/events.png, id=199, 2016.333pt x 570.933pt>
-File: media/events.png Graphic file (type png)
-<use media/events.png>
-Package pdftex.def Info: media/events.png  used on input line 148.
-(pdftex.def)             Requested size: 455.24411pt x 128.89867pt.
-<media/feeRegime.png, id=200, 1293.633pt x 281.853pt>
-File: media/feeRegime.png Graphic file (type png)
-<use media/feeRegime.png>
-Package pdftex.def Info: media/feeRegime.png  used on input line 156.
-(pdftex.def)             Requested size: 455.24411pt x 99.1876pt.
  [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.161 
-      {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./media/signaturePlot.png>] [6
+l.132 
+      {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./media/signaturePlot.png>]
+<media/events.png, id=210, 2016.333pt x 859.89255pt>
+File: media/events.png Graphic file (type png)
+<use media/events.png>
+Package pdftex.def Info: media/events.png  used on input line 140.
+(pdftex.def)             Requested size: 455.24411pt x 194.13664pt.
+<media/feeRegime.png, id=211, 1293.633pt x 281.853pt>
+File: media/feeRegime.png Graphic file (type png)
+<use media/feeRegime.png>
+Package pdftex.def Info: media/feeRegime.png  used on input line 148.
+(pdftex.def)             Requested size: 455.24411pt x 99.1876pt.
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.174 \end{align}
-                 
+l.153 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.174 \end{align}
-                  <./media/events.png> <./media/feeRegime.png>] [7
+l.153 
+       <./media/events.png> <./media/feeRegime.png>] [7] [8
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.209 
-      ]
-<media/volume.png, id=251, 1004.553pt x 570.933pt>
+l.216 \end{align}
+                 ]
+<media/volume.png, id=262, 1004.553pt x 570.933pt>
 File: media/volume.png Graphic file (type png)
 <use media/volume.png>
-Package pdftex.def Info: media/volume.png  used on input line 235.
+Package pdftex.def Info: media/volume.png  used on input line 229.
 (pdftex.def)             Requested size: 455.24411pt x 258.73822pt.
- [8] [9
+ [9] [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.266 
-       <./media/volume.png>] [10
+l.265 
+      
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.340 
-      ] [11
+l.265 
+       <./media/volume.png>] [11] [12
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.340 
-      ] [12
+l.387 
+      ] [13
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.390 
-      ] [13] [14] [15] [16
+l.396 
+      ] [14] [15] [16] [17
 
 ]
-<media/correlationHeatmap.png, id=376, 1293.633pt x 715.473pt>
+<media/correlationHeatmap.png, id=389, 1293.633pt x 715.473pt>
 File: media/correlationHeatmap.png Graphic file (type png)
 <use media/correlationHeatmap.png>
 Package pdftex.def Info: media/correlationHeatmap.png  used on input line 437.
 (pdftex.def)             Requested size: 455.24411pt x 251.78395pt.
- [17
+ [18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.440     \clearpage
-                     % new page <./media/correlationHeatmap.png>] [18
+                     % new page <./media/correlationHeatmap.png>] [19
 
-] [19] [20] (./main.aux)
+] [20] [21] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -687,18 +688,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18288 strings out of 467168
- 319553 string characters out of 5409462
- 1231098 words of memory out of 5000000
- 47252 multiletter control sequences out of 15000+600000
+ 18293 strings out of 467168
+ 319602 string characters out of 5409462
+ 1231301 words of memory out of 5000000
+ 47255 multiletter control sequences out of 15000+600000
  638939 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,67p,1914b,1619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,10n,67p,2214b,1617s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (20 pages, 8771918 bytes).
+Output written on main.pdf (21 pages, 11388723 bytes).
 PDF statistics:
- 533 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
  178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
