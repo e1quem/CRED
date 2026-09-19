@@ -35,66 +35,65 @@
     
     Under the supervision of Elena Dumitrescu and Yackolley Amoussou-Guenou \\
     Economics and Law Research Center (CRED) -- Paris-Panthéon-Assas University \\
-    Notebooks, sources and data are available on \href{https://github.com/e1quem/CRED}{Github}
+    Notebooks, sources and data are available on \href{https://github.com/e1quem/CRED}{GitHub}
     \vspace{1cm}
 \end{center}
 
 
 \section{Introduction}
 
-\textcite{Nakamoto2008} introduced Bitcoin as a mechanism enabling peer-to-peer decentralized electronic payments, without the need to rely on financial institutions for transaction validation. In practice, a network of independent nodes -- computers running the protocol -- maintains a record of ownership and all transfers of value by organizing transactions into blocks -- batches identified by a hash. To function, validators -- the nodes responsible for verifying blocks -- must reach consensus on a unique version of this ledger. Consensus can only be achieved if nodes follow a given sequence of actions needed to maintain the blockchain: the protocol (\cite{AmoussouGuenou2026}).
+\textcite{Nakamoto2008} introduced Bitcoin as a mechanism enabling peer-to-peer decentralized electronic payments, without the need to rely on financial institutions for transaction validation. In practice, a network of independent nodes -- computers running the protocol -- maintains a record of ownership and all transfers of value by organizing transactions into blocks identified by a hash. To function, validators -- the nodes responsible for verifying blocks -- must reach consensus on a unique version of this ledger. Consensus can only be achieved if nodes follow a given sequence of actions needed to maintain the blockchain: the protocol (\cite{AmoussouGuenou2026}).
 
-Validators play a critical role in order for this system to function without any central authority: they must be incentivized to fulfill their role, and to do so while ensuring compliance with the protocol. With no global oversight, incentive compatibility -- a combination of rewards (newly issued tokens distributed to validators) and penalties (loss of computing resources or staked capital) -- favors alignment over deviation. In Bitcoin's Proof-of-Work (PoW) consensus mechanism, anyone can become a validator, taking part in the competition among nodes trying to propose the next block by solving computation-intensive puzzles, with the odds of winning weighted by computational power. The winning node is rewarded while an invalid block is rejected, each error sinking computational effort and energy expenditure. \textcite{Biais2019} show that PoW constitutes an equilibrium, although it is not the only one: \textcite{AmoussouGuenou2024} obtain a reciprocal result for committee-based Proof-of-Stake (PoS) protocols.
+Validators play a critical role in order for this system to function without any central authority: they must be incentivized to fulfill their role, and to do so while ensuring compliance with the protocol. With no global oversight, incentive compatibility -- a combination of rewards (newly issued tokens distributed to validators) and penalties (loss of computing resources or staked capital) -- fosters alignment. In Bitcoin's Proof-of-Work (PoW) consensus mechanism, anyone can become a validator to take part in the competition among nodes, by trying to propose the next block by solving computation-intensive puzzles, with winning odds being weighted by computational power. Winners are rewarded, while invalid blocks are rejected, each error sinking computational effort and energy expenditure. \textcite{Biais2019} show that PoW constitutes an equilibrium, although it is not the only one: \textcite{AmoussouGuenou2024} obtain a reciprocal result for committee-based Proof-of-Stake (PoS) protocols.
 
-Ethereum extends Bitcoin's decentralisation beyond payment with smart contracts: self-executing programs whose interactions are themselves transactions, allowing for a broader set of applications in decentralised finance. On September 15th, 2022, the Ethereum network underwent the Merge: its original PoW layer merged with a PoS layer that had been running in parallel since 2020. Unlike PoW, PoS validators stake capital in order to be eligible to suggest blocks, with the risk of losing their stake if blocks they propose deviate from the protocol; the next validator is then selected at random, weighted by stake. This transition from intensive block "mining" to staked validation cut the network's energy consumption by 99.95\%, while leaving transaction history and user holdings intact. It also set the stage for further scalability upgrades, bringing Ethereum one step closer to its roadmap. Since these consensus mechanisms rely on specific reward and penalty structures, a shift in protocol such as the Merge could alter this balance of incentives, and by extension impact the financial markets on which these assets are traded
+Ethereum extends Bitcoin's decentralization beyond payment with smart contracts: self-executing programs allowing for a broader set of applications in decentralized finance. On September 15th, 2022, the Ethereum network underwent the Merge: its PoW layer merged with a parallel PoS layer that had been running since 2020. Unlike in PoW, PoS validator status depends on meeting a threshold of staked capital, with next-block validating node selection being weighted by stake. Validators face the risk of losing their capital if blocks they propose deviate from the protocol. This transition from intensive block "mining" to staked validation cut the network's energy consumption by 99.95\% and brought Ethereum one step closer to its roadmap setting the stage for later scalability upgrades while leaving transaction history and user holdings intact. Since these consensus mechanisms rely on specific reward and penalty structures, a shift in protocol could alter this balance of incentives, and by extension impact the financial markets on which these assets are traded.
 
-The Merge therefore offers a rare natural experiment: a structural change in the protocol of the second largest cryptocurrency by market capitalization. This setting is the opportunity to study how a protocol shift affects the trading behaviour of a cryptocurrency, specifically the dynamics of volatility, volume and liquidity, where Bitcoin's unchanged protocol serves as a counterfactual in order to disentangle effects specific to Ethereum's transition from market-wide movements affecting both assets. To capture the effects of the Merge, our observation window spans from May 4th, 2021 to December 31st, 2024. This choice stems from data availability constraints, and aims to maintain consistent market conditions throughout our sample in the fast-moving landscape of cryptocurrencies: prior data originate from a vastly different market environment, characterized by incomparable volumes and dynamics.
+The Merge therefore offers a rare natural experiment: a structural change in the protocol of the second largest cryptocurrency by market capitalization. This setting allows us to study how a protocol shift affects the trading behavior of a cryptocurrency, specifically the dynamics of volatility, volume and liquidity, whereas Bitcoin's unchanged protocol serves as a neutral counterfactual. To capture the effects of the Merge, our observation window spans from May 4th, 2021 to December 31st, 2024. This choice stems from data availability constraints and aims to maintain consistent market conditions throughout our sample in the fast-moving landscape of cryptocurrencies: prior data originate from a vastly different market environment, characterized by incomparable volumes and dynamics.
 
-We find that the Merge itself had little observable effect on Ethereum's trading dynamics across volatility, liquidity and volume measures. Cointegration between Ethereum and Bitcoin persists throughout the Merge, with no clear break in their long-run relation, contrary to what a significant shift of Ethereum metrics caused by the Merge would imply. By comparison, a simultaneous and unrelated exchange-level fee change for Bitcoin pairs listed on Binance -- resulting in a structural shift of similar scope for trading metrics, confined to Binance's Bitcoin pairs -- had a more pronounced impact on Bitcoin's trading volume than the Merge had on Ethereum's. Finally, our extended HAR-RV estimates show no shift in the regressors driving Ethereum's volatility around the Merge, indicating that the mechanisms linked to volatility remained unchanged by the transition. These results suggest that the Merge had no significant impact on Ethereum's spot market behaviour. 
+We find that the Merge itself had little observable effect on Ethereum's trading dynamics across volatility, liquidity and volume measures. Cointegration between Ethereum and Bitcoin persists throughout the Merge, with no clear break in their long-run relation, contrary to what a significant shift of Ethereum metrics caused by the Merge would imply. By comparison, a simultaneous and unrelated exchange-level fee change for Bitcoin pairs listed on Binance -- resulting in a structural shift of similar scope for trading metrics, confined to Binance's Bitcoin pairs -- had a more pronounced impact on Bitcoin's trading volume than the Merge had on Ethereum's. Finally, our extended HAR-RV regressions show no shift in the regressors driving Ethereum's volatility around the Merge, indicating that the mechanisms linked to this metric remained unchanged by the transition. These results suggest that the Merge had no significant impact on Ethereum's spot market behavior. 
 
+Literature shows that empirical evidence of the Merge's effect on markets remains limited and mixed. \textcite{Tsuyuguchi2025} use a DiD design to capture ETH-BTC dynamics: they find that daily returns and on-chain fees were not significantly affected by the Merge, while trading volumes and network activity diverged significantly post-transition. \textcite{Liu2025} report that the change was translated into improved liquidity, reduced trading activity and a decrease in intraday volatility for Ethereum relative to Bitcoin. These diverging conclusions emerging from different empirical strategies motivate a closer look at the volatility-volume-liquidity relationship itself. \textcite{Jain2023} studies the impact of the Merge on on-chain fees, showing that the transition reduced them for both Bitcoin and Ethereum blockchains. This mechanism is distinct from the exchange-level fee regime changes we observe on Binance, but is relevant to distinguish effects of protocol-level from exchange-level changes on trading dynamics. Pertinent to the horizons central to our HAR-RV approach, \textcite{Hansen2024} confirms the intraday and weekly periodicity patterns in Bitcoin and Ethereum volume we observe in our data. Finally, \textcite{Bogousslavsky2023} equity-market perspective links order imbalance volatility to the volume-spread relationship. Although based on equity, their framework motivates the volume-illiquidity channel we test empirically through use of Amihud, Realized Amihud (\cite{Ranaldo2022}) and Kyle's lambda.
 
-Literature shows that empirical evidence of the Merge's effect on markets remains limited and mixed. \textcite{Tsuyuguchi2025} use a DiD design to capture ETH-BTC dynamics: they find that daily returns and on-chain fees were not significantly affected by the Merge, while trading volumes and network activity diverged significantly post-transition. \textcite{Liu2025} report that the change was translated by improved liquidity, reduced trading activity and a decrease in intraday volatility for Ethereum relative to Bitcoin. These diverging conclusions emerging from different empirical strategies motivate a closer look at the volatility-volume-liquidity relationship itself. \textcite{Jain2023} studies impact of the Merge on on-chain fees, showing that the transition reduced them for both Bitcoin and Ethereum blockchains. This mechanism is distinct from the exchange-level fee regime changes we observe, but is pertinent to distinguish protocol-level from exchange-level effects on trading behaviour. Relevant to the horizons central to our HAR-RV approach, \textcite{Hansen2024} confirms the intraday and weekly periodicity patterns in Bitcoin and Ethereum volume we observe in our data. Finally, \textcite{Bogousslavsky2023} equity-market perspective links order imbalance volatility to the volume-spread relationship. Although being based on equity, their framework motivates the volume-illiquidity channel we test empirically through use of Amihud, Realized Amihud (\cite{Ranaldo2022}) and Kyle's lambda.
-
-This report is organized as follows. Section~\ref{sec:data} describes data sources for trading data and events used throughout our analysis. Section~\ref{sec:metrics} introduces the intraday volatility and illiquidity estimators we use, and justifies our bin size choice. Section~\ref{sec:analysis} documents market periods, exchange-level fees changes, cointegration testing across sub-periods, flight of capital from PoW to PoS assets, and estimation of HAR-RV models linking volatility to volume, liquidity and fees. Finally, Section~\ref{sec:conclusion} synthesizes our findings and discusses possible directions for further causal analysis.
+This report is organized as follows. Section~\ref{sec:data} describes data sources for trading data and events used throughout our analysis. Section~\ref{sec:metrics} introduces the intraday volatility and illiquidity estimators we use, and justifies our bin size choice. Section~\ref{sec:analysis} documents market periods, exchange-level fee changes, cointegration testing across periods, flight of capital from PoW to PoS assets, and estimation of HAR-RV models linking volatility to volume, liquidity and fees. Finally, Section~\ref{sec:conclusion} synthesizes our findings and discusses possible directions for further causal analysis.
 
 \section{Data}
 \label{sec:data}
     \subsection{Market Data}
 
-Binance, the world’s largest cryptocurrency exchange by trading volume, provides an exceptionally dense and \href{https://github.com/binance/binance-public-data}{well-documented} \href{https://data.binance.vision}{public dataset} for all of its trading pairs. For spot, it includes tick-by-tick trade history and candlestick data down to a 1s resolution, ranging from 2017-08 to 2026-07. For our observation window, we store aggregated trades (3.7B rows) and 1s price data (231M rows) into a DuckDB database for Ethereum-Tether (ETHUSDT) and Bitcoin-Tether (BTCUSDT) pairs. The choice of Tether pairs is justified by the market capitalization of the USDT stablecoin -- ranked third behind Bitcoin and Ethereum -- and the substantial historical data available for its pairs on Binance. 
+Binance, the world's largest cryptocurrency exchange by trading volume, provides an exceptionally dense and \href{https://github.com/binance/binance-public-data}{well-documented} \href{https://data.binance.vision}{public dataset} for all of its trading pairs. For spot, it includes tick-by-tick trade history and candlestick data down to a 1s resolution, ranging from 2017-08 to 2026-07. For our observation window, we store aggregated trades (3.7B rows) and 1s price data (231M rows) into a DuckDB database for Ethereum-Tether (ETHUSDT) and Bitcoin-Tether (BTCUSDT) pairs. The choice of Tether pairs is justified by the market capitalization of the USDT stablecoin -- ranked third behind Bitcoin and Ethereum -- and the substantial historical data available for its pairs on Binance. 
 %DuckDB table BTCUSDT_aggTrades: 2,645,406,584 rows
 % DuckDB table BTCUSDT_1s_control: 115,825,966 rows, same for ETHUSDT
 % DuckDB table ETHUSDT_aggTrades: 1,054,372,816 rows
 
 In theory, trade data allows us to reconstruct higher bin sizes by aggregating trades over intervals of duration $N$. The effectiveness of this approach depends on the fidelity of raw trade feeds. In practice, a 100\% Pearson correlation and a zero median discrepancy between downloaded and reconstructed 1s data confirm the reliability of this method, that we use for later bin size reconstruction. 
 
-Unlike traditional financial markets where prices are centralized, the cryptocurrency system is characterized by its fragmentation across multiple exchanges of varying volumes, listing closely aligned prices that would otherwise offer arbitrage opportunities (\cite{Makarov2020} \cite{Crepelliere2023}). For cross-validation of our Binance dataset, we use Coinbase, the second largest exchange by volume. Its \href{https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/public/get-public-product-candles}{API} provides 1m historical candlestick data for Bitcoin and Ethereum, respectively spanning from 2021-05 and 2017-07 to 2026-05. Coinbase's candlesticks, quoted in either USDT or USD, are seemingly interchangeable, as underlined by a near 100\% Pearson correlation and a median absolute price difference situated below 0.05\% (below 0.3\% at the 99th percentile). However, their trading activity differs significantly: USD volumes are 25 to 35 times higher than those of USDT. We therefore select the former for subsequent inter-exchange comparisons. Using the former, a Binance-Coinbase comparison for both cryptocurrencies reveals a near 100\% Pearson correlation and a median price difference below 0.02\% for candlestick data. Fewer than 0.01\% of 1m bins closing prices exhibit a discrepancy greater than 1\%, emphasizing limited upfront inter-exchange arbitrage opportunities. Given that Binance's USDT pairs have 78 to 128 times the volume of Coinbase USD contracts, we retain the former as our default data source. Other major exchanges (\href{https://support.kraken.com/articles/360047543791-downloadable-historical-market-data-time-and-sales-}{Kraken}, \href{https://public.bybit.com}{ByBit}) were evaluated as alternative sources, but either lacked directly comparable trading pairs or provided limited historical coverage. 
+Unlike traditional financial markets where prices are centralized, the cryptocurrency system is characterized by its fragmentation across multiple exchanges of varying volumes, listing closely aligned prices that would otherwise offer arbitrage opportunities (\cite{Makarov2020} \cite{Crepelliere2023}). For cross-validation of our Binance dataset, we use Coinbase, the second largest exchange by volume. Its \href{https://docs.cdp.coinbase.com/api-reference/advanced-trade-api/rest-api/public/get-public-product-candles}{API} provides 1m historical candlestick data for Bitcoin and Ethereum, respectively spanning from 2021-05 and 2017-07 to 2026-05. Coinbase's candlesticks, quoted in either USDT or USD, are seemingly interchangeable, as underlined by a near 100\% Pearson correlation and a median absolute price difference situated below 0.05\% (below 0.3\% at the 99th percentile). However, their trading activity differs significantly: USD volumes are 25 to 35 times higher than those of USDT. We therefore select the former for subsequent inter-exchange comparisons. A Binance-Coinbase comparison for both cryptocurrencies reveals a near 100\% Pearson correlation and a median price difference below 0.02\% for candlestick data. Fewer than 0.01\% of 1m bins closing prices exhibit a discrepancy greater than 1\%, emphasizing limited upfront inter-exchange arbitrage opportunities. Given that Binance's USDT pairs have 78 to 128 times the volume of equivalent Coinbase USD contracts, we retain the former as our default data source. Other major exchanges (\href{https://support.kraken.com/articles/360047543791-downloadable-historical-market-data-time-and-sales-}{Kraken}, \href{https://public.bybit.com}{Bybit}) were evaluated as alternative sources, but either lacked directly comparable trading pairs or provided limited historical coverage. 
 
 
     \subsection{Market Events}
 
-To provide context for our empirical analysis, we compile a timeline of significant events that affected Ethereum and Bitcoin markets in the period surrounding the Merge. For Ethereum, sources include \href{https://ethereum.org/ethereum-forks/}{Ethereum Project's forks timeline} that lists major milestones of the blockchain, \href{https://blog.ethereum.org}{Ethereum Foundation's blog} and \href{https://www.eth101.org/en/history}{ETH101's timeline} discussing exogenous events affecting the crypto environment during Ethereum's lifespan. CoinMarketCap's all-time Ethereum and Bitcoin plots listing news and milestones, Binance archived announcements for fees regime, as well as \href{https://www.strategy.com/ledger}{Strategy's} Bitcoin purchases were used for Bitcoin. Events span two main categories: Ethereum's protocol upgrades (e.g. the Merge), and global market shocks (e.g. regulatory changes). Across hundreds of events, those listed in Appendix~\ref{sec:appendixEvents} explain major events for these markets over our timeframe. To control for financial context, we obtain 5m interval S\&P500 OHLC data from a \href{https://www.kaggle.com/datasets/salaheddineelkhirani/5-year-data-for-s-and-p-500-and-nasdaq-100/data}{Kaggle dataset} ranging from 2019-11 to 2024-08, and weekly risk-free rate from \href{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html}{Kenneth R. French's website} ranging from 1926-07 to 2026-06. 
+To provide context for our empirical analysis, we compile a timeline of significant events that affected Ethereum and Bitcoin markets in the period surrounding the Merge. For Ethereum, sources include \href{https://ethereum.org/ethereum-forks/}{Ethereum Project's forks timeline} that lists major milestones of the blockchain, \href{https://blog.ethereum.org}{Ethereum Foundation's blog} and \href{https://www.eth101.org/en/history}{ETH101's timeline} discussing exogenous events affecting the crypto environment during Ethereum's lifespan. CoinMarketCap's all-time Ethereum and Bitcoin plots listing news and milestones, Binance archived announcements for fees regime, as well as \href{https://www.strategy.com/ledger}{Strategy's} Bitcoin purchases were used for Bitcoin. Events span two main categories: Ethereum's protocol upgrades (e.g. the Merge), and global market shocks including regulatory changes. Across hundreds of events, those listed in Appendix~\ref{sec:appendixEvents} pinpoint major volume-shifting events for these markets over our timeframe. To control for financial context, we obtain 5m interval S\&P 500 OHLC data from a \href{https://www.kaggle.com/datasets/salaheddineelkhirani/5-year-data-for-s-and-p-500-and-nasdaq-100/data}{Kaggle dataset} ranging from 2019-11 to 2024-08, and weekly risk-free rate from \href{https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html}{Kenneth R. French's website} ranging from July 1926 to June 2026. 
 
 
 \section{Metrics}
 \label{sec:metrics}
 
-Intraday measures of volatility and liquidity are derived from aggregated trade data grouped at intraday frequencies ranging from 10ms to 1h bins, subsequently aggregated at a daily level. For returns computation, we choose a close-to-close measure over an open-to-close alternative, as we observe in our data that the latter sometimes doesn't account for price movements occurring between the close of one bin and the open of the next. Considering the size of our dataset, loading all trades at once would exceed our physical RAM limitations. To compute metrics, we therefore use a day-to-day data streaming approach in order to stay within our capacities bounds. This process is slow -- taking over an hour -- but allows us to obtain daily aggregated metrics based on various bin sizes. 
+Intraday measures of volatility and liquidity are derived from aggregated trade data grouped at frequencies ranging from 10ms to 1h bins, subsequently aggregated at a daily level. For returns computation, we choose a close-to-close measure over an open-to-close alternative, since our data emphasizes that the latter doesn't always account for price movements occurring between the close of one bin and the open of the next. Considering the size of our dataset, loading all trades at once would exceed our physical RAM limitations. We therefore use a day-to-day data streaming approach in order to stay within our capacity bounds when computing metrics. This process is slow -- taking over an hour -- but allows us to obtain daily aggregated metrics based on various bin sizes. 
 
-Intraday volatility is not directly observable: only prices sampled at a given frequency $\Delta \tau$ can be. For day $t$ divided into $M$ intervals $t=t_0<t_1<...<t_M$, let $r_{t_i}$ denote intraday logarithmic returns over the $i$-th interval (\cite{Dumitrescu2025}). We consider several estimators for volatility. First, realized variance ($RV_t$, Eq.~\ref{eq:rv}) is a benchmark estimator of daily variance that converges toward integrated volatility in the absence of jumps, as $M \rightarrow \infty$. For a jump-robust alternative, we implement the bipower variation ($BV_t^{\left\{ 1,1 \right\}}$, Eq.~\ref{eq:bv}) introduced by \textcite{Barndorff2004}. Realized semi-variance ($RS^+$, $RS^-$, Eq.~\ref{eq:rs}) captures variance asymmetry based on sign returns to distinguish the respective contributions of upside and downside risk to total volatility (\cite{Barndorff2010}). Finally, to leverage full candlestick data rather than log-returns alone, we include the Garman-Klass estimator ($G\text{-}K_t$, Eq.~\ref{eq:gk}) as an efficient zero-drift variance measure (\cite{Garman1980}), alongside the Rogers-Satchell alternative ($R\text{-}S_t$, Eq.~\ref{eq:rgs}) which provides an unbiased variance estimate in case of price trends (\cite{Rogers1991}). No estimator is without flaws and literature identifies the shortcomings of existing measures and justifies alternatives accordingly. Here, $RV_t$ doesn't account fairly for volatility in the presence of jumps, and all realized metrics discard part of the price information carried in candlestick data, while $G-K_t$ and $R-S_t$ rely on assumptions that may not hold empirically. Consistent with the exploratory nature of this paper, we report all estimators to cross-validate estimates across bin size. This variety of estimators instead of a single choice that wouldn't be empirically justified allows us to explore potential discrepancies across measures as entry points for further analysis. 
+Intraday volatility is not directly observable: only prices sampled at a given frequency $\Delta \tau$ can be. For day $t$ divided into $M$ intervals $t=t_0<t_1<...<t_M$, let $r_{t_i}$ denote intraday logarithmic returns over the $i$-th interval (\cite{Dumitrescu2025}). We consider several estimators for volatility. First, realized variance ($RV_t$, Eq.~\ref{eq:rv}) is a benchmark estimator of daily variance that converges toward integrated volatility in the absence of jumps, as $M \rightarrow \infty$. For a jump-robust alternative, we implement the bipower variation ($BV_t^{\left\{ 1,1 \right\}}$, Eq.~\ref{eq:bv}) introduced by \textcite{Barndorff2004}. Realized semi-variance ($RS^+$, $RS^-$, Eq.~\ref{eq:rs}) captures variance asymmetry based on signed returns to distinguish the respective contributions of upside and downside risk to total volatility (\cite{Barndorff2010}). Finally, to leverage full candlestick data rather than log-returns alone, we include the Garman-Klass estimator ($G\text{-}K_t$, Eq.~\ref{eq:gk}) as an efficient zero-drift variance measure (\cite{Garman1980}), alongside the Rogers-Satchell alternative ($R\text{-}S_t$, Eq.~\ref{eq:rgs}) which provides an unbiased variance estimate in case of price trends (\cite{Rogers1991}). No estimator is without flaws and literature identifies the shortcomings of existing measures and justifies alternatives accordingly. Here, $RV_t$ doesn't account fairly for volatility in the presence of jumps, and all realized metrics discard part of the price information carried in candlestick data, while $G-K_t$ and $R-S_t$ rely on assumptions that may not hold empirically. Consistent with the exploratory nature of this analysis, we report all estimates instead of a unique choice that wouldn't be empirically justified in order to cross-validate results across bin size and to explore eventual discrepancies across measures as entry points for further analysis. 
 \begin{align}
 RV_t&=\sum\limits^M_{i=1}r^2_{t_i}\tag{1} \label{eq:rv} \\
 BV_t^{\{ 1,1 \}}&=BV_T=\frac{\pi}{2}\sum\limits^M_{j=2}|r_{t_j}|\cdot|r_{t_{j-1}}| \tag{2} \label{eq:bv} \\
-RS_t^{+}&=\sum\limits^M_{i=1}r^2_{t_1}\mathds{1}_{rt_i\geq0}\quad\text{and}\quad RS_t^{-}=\sum\limits^M_{i=1}r^2_{t_1}\mathds{1}_{rt_i\leq0} \tag{3} \label{eq:rs} \\
+RS_t^{+}&=\sum\limits^M_{i=1}r^2_{t_i}\mathds{1}_{rt_i\geq0}\quad\text{and}\quad RS_t^{-}=\sum\limits^M_{i=1}r^2_{t_i}\mathds{1}_{rt_i\leq0} \tag{3} \label{eq:rs} \\
 G\text{-}K_t &= 0.5\left[ \ln\left(\frac{H_t}{L_t}\right)\right]^2 - (2\ln 2-1)\left[\ln\left(\frac{C_t}{O_t}\right)\right]^2\tag{4} \label{eq:gk} \\
 R\text{-}S_t &= \ln\left(\frac{H_t}{C_t}\right)\ln\left(\frac{H_t}{O_t}\right)+\ln\left(\frac{L_t}{C_t}\right)\ln\left(\frac{L_t}{O_t}\right) \tag{5} \label{eq:rgs}
 \end{align} 
 
 \vspace{0.3cm}
 
-\noindent where $O_t, H_t, L_t, C_t$ represent open, high, low and close values for day $t$, respectively.
+\noindent where $O_t, H_t, L_t, C_t$ represent open, high, low and close values for bin $t$, respectively.
 
-For illiquidity measure, Amihud's illiquidity ratio (Eq.~\ref{eq:Amihud}) is the standard reference, measuring illiquidity as a ratio of absolute percentage return to dollar volume over a given period (\cite{Amihud2002}). Its main appeal is its simplicity, as it requires only price and volume data. \textcite{Ranaldo2022} recently introduced an alternative version of this ratio: the realized Amihud (Eq.~\ref{eq:RAmihud}), which aggregates absolute intraday log-returns before dividing by daily volume in order to capture intraday variation that the Amihud ratio would otherwise average out. Comparing both measures lets us assess whether they converge and whether this added granularity introduces additional meaningful signal. Finally, Kyle’s lambda (Eq.~\ref{eq:Kyle}) offers an alternative price-impact measure derived from the linear relationship between trade-level order flow and price change (\cite{Kyle1985}). Unlike the previous two illiquidity estimators, this metric can only be computed from the tick-level data our dataset provides, as it requires trade-by-trade data to obtain signed volume. 
+For illiquidity measures, Amihud's illiquidity ratio (Eq.~\ref{eq:Amihud}) is the standard reference, measuring illiquidity as a ratio of absolute percentage return to dollar volume over a given period (\cite{Amihud2002}). Its main appeal is its simplicity, requiring only price and volume data. \textcite{Ranaldo2022} recently introduced an alternative version of this ratio: the realized Amihud (Eq.~\ref{eq:RAmihud}), which aggregates absolute intraday log-returns before dividing by daily volume in order to capture intraday variation that the Amihud ratio would otherwise average out. Comparing both measures lets us assess whether they converge and whether this added granularity introduces meaningful signal. Finally, Kyle's lambda (Eq.~\ref{eq:Kyle}) offers an alternative price-impact measure derived from the linear relationship between trade-level order flow and price change (\cite{Kyle1985}). Unlike the previous two illiquidity estimators, this metric can only be computed from the tick-level data our dataset provides, as it requires trade-by-trade data to obtain signed volume. 
 \begin{align}
 Amihud_t&=\frac{|R_t|}{V_t}\tag{6} \label{eq:Amihud}\\
 RAmihud_t&=\frac{\sum\limits^M_{i=1}|r_{t_i}|}{V_t}\tag{7} \label{eq:RAmihud}\\
@@ -103,13 +102,13 @@ RAmihud_t&=\frac{\sum\limits^M_{i=1}|r_{t_i}|}{V_t}\tag{7} \label{eq:RAmihud}\\
 
 \vspace{0.3cm}
 
-\noindent where $R_t$ is daily return, $V_t$ is the daily dollar volume $\Delta p_{t_i}$ is the price change associated with trade $i$, $x_{t_i}$ is the signed trade volume and $\lambda_t$ measures the price impact per unit of order flow.
+\noindent where $R_t$ is daily return, $V_t$ is the daily dollar volume, $\Delta p_{t_i}$ is the price change associated with trade $i$, $x_{t_i}$ is the signed trade volume and $\lambda_t$ measures the price impact per unit of order flow.
 
-Signature plots allow us to observe the evolution of our metrics as bin size increases from 10ms to 1h (Fig.~\ref{fig:signaturePlot}). Microstructure noise is noticeable at the 10ms and 100ms intervals for return-based volatility metrics, while Garman-Klass and Rogers-Satchell are less affected by sampling size at these frequencies. A convergence appears from 1s onwards, with all volatility metrics giving similar readings at the 5m interval. This suggests that at such granularity, choice of estimator matters little as they yield comparable results. This high correlation is confirmed by our heatmap analysis (Appendix~\ref{sec:appendixHeatmap}). For sided metrics, realized semi-variance shows no pronounced asymmetry, consistent with rather balanced sided price movements. We therefore select 5m as the default bin size for subsequent plots and analysis, in a trade off between thin granularity and microstructure noise. This follows \textcite{Andersen2001} who argues that for a liquid market, a 5m sampling interval is optimal, a choice followed by \textcite{Bandi2006}, \textcite{Andersen2007}, \textcite{Patton2011} as well as \textcite{Haugom2014}.
+Signature plots allow us to observe the evolution of our metrics as bin size increases from 10ms to 1h (Fig.~\ref{fig:signaturePlot}). Microstructure noise is noticeable at the 10ms and 100ms intervals for return-based volatility metrics, while Garman-Klass and Rogers-Satchell are less affected by sampling size at these frequencies. A convergence appears from 1s onwards, with all volatility metrics giving similar readings at the 5m interval. This suggests that choice of estimator matters little at such granularity, as they yield comparable results. This high correlation is confirmed by our heatmap analysis (Appendix~\ref{sec:appendixHeatmap}). For sided metrics, realized semi-variance shows no pronounced asymmetry, consistent with rather balanced directional price movements. We therefore select 5m as the default bin size for subsequent plots and analysis, as a trade-off between fine granularity and microstructure noise. This follows \textcite{Andersen2001} who argues that for a liquid market, a 5m sampling interval is optimal, a choice followed by \textcite{Bandi2006}, \textcite{Andersen2007}, \textcite{Patton2011} as well as \textcite{Haugom2014}.
 
-For liquidity metrics, Amihud ratio is computed on a daily basis and Kyle's lambda is obtained through trade-level data: these metrics hence remain unaffected by bin size. Only realized Amihud shows a clear decreasing trend as bin size increases, represented in the bottom subplot of Fig.~\ref{fig:signaturePlot}. This result follows an economic intuition: increasing bin size mechanically increases volume per bin, hence reducing the market impact of normal-sized orders on markets where daily volume is measured in billions.
+For liquidity metrics, Amihud ratio is computed on a daily basis and Kyle's lambda is obtained through trade-level data: those metrics hence remain unaffected by bin size. Only realized Amihud shows a clear decreasing trend as bin size increases, represented in the bottom subplot of Fig.~\ref{fig:signaturePlot}. This result follows an economic intuition: increasing bin size mechanically increases volume per bin, hence reducing the market impact of normal-sized orders on markets where daily volume is measured in billions.
 
-With estimators defined and bin size choice established, we now proceed to explore market dynamics associated with the Merge.
+With estimators defined and bin size established, we now proceed to explore market dynamics associated with the Merge.
 
 
 \begin{figure}[!htbp]
@@ -127,9 +126,9 @@ With estimators defined and bin size choice established, we now proceed to explo
     \subsection{Market Dynamics}
         \subsubsection{Events and Market Periods}
 
-Using 5m data, we plot daily price and dollar volume of Ethereum and Bitcoin pairs alongside all events explaining major volume spikes for these markets. We also add Binance's fee regime changes and Merge related announcements to the chart. Figure~\ref{fig:events} underlines a factor-two difference in volume (average daily volume is \$1.2B for Ethereum, \$2.7B for Bitcoin) and a large difference in the price of these two assets. In terms of liquidity, Ethereum is relatively more liquid than Bitcoin, as a higher realized Amihud value indicates higher illiquidity. From a visual reading, Merge announcements (events 13, 14) are linked to little volume change, and Merge execution (event 16) is linked to a small-scale volume spike for Ethereum. Merge execution has no observable effect on Bitcoin charts compared to, for example, *US inflation announcement higher than forecasted* (event 15). However, Binance's removal then reintroduction of fees on Bitcoin pairs (respectively events 12 and 21), has a notable impact on metrics. For Bitcoin, it is directly linked to a phase of sustained increased volume -- +160\% compared to the overall fee-present sample trading volume -- as trading becomes frictionless. For Ethereum, a mean -26.4\% decrease in volume during the fee-less phase indicates that no similar effect is to be observed. This effect is even more visible on realized Amihud, which flattens out throughout the fee-less phase, indicating that increased volume led to improved Bitcoin liquidity. These contrasting observations -- a minute reaction to the Merge and a noticeable response to a trivial fee change -- open up pathways that will be addressed in Section~\ref{sec:harrv}: whether volume shifts induced by exchange-fee-regime impacts volatility measures. 
+Using 5m data, we plot daily price and dollar volume of Ethereum and Bitcoin pairs alongside all events explaining major volume spikes for these markets. We also add Binance's fee regime changes and Merge-related announcements to the chart. Figure~\ref{fig:events} underlines a two-fold difference in volume (average daily volume is \$1.2B for Ethereum, \$2.7B for Bitcoin) and a large difference in asset price. Since a higher realized Amihud value indicates a less liquid market, Ethereum is relatively more liquid than Bitcoin. From a visual reading, Merge announcements (events 13, 14) are linked to little volume change, and Merge execution (event 16) is linked to a small-scale volume spike for Ethereum. Merge execution has no observable effect on Bitcoin charts compared to, for example, \textit{US inflation announcement higher than forecasted} (event 15). However, Binance's removal then reintroduction of fees on Bitcoin pairs (respectively events 12 and 21), has a notable impact on metrics. For Bitcoin, it is directly linked to a phase of sustained increased volume (+160\% compared to the overall fee-present sample trading volume) as trading becomes frictionless. For Ethereum, a mean -26.4\% decrease in volume during the fee-less phase indicates that no similar effect is to be observed. This effect is even more visible on realized Amihud, which flattens out throughout the fee-less phase, indicating that increased volume led to improved Bitcoin liquidity. This minute reaction to the Merge and a noticeable response to a trivial fee change are worth addressing in Section~\ref{sec:harrv}, in order to verify whether volume shifts induced by exchange-fee-regime impact volatility measures. 
 
-Figure~\ref{fig:feeRegime} illustrates this fee-related volume shift. Phase 1 corresponds to normal trading fees on Binance (0.1\% of the transaction value); phase 2 begins when Binance removed fees on 13 Bitcoin pairs; phase 3 starts when this zero-fee promotion is withdrawn from all pairs except BTCTUSD; phase 4 represents the full reintroduction of fees. BTCUSDT volume rises sharply during phase 2 and drops immediately once fees are reinstated, underlining how fee regime impacts market behavior. BTCTUSD shows a volume spike once it becomes the only fee-less Bitcoin pair listed on Binance. Coinbase volume analysis shows a stable trend throughout these periods, underlining how these volumes changes are linked to Binance promotional-stunt rather than global market context; it is omitted from the figure due to its different scale. During our entire sample, Binance fees for the ETHUSDT pair remained stable at around 0.1\%, hence no similar volume shift is observed for this cryptocurrency on this exchange. 
+Figure~\ref{fig:feeRegime} illustrates this fee-related volume shift. Phase 1 corresponds to normal trading fees on Binance (0.1\% of the transaction value); phase 2 begins when Binance removed fees on 13 Bitcoin pairs; phase 3 starts when this zero-fee promotion is withdrawn from all pairs except BTCTUSD; phase 4 represents the full reintroduction of fees. BTCUSDT volume rises sharply during phase 2 and drops immediately once fees are reinstated, underlining how fee regime impacts market behavior. BTCTUSD shows a volume spike once it becomes the only fee-less Bitcoin pair listed on Binance. Coinbase volume analysis shows a stable trend throughout these periods, underlining how these volume changes are linked to Binance's promotional-stunt rather than global market context; it is omitted from the figure due to its different scale. During our entire sample, Binance fees for the ETHUSDT pair remained stable at around 0.1\%, hence no similar volume shift is observed for this cryptocurrency on this exchange. 
 
 \begin{figure}[!htbp]
 \centering
@@ -148,7 +147,7 @@ Figure~\ref{fig:feeRegime} illustrates this fee-related volume shift. Phase 1 co
 \end{figure}
 
 
-Plotting these events allows us to define three market periods shared by both assets, indicated by the grey shading in Figure~\ref{fig:events}. Period 1 (405 days) follows the DeFi summer and is characterized by increased volatility, as prices reach all-time-highs before plummeting, followed by coin collapses (Terra/LUNA, UST) and multiple crypto lenders and exchanges (Celsius Network, Voyager Digital) filing for bankruptcy. Period 2 (from event 11 to event 26, 577 days), is more stable and characterized by regulatory changes as the market moves more horizontally. Finally, the approval of Bitcoin spot ETFs marks the beginning of period 3 (356 days), during which institutional investors gain access to a more volatile market influenced by the beginning of the Trump administration. For period 2, relatively calmer than the rest of the sample, we expect a better fit of our volatility models, as less extreme price movements are present. Going forward, the term \textit{periods} will exclusively refer to the market-regimes described in Figure~\ref{fig:events}, while the word \textit{phases} will strictly be used for the fee-regimes of Figure~\ref{fig:feeRegime}. Beyond these shared contextual periods (53\% of Bitcoin-relevant events also affect Ethereum, and 72\% of Ethereum-relevant events also affect Bitcoin), we verify whether this visual impression of joint price movement holds statistically using cointegration tests. 
+Plotting these events allows us to define three market periods shared by both assets, indicated by the grey shading in Figure~\ref{fig:events}. Period 1 (405 days) follows the DeFi summer and is characterized by increased volatility, as prices reach all-time-highs before plummeting, followed by coin collapses (Terra/LUNA, UST) and multiple crypto lenders and exchanges (Celsius Network, Voyager Digital) filing for bankruptcy. Period 2 (from event 11 to event 26, 577 days), is more stable and characterized by regulatory changes as the market moves more horizontally. Finally, the approval of Bitcoin spot ETFs marks the beginning of period 3 (356 days), during which institutional investors gain access to a more volatile market influenced by the outcome of the 2024 US presidential election. For period 2, relatively calmer than the rest of the sample, we expect a better fit of our volatility models, as less extreme price movements are present. Going forward, the term \textit{periods} will exclusively refer to the market-regimes described in Figure~\ref{fig:events}, while the word \textit{phases} will strictly be used for the fee-regimes of Figure~\ref{fig:feeRegime}. Beyond these shared contextual periods (53\% of Bitcoin-relevant events also affect Ethereum, and 72\% of Ethereum-relevant events also affect Bitcoin), we verify whether this visual impression of joint price movement holds statistically using cointegration tests. 
  
 
         \subsubsection{Cointegration Testing}
@@ -159,7 +158,7 @@ y_t &= \alpha + \beta x_t + u_t \tag{9}\\
 \Delta \hat u_t &= \rho \hat u_{t-1} + \sum_{i=1}^k \phi_i \Delta \hat u_{t-i} + \varepsilon_t \tag{10}
 \end{align}
 
-\noindent where $y_t$ and $x_t$ represent the log-prices of the two assets, $\hat{u_t}$ is the estimated residual representing the long-term equilibrium error,$\phi_i$ are the autoregressive coefficients of the lagged residual differences and $k$ is the lag length. The null hypothesis is  $H_0:\rho=0$ (no cointegration). This approach depends on which variable is chosen as a regressor and only handles a single cointegration relation. We hence complement it using the Johansen trace test (\cite{Johansen1988}), based on a vector error-correction representation, symmetric by construction:
+\noindent where $y_t$ and $x_t$ represent the log-prices of the two assets, $\hat{u_t}$ is the estimated residual representing the long-term equilibrium error, $\phi_i$ are the autoregressive coefficients of the lagged residual differences and $k$ is the lag length. The null hypothesis is  $H_0:\rho=0$ (no cointegration). This approach depends on which variable is chosen as a regressor and only handles a single cointegration relation. We hence complement it using the Johansen trace test (\cite{Johansen1988}), based on a vector error-correction representation, symmetric by construction:
 \begin{align}
 \Delta Y_t &= \Pi Y_{t-1} + \sum_{i=1}^{k-1}\Gamma_i \Delta Y_{t-i} + \varepsilon_t \tag{11}
 \end{align}
@@ -171,9 +170,9 @@ y_t &= \alpha + \beta x_t + u_t \tag{9}\\
 
 \noindent where $T$ is the sample size, $n$ is the number of variables and $\hat{\lambda_i}$ the estimated eigenvalues of $\Pi$. 
 
-According to both tests, the full sample presents no significant cointegration despite a 0.81 correlation (Table~\ref{tab:cointegration}). This suggests that this comovement doesn't reflect a stable long-run equilibrium relationship, that might be punctuated by asymmetric shocks. This observation is evidenced in our event plots (Figure~\ref{fig:events}): despite over half of news being shared by both pairs, many events impacting Ethereum are missing from the Bitcoin plot, and the opposite holds true. For subperiods, the first one shows significant cointegration according to Engle-Granger (5\%), Johansen rank 0 (1\%) and Johansen rank 1 (5\%) tests, also highlighted by a 94\% correlation. Cointegration weakens but remains present over period 2, emphasized by significant Engle-Granger (5\%) and Johansen rank 0 (10\%) tests. Period 3 presents no cointegration and a 0.62 correlation.
+According to both tests, the full sample presents no significant cointegration despite a 0.81 correlation (Table~\ref{tab:cointegration}). This suggests that this comovement doesn't reflect a stable long-run equilibrium relationship, that might be interrupted by shocks. This observation is evidenced in our event plots (Figure~\ref{fig:events}): despite over half of news being shared by both pairs, many events impacting Ethereum are missing from the Bitcoin plot, and the opposite holds true. For subperiods, the first one shows significant cointegration according to Engle-Granger (5\%), Johansen rank 0 (1\%) and Johansen rank 1 (5\%) tests, also highlighted by a 94\% correlation. Cointegration weakens but remains present over period 2, emphasized by significant Engle-Granger (5\%) and Johansen rank 0 (10\%) tests. Period 3 presents no cointegration and a 0.62 correlation.
 
-Since the Merge occurs at the start of period 2, the persistence of cointegration over the remaining of this period indicates that no clear break in the ETH-BTC long-run relationship is to be noticed around this event: Engle-Granger cointegration is just as significant, correlation is similar, only Johansen cointegration shifts. Moreover, the disappearance of any cointegration with sub-period 3 could be coherent with a "Bitcoin decoupling" hypothesis that can be drawn from events of the third period. The arrival of crypto-ETFs as early as January of 2024 for Bitcoin and only six months later -- in July of 2024 -- for Ethereum might have led to a temporary mismatch in investment vehicles, with financial institutions trading only on the asset that is available to them, leading to diverging market behavior for these assets.
+Since the Merge occurs at the start of period 2, the persistence of cointegration over this period indicates that no clear break in the Ethereum-Bitcoin long-run relationship is to be noticed around this event: Engle-Granger cointegration significance remains, correlation is similar, only Johansen cointegration changes. Moreover, the disappearance of cointegration in period 3 could be coherent with a "Bitcoin decoupling" hypothesis that can be drawn from events of the third period. The arrival of crypto-ETFs as early as January of 2024 for Bitcoin and only six months later (in July of 2024) for Ethereum might have led to a temporary mismatch in investment vehicles, as financial institutions active on traditional markets could take part in Bitcoin trading only, leading to diverging market dynamics relative to Ethereum.
 
 \begin{table}[!htbp]
 \centering
@@ -196,18 +195,18 @@ Period 3 & Not significant                         & Not significant & Not signi
 
         \subsubsection{Flight of Capital From PoW to PoS}
 
-We hypothesize that the Merge might have initiated, or been preceded by, a flight of capital from networks that underwent the PoW-to-PoS transition towards networks that remained PoW throughout this period. Ethereum falls in the former category while Bitcoin fits the latter, yet we also download Binance data for this period's top cryptocurrencies (BNB, XRP, DOGE, ADA, MATIC, DOT, LTC, SOL, SHIB, TRX, UNI, AVAX, BUSD). We obtain historical weekly market capitalization from \href{https://coinmarketcap.com/historical/}{CoinMarketCap's Cryptocurrency Historical Data Snapshot}, ranging from 2022-07-03 to 2022-11-27. We cover the entirety of the Merge period: before \href{https://blog.ethereum.org/2022/08/12/finalized-no-36}{the first Merge announcement} on 2022-08-12, throughout, and after the Merge (2022-09-15). We also base our analysis on consensus mechanism evolution for these coins, obtained as of November 27, 2022 through \textcite{AmoussouGuenou2024} supplementary appendix. 
+We hypothesize that the Merge might have initiated, or been preceded by, a flight of capital from networks that underwent the PoW-to-PoS transition towards networks that remained PoW throughout this period. Ethereum falls in the former category while Bitcoin fits the latter, yet we also download Binance data for this period's top cryptocurrencies: BNB, XRP, DOGE, ADA, MATIC, DOT, LTC, SOL, SHIB, TRX, UNI, AVAX and BUSD. We obtain historical weekly market capitalization from \href{https://coinmarketcap.com/historical/}{CoinMarketCap's Cryptocurrency Historical Data Snapshot}, ranging from July 3rd 2022 to November 27th 2022. We cover the entirety of the Merge period: before \href{https://blog.ethereum.org/2022/08/12/finalized-no-36}{the first Merge announcement} (2022-08-12), throughout, and after the Merge (2022-09-15). We also base our analysis on consensus mechanism evolution for these coins, obtained as of November 27th 2022 through \textcite{AmoussouGuenou2024} supplementary appendix. 
 
-A visual study of volume and price for coins with varying consensus mechanism indicates no significant shift around the Merge period. Using a slope chart of market capitalization that is not included here, we check for any relation between market capitalization and consensus mechanism throughout the Merge. Contrary to our hypothesis, no common trends are observed for coins that remained either PoW or PoS, nor for those that underwent the PoW-to-PoS transition during this period. Coins seemingly all move together from one week to another independent of consensus mechanism, prompting us not to explore the dynamics of other coins any further.
+A visual study of volume and price for coins with varying consensus mechanisms indicates no significant shift around the Merge period. Using a parallel axis plot that is not included here, we check for any relation between market capitalization and consensus mechanism throughout the Merge. Contrary to our hypothesis, no common trends are observed for coins that remained either PoW or PoS, nor for those that underwent the PoW-to-PoS transition. Coins seemingly all move together from one week to another independent of consensus mechanism, prompting us not to explore the dynamics of other coins any further.
 
     \subsection{HAR-RV Model}
     \label{sec:harrv}
         \subsubsection{Model Design and Adaptation to Cryptocurrency Characteristics}
         \label{sec:4.2.1}
 
-To explore the dynamics linking volatility to volume, fees and liquidity during the periods surrounding the Merge, we use the Heterogeneous Autoregressive model of Realized Volatility (HAR-RV) introduced by \textcite{Corsi2009} to study how these variables affect models' performances. HAR-RV is a three factor stochastic volatility model with a simple autoregressive structure enabling treatment of cascading volatilities realized over intervals of respectively one day, one week and one month. According to \textcite{Andersen2007}, it has shown remarkably good forecasting performance comparable to more complicated long-memory ARFIMA model since its varying horizons represent fluctuating expectations over different timeframes for next period's volatility. Realized volatility over a period of $x$ trading days is defined as the average of daily quantities
+To explore the dynamics linking volatility to volume, fees and liquidity during the periods surrounding the Merge, we use the Heterogeneous Autoregressive model of Realized Volatility (HAR-RV) introduced by \textcite{Corsi2009} to study how these variables affect model performances. HAR-RV is a three factor stochastic volatility model with a simple autoregressive structure based on measures of cascading volatilities realized over intervals of respectively one day, one week and one month. Its varying horizons represent fluctuating expectations over different timeframes for next period's volatility. According to \textcite{Andersen2007}, HAR-RV has shown remarkably good volatility forecasting performance comparable to that of more complicated long-memory ARFIMA models. Realized volatility over a period of $x$ trading days is defined as the average of daily quantities
 \begin{align}
-RV_t^{(x)}&=\frac{1}{x}\left(RV_t + RV_{t-1} + ... +  RV_{t-x-1} \right) \tag{13}
+RV_t^{(x)}&=\frac{1}{x}\left(RV_t + RV_{t-1} + ... +  RV_{t-x+1} \right) \tag{13}
 \label{eq:averages}
 \end{align}
 
@@ -216,11 +215,9 @@ RV_t^{(x)}&=\frac{1}{x}\left(RV_t + RV_{t-1} + ... +  RV_{t-x-1} \right) \tag{13
 RV_{t+1}&=c+\beta^{(d)}RV_t^{(1)}+\beta^{(w)}RV_t^{(5)}+\beta^{(m)}RV_t^{(20)}+e_{t+1} \tag{14} \label{eq:HAR-RV}
 \end{align}
 
-A benefit of having such a simple model is that it can easily be extended by adding additional regressors, such as lagged trading volume. \textcite{Tseng2015} introduced volume in the model, following the intuition of \textcite{Clark1973} who states that both traded volume and volatility are driven by the same underlying "news" variable and will therefore be positively correlated: this relationship has been widely documented for stock markets (\cite{Gallant1992}; \cite{Andersen1996}). We also extend the model using illiquidity metrics, cross-asset volatility and Binance's fees regime in order to observe how these features impact model's performance. An illiquid market is expected to be more volatile, since each order has a larger market-impact. Given the cointegration results discussed earlier, cross-asset volatility is expected to be significant between Ethereum and Bitcoin, as they tend to move together. Finally, the increased trading volume induced by the temporary removal of fees on Binance is expected to have a positive effect on volatility, as it reduces trading friction and encourages more frequent trading. S\&P500 prices and risk-free rate were also tested but quickly excluded from the model, as index prices had no significant relation with cryptocurrency prices for most of our sub-periods, while risk-free rate's dim evolution and high anticipation were too pronounced to add any meaningful improvement.
+A benefit of having such a simple model is that it can easily be extended by adding additional regressors. \textcite{Tseng2015} introduced lagged volume in the model, following the intuition of \textcite{Clark1973} who states that both traded volume and volatility are driven by the same underlying "news" variable and will therefore be positively correlated: this relationship has been widely documented for stock markets (\cite{Gallant1992}; \cite{Andersen1996}). We extend the model following this volume approach as well as using illiquidity metrics, cross-asset volatility and Binance's fees regime in order to observe how these features impact fit and forecasting performance. For example, an illiquid market is expected to be more volatile, with each order having a larger market-impact. Given the cointegration results discussed earlier, cross-asset volatility is expected to be significant between Ethereum and Bitcoin over the entire sample, but might deteriorate in period 3. Finally, the increased trading volume induced by the temporary removal of fees on Binance is expected to have a positive correlation with volatility, as it reduces trading friction and encourages more frequent trading. S\&P 500 prices and risk-free rate were also regressed but were quickly excluded from the model, as index prices had no significant relation with cryptocurrency prices for most of our periods, while risk-free rate's slow evolution and high anticipation were too pronounced to add any meaningful improvement.
 
-Unlike the 252 trading days observed on traditional financial markets, crypto trading happens live around the clock, with no weekend or holiday breaks. This characteristic prompts us to consider an adapted version of the HAR-RV model: instead of defining Eq.~\ref{eq:averages} over a week of five trading days and a month of twenty, we consider the case of markets on which trading happens 24/7 and for which a week consists of seven days and a month of thirty. 
-
-However, Figure~\ref{fig:volume} shows that there is a clear intraday and weekly cycle of trading volume on Bitcoin and Ethereum pairs for both Binance and Coinbase data: UTC midday hours show higher volatility, while weekends are characterized by limited volume. We hence prefer a classical 1-5-20 configuration over a 1-7-30 model, because our data indicates that major crypto currencies volume display the same investor attention span observed on traditional financial markets. This is consistent with cycles described by \textcite{Hansen2024} for cryptocurrencies.
+Unlike the 252 trading days observed on traditional financial markets, crypto trading happens live around the clock, with no weekend or holiday breaks. This characteristic prompts us to consider an adapted version of the HAR-RV model: instead of defining Eq.~\ref{eq:averages} over a week of five trading days and a month of twenty, we consider the case of live markets where a week consists of seven days and a month of thirty. However, Figure~\ref{fig:volume} shows that there is a clear intraday and weekly cycle of trading volume on Bitcoin and Ethereum pairs for both Binance and Coinbase data. UTC midday hours show higher volume, while weekends are characterized by limited activity. We hence prefer a classical 1-5-20 horizon configuration over a 1-7-30 model, because our data indicates that major cryptocurrencies' volume display the same investor attention span observed on traditional financial markets, consistent with cryptocurrency cycles described by \textcite{Hansen2024}.
 
 \begin{figure}[!htbp]
 \centering
@@ -233,7 +230,7 @@ However, Figure~\ref{fig:volume} shows that there is a clear intraday and weekly
         \subsubsection{Additive HAR-RV Specifications}
         \label{sec:4.2.2}
 
-Table~\ref{tab:coefs} reports adjusted $R^2$ of features added individually to the base HAR-RV model, fitted over the full sample starting at the 21st day of each sub-period -- aligned with the 20-days HAR-RV requirement. The binary value of the fee dummy variable is defined as
+We first add variables individually to the base HAR-RV model, in order to compare their fit over the entire sample to that of the initial model. Volume, Amihud ratio, realized Amihud as well as Kyle's lambda are each added as three cascading regressors based on daily, weekly and monthly averages, following the horizons of the original configuration. However, the cross-asset volatility, the jump component and the dummy variable are each a single addition to the model. The binary fee dummy is positive only during the fee-less phase, defined as: 
 \begin{align}
     fees_t = 1\{t \in [\text{2022-07-08}, \text{2023-03-22}]\} \tag{15} \label{eq:fees}
 \end{align}
@@ -243,31 +240,42 @@ Table~\ref{tab:coefs} reports adjusted $R^2$ of features added individually to t
     jt_t(\Delta)= \max{(RV_t-BV_t, 0)} \tag{16} \label{eq:jump}
 \end{align}
 
-\noindent and adding it to the base model reproduces their HAR-RV-J specification. Detailed coefficients are omitted from the table for readability, but are analysed below. Except for cross-asset volatility, jump component and dummy variables, features are added as three cascading regressors based on the daily, weekly and monthly averages, following the different timeframes of the original model. 
+\noindent and adding it to the base model reproduces their HAR-RV-J specification. Table~\ref{tab:coefs} reports adjusted $R^2$ of features added individually. Detailed coefficients are omitted for readability, but are analysed below.
 
-For Ethereum, only lagged volume and Kyle's lambda show meaningful individual improvement with individual adjusted $R^2$ of .2148 and .2025 respectively, compared to .198 for the base model (Table~\ref{tab:coefs}). Volume coefficients are positive but marginal and not significant, while only monthly Kyle's lambda coefficient is significant (.3948**). Cross-asset volatility, jump component, other liquidity measures and the fee dummy are not significant on their own. This is expected for the fee dummy, as Ethereum doesn't undergo any fee regime change during the period tackled by the dummy variable. For Bitcoin, Kyle's lambda and the jump component bring the largest individual gains. Jump component is highly significant (.5299**) and Kyle's lambda show moderate and marginally significant coefficients (.0006*, .0004 and .001 for day, week and month respectively). Volume, Amihud's ratio, realized Amihud and the dummy offer moderate improvement. Notably, the dummy is insignificant when considered individually, but becomes strongly significant (***) once combined with other regressors, suggesting its effects are conditional on controlling for volume, illiquidity and jumps. Once combined, the negative sign of the coefficient (-.0007) indicates that the fee-less period is associated with lower volatility once other factors are accounted for, the opposite of our initial hypothesis. This result suggests that the increased volume associated with the fee removal reflects a more liquid market, where higher volume smooths out otherwise erratic activity.
+For Ethereum, the base .188 adjusted $R^2$ shows meaningful but marginal improvement only with volume and Kyle's lambda, with individual fits of .206 and .191 respectively. Volume coefficients are positive but not significant with only the daily lag being significant (*). Kyle's lambda coefficients are negative on the daily (*) and weekly horizon, but positive for the monthly one (**). Cross-asset volatility, jump component, other liquidity measures and the fee dummy are not significant on their own and they worsen the fit. This is expected for the fee dummy, as Ethereum doesn't undergo any fee regime change during the period tackled by the dummy variable. For Bitcoin, the jump component and Kyle's lambda moderately improve the initial .130 fit, with respectively .133 and .135. Jump component is significant (-.4847**) when added to the base model. Volume and Amihud's ratio offer moderate improvement, while realized Amihud and the dummy leave the fit unchanged or slightly worse. The dummy coefficient is here insignificant when considered alone. 
+
 
 \begin{table}[!htbp]
 \centering
 \small
-\caption{Adj. $R^2$ of HAR-RV models with individual added regressors}
+\caption{Adj. $R^2$ of HAR-RV models with individual regressors}
 \vspace{4pt}
 \label{tab:coefs}
 \renewcommand{\arraystretch}{1.3}
 \begin{tabular}{lllllllll}
  & \textbf{HAR-RV} & \textbf{Volume} & \textbf{Cross vol.} & \textbf{jt} & \textbf{Amihud} & \textbf{RAmihud} & \textbf{Kyle's $\lambda$} & \textbf{Fees}  \\
 \hline
-ETH & .198     & .215 & .198  & .199 & .172  & .197  & .202 & .198 \\
-BTC & .134     & .135 & .133  & .139 & .134  & .134  & .140 & .134 \\
+ETH & .188     & \textbf{.206} & .187  & .187 & .166  & .187  & \textbf{.191} & .187 \\
+BTC & .130     & \textbf{.131} & .129  & \textbf{.133} & \textbf{.131}  & .130  & \textbf{.135} & .130 \\
 \hline
 \end{tabular}
+\begin{tablenotes}
+\small
+\item Bold indicates improvements over the HAR-RV benchmark
+\end{tablenotes}
 \end{table}
 
-Building on these results, we estimate additive models, summarized in Table~\ref{tab:additive_full} for the entire sample and in Appendix~\ref{sec:appendixSubperiods} for sub-periods. For Ethereum over the full period, volume and Kyle's lambda substantially improve fit, jump component adds further improvement, but cross-volatility and fee-dummy marginally improve $R^2$ while deteriorating BIC: we retain the \textit{volume+Kyle+jump} specification. Across sub-periods, features choice becomes regime dependent. Periods 1 and 3 show overall weak fit (adj. $R^2$ of .132 and .037 respectively) while penalizing complexity: the best model is the one driven by volume alone, while AIC and BIC suggest the base model would be preferred. Period 2 shows a much improved fit, with \textit{volume+Kyle+jump+cross-volatility} reaching an .397 adjusted $R^2$. This is consistent with our simple graphical analysis: the first and third periods show much higher volatility, while the second shows a stable price trend with fewer volume or volatility spikes. For Bitcoin over the full period, the specification \textit{volume+Kyle+jump component+cross-volatility+fee} has the best performance for both $R^2$ and AIC. The dummy's coefficient (-.0007***) confirms its explanatory role once other factors are taken into account. Sub-period analysis shows a pattern quite similar to that of Ethereum: the \textit{volume+Kyle+jump} model has the best performance for the first period, while period 2 favors the full specification with an increased fit (adj. $R^2$ of .233), and period 3 shows negligible explanatory power, with the base model being preferred by AIC and BIC. Weekly and monthly Kyle's lambda coefficients move in opposite directions, suggesting that the price-impact-volatility relationship may not be stable over varying horizons.
+Building on these results, we estimate additive models, summarized in Table~\ref{tab:additive_full} for the entire sample and in Appendix~\ref{sec:appendixSubperiods} for periods. We consider a cumulative \textit{base +volume +kyle +jt +cross\_vol +fees} approach based on the improvements observed with individual variables.
 
-Overall, past volatility and trading volume drive most of the explanatory power for both assets, as highlighted by \textcite{Tseng2015}. Microstructure metrics (Kyle's lambda, jump component) add marginal improvement, while cross-asset volatility spillovers and fee-regime effects matter only conditionally. The higher fit for the second period noticed for both pairs suggests that volatility dynamics are more predictable by our regression in low-volatility episodes. These findings can be compared to the forecasting performance of these models, explored in the next section.
+For Ethereum over the full period, combined volume and Kyle's lambda improve fit with an .215 adjusted $R^2$, above that reached by the individual specifications, underlining that their respective effect remains when considered together. All further specifications marginally improve adjusted $R^2$ while deteriorating BIC: we hence retain the \textit{volume +Kyle} specification for Ethereum over the full sample. Across periods, feature choice becomes regime dependent. Periods 1 and 3 show overall weak fit, with the adjusted $R^2$ of the base HAR-RV being .121 and .015 respectively. Complexity is heavily penalized, with the best model being \textit{+volume} for both of these periods, while AIC and BIC suggest the base model would be preferred. Period 2 shows a much improved fit, with \textit{volume +Kyle +jump +cross\_volatility} reaching a .385 adjusted $R^2$. Those periodical results are consistent with our visual graphical analysis: the first and third periods show much higher volatility hence a lower fit, while the second shows a stable price trend with fewer volume or volatility spikes. 
 
-Since the Merge falls at the start of period 2, these results also speak to our original question: if the consensus mechanism shift had impacted the mechanisms driving Ethereum's volatility, we would expect the explanatory power and the coefficients of our added regressors to shift between period 1 and 2 for Ethereum specifically, beyond what is observed for Bitcoin as a counterfactual. Instead, both cryptocurrencies show a similar improvement of fit over period 2. This suggests that this improved fit reflects the overall calmer market regime described in Section~\ref{sec:analysis} and that the drivers of Ethereum's volatility were not altered by the Merge.
+For Bitcoin over the full period, the full specification \textit{volume +Kyle +jump component +cross\_volatility +fee} has the best performance for both $R^2$ and AIC. The dummy's coefficient (-.0008***) confirms its explanatory role once other factors are taken into account. The negative sign of the coefficient indicates that the fee-less period is associated with lower volatility, the opposite of our initial hypothesis. This result could suggest that the increased volume associated with the fee removal reflects a more liquid market, where higher volume smooths out otherwise erratic activity. Period analysis shows a pattern quite similar to that of Ethereum: the \textit{volume +Kyle +jump} model has the best performance for the first period, while period 2 favors the full specification, and period 3 shows negligible explanatory power with the base model being preferred by AIC and BIC. Over most periods, weekly and monthly Kyle's lambda coefficients move in opposite directions, suggesting that the price-impact-volatility relationship may not be stable over varying horizons.
+
+Overall, past volatility and trading volume drive most of the explanatory power for both assets, as highlighted by \textcite{Tseng2015}. Microstructure metrics (Kyle's lambda, jump component) add marginal improvement, while cross-asset volatility spillovers and fee-regime effects matter only when controlling for other variables. The higher fit for the second period noticed for both pairs suggests that volatility dynamics are more predictable by our regression in low-volatility episodes. These findings can be compared to the forecasting performance of these models, explored in the next section.
+
+Since the Merge falls 94 days (16\%) after the start of period 2, these results also speak to our original question. If the consensus mechanism shift had impacted the mechanisms driving Ethereum's volatility, we would expect the explanatory power and the coefficients of our added regressors to shift between period 1 and 2 for Ethereum specifically, beyond what is observed for Bitcoin as a counterfactual. Instead, both cryptocurrencies show a similar improvement of fit over period 2. This suggests that this improved fit reflects the overall calmer market regime described in Section~\ref{sec:analysis} and that the drivers of Ethereum's volatility were not altered by the Merge, at least not when considering the variables we added as regressors.
+
+
 
 \begin{table}[!htbp]
 \centering
@@ -280,47 +288,47 @@ Since the Merge falls at the start of period 2, these results also speak to our 
 \multicolumn{7}{l}{\textbf{A.} ETHUSDT (n=1317)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0007*** & \hfil -.0087*** & \hfil -.0106*** & \hfil -.0107*** & \hfil -.0108*** & \hfil -.0121*** \\
-$RV_1$ & \hfil .1802*** & \hfil .1312*** & \hfil .1545*** & \hfil .1829*** & \hfil .2421*** & \hfil .2534*** \\
-$RV_5$ & \hfil .1668*** & \hfil .1609*** & \hfil .1680*** & \hfil .1554*** & \hfil .1507*** & \hfil .1521*** \\
-$RV_{20}$ & \hfil .0965*** & \hfil .0341 & \hfil -.0900** & \hfil -.0889* & \hfil -.0895* & \hfil -.0975** \\
-$vol_1$ & & \hfil .0003 & \hfil .0003* & \hfil .0003* & \hfil .0003* & \hfil .0003** \\
-$vol_5$ & & \hfil .0002 & \hfil .0003 & \hfil .0004 & \hfil .0004 & \hfil .0004 \\
-$vol_{20}$ & & \hfil .0003 & \hfil .0003 & \hfil .0002 & \hfil .0002 & \hfil .0003 \\
-$kyle_1$ & & & \hfil -.1295 & \hfil -.1370 & \hfil -.1296 & \hfil -.1265 \\
-$kyle_5$ & & & \hfil -.3490* & \hfil -.3434* & \hfil -.3459* & \hfil -.3584* \\
-$kyle_{20}$ & & & \hfil .6610*** & \hfil .6543*** & \hfil .6604*** & \hfil .6381*** \\
-$jt$ & & & & \hfil -.2924 & \hfil -.2862 & \hfil -.2703 \\
-cross\_vol & & & & & \hfil -.1099 & \hfil -.1381 \\
-fees & & & & & & \hfil -.0003* \\
+const & \hfil .0007*** & \hfil -.0096*** & \hfil -.0115*** & \hfil -.0116*** & \hfil -.0116*** & \hfil -.0129*** \\
+$RV_1$ & \hfil .2009*** & \hfil .1428*** & \hfil .1730*** & \hfil .1967*** & \hfil .2716*** & \hfil .2821*** \\
+$RV_5$ & \hfil .1575*** & \hfil .1493*** & \hfil .1567*** & \hfil .1462*** & \hfil .1402*** & \hfil .1415*** \\
+$RV_{20}$ & \hfil .1032*** & \hfil .0378 & \hfil -.0893* & \hfil -.0883* & \hfil -.0891* & \hfil -.0964* \\
+$vol_1$ & & \hfil .0003* & \hfil .0003* & \hfil .0003* & \hfil .0004** & \hfil .0004** \\
+$vol_5$ & & \hfil .0002 & \hfil .0004 & \hfil .0004 & \hfil .0004 & \hfil .0004 \\
+$vol_{20}$ & & \hfil .0003 & \hfil .0002 & \hfil .0002 & \hfil .0002 & \hfil .0003 \\
+$kyle_1$ & & & \hfil -.1590 & \hfil -.1652 & \hfil -.1558 & \hfil -.1530 \\
+$kyle_5$ & & & \hfil -.3751* & \hfil -.3704* & \hfil -.3736* & \hfil -.3851* \\
+$kyle_{20}$ & & & \hfil .6915*** & \hfil .6860*** & \hfil .6936*** & \hfil .6730*** \\
+$jt$ & & & & \hfil -.2429 & \hfil -.2350 & \hfil -.2203 \\
+cross\_vol & & & & & \hfil -.1391 & \hfil -.1652 \\
+fees & & & & & & \hfil -.0002 \\
 \hline
-$R^2$ & \hfil .2003 & \hfil .2184 & \hfil .2304 & \hfil .2318 & \hfil .2324 & \hfil .2343 \\
-Adj. $R^2$ & \hfil .1984 & \hfil .2148 & \hfil .2251 & \hfil .2259 & \hfil .2259 & \hfil .2272 \\
-AIC & \hfil -12829.73 & \hfil -12853.90 &   \hfil -12868.36 & \hfil -12868.64 & \hfil -12867.72 & \hfil -12868.92 \\
-BIC & \hfil -12809.00 & \hfil -12817.62 & \hfil -12816.53 & \hfil -12811.62 & \hfil -12805.52 & \hfil -12801.54 \\
+$R^2$ & \hfil .1896 & \hfil .2097 & \hfil .2206 & \hfil .2214 & \hfil .2223 & \hfil .2237 \\
+Adj. $R^2$ & \hfil .1878 & \hfil .2061 & \hfil .2152 & \hfil .2154 & \hfil .2157 & \hfil .2165 \\
+AIC & \hfil -12639.57 & \hfil -12666.61 & \hfil -12678.93 & \hfil -12678.29 & \hfil -12677.80 & \hfil -12678.17 \\
+BIC & \hfil -12618.83 & \hfil -12630.32 & \hfil -12627.10 & \hfil -12621.28 & \hfil -12615.60 & \hfil -12610.79 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{B.} BTCUSDT (n=1317)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0005*** & \hfil .0005 & \hfil .0004 & \hfil .0003 & \hfil .0003 & \hfil -.0031*** \\
-$RV_1$ & \hfil .1482*** & \hfil .1383*** & \hfil .1652*** & \hfil .2224*** & \hfil .2293*** & \hfil .1331 \\
-$RV_5$ & \hfil .1386*** & \hfil .0941* & \hfil .0708 & \hfil .0485 & \hfil .0494 & \hfil .0198 \\
-$RV_{20}$ & \hfil .1319*** & \hfil .1746*** & \hfil .1110** & \hfil .1190*** & \hfil .1190*** & \hfil .0746 \\
+const & \hfil .0005*** & \hfil .0004 & \hfil .0003 & \hfil .0002 & \hfil .0002 & \hfil -.0035*** \\
+$RV_1$ & \hfil .1565*** & \hfil .1454*** & \hfil .1730*** & \hfil .2259*** & \hfil .2139** & \hfil .1102 \\
+$RV_5$ & \hfil .1419*** & \hfil .0945* & \hfil .0694 & \hfil .0488 & \hfil .0473 & \hfil .0154 \\
+$RV_{20}$ & \hfil .1512*** & \hfil .1950*** & \hfil .1327*** & \hfil .1401*** & \hfil .1401*** & \hfil .0923* \\
 $vol_1$ & & \hfil .0000 & \hfil .0000 & \hfil .0000 & \hfil .0000 & \hfil .0001 \\
-$vol_5$ & & \hfil .0003* & \hfil .0004** & \hfil .0004** & \hfil .0004** & \hfil .0006*** \\
+$vol_5$ & & \hfil .0004* & \hfil .0004** & \hfil .0004** & \hfil .0004** & \hfil .0006*** \\
 $vol_{20}$ & & \hfil -.0004** & \hfil -.0005*** & \hfil -.0005*** & \hfil -.0005*** & \hfil -.0004** \\
-$kyle_1$ & & & \hfil -.0006* & \hfil -.0007* & \hfil -.0007* & \hfil -.0006 \\
-$kyle_5$ & & & \hfil -.0001 & \hfil .0000 & \hfil .0000 & \hfil -.0001 \\
-$kyle_{20}$ & & & \hfil .0015** & \hfil .0014** & \hfil .0015** & \hfil .0014** \\
-$jt$ & & & & \hfil -.5365*** & \hfil -.5411*** & \hfil -.4813*** \\
-cross\_vol & & & & & \hfil -.0042 & \hfil .0408 \\
-fees & & & & & & \hfil -.0007*** \\
+$kyle_1$ & & & \hfil -.0007 & \hfil -.0007* & \hfil -.0007* & \hfil -.0006 \\
+$kyle_5$ & & & \hfil -.0000 & \hfil .0001 & \hfil .0001 & \hfil -.0001 \\
+$kyle_{20}$ & & & \hfil .0015** & \hfil .0014** & \hfil .0014** & \hfil .0014** \\
+$jt$ & & & & \hfil -.4958** & \hfil -.4878** & \hfil -.4233** \\
+cross\_vol & & & & & \hfil .0072 & \hfil .0557 \\
+fees & & & & & & \hfil -.0008*** \\
 \hline
-$R^2$ & \hfil .1356 & \hfil .1394 & \hfil .1494 & \hfil .1552 & \hfil .1552 & \hfil .1637 \\
-Adj. $R^2$ & \hfil .1336 & \hfil .1354 & \hfil .1435 & \hfil .1487 & \hfil .1480 & \hfil .1560 \\
-AIC & \hfil -14083.88 & \hfil -14083.61 & \hfil -14093.08 & \hfil -14100.02 & \hfil -14098.03 & \hfil -14109.40 \\
-BIC & \hfil -14063.15 & \hfil -14047.33 & \hfil -14041.25 & \hfil -14043.01 & \hfil -14035.83 & \hfil -14042.02 \\
+$R^2$ & \hfil .1318 & \hfil .1355 & \hfil .1441 & \hfil .1483 & \hfil .1483 & \hfil .1567 \\
+Adj. $R^2$ & \hfil .1298 & \hfil .1315 & \hfil .1382 & \hfil .1417 & \hfil .1411 & \hfil .1490 \\
+AIC & \hfil -13867.28 & \hfil -13866.90 & \hfil -13874.03 & \hfil -13878.49 & \hfil -13876.51 & \hfil -13887.66 \\
+BIC & \hfil -13846.55 & \hfil -13830.62 & \hfil -13822.19 & \hfil -13821.47 & \hfil -13814.32 & \hfil -13820.28 \\
 \hline
 \end{tabular}
 \begin{tablenotes}
@@ -331,22 +339,22 @@ BIC & \hfil -14063.15 & \hfil -14047.33 & \hfil -14041.25 & \hfil -14043.01 & \h
 
         \subsubsection{Proxy and Loss Functions for Volatility Forecasting}
 
-The evaluation of volatility forecasts is impeded by the fact that the variable of interest itself -- conditional variance -- is never directly observed. \textcite{Patton2011} shows that the choice of a proxy matters in this case, as certain loss functions can lead to distorted ranking of competing forecasts. He derives conditions for a loss function to be robust to such distortion and shows that only mean squared-error (MSE, Eq.~\ref{eq:MSE}) and QLIKE (Eq.~\ref{eq:QLIKE}) loss functions satisfy them.
+The evaluation of volatility forecasts is hindered by the aforementioned fact that the variable of interest -- intraday volatility -- cannot be directly measured, but only approximated. \textcite{Patton2011} shows that the choice of volatility proxy matters in this case, as certain loss functions can lead to distorted ranking of competing forecasts. He derives conditions for a loss function to be robust to such distortion and shows that only mean squared-error (MSE, Eq.~\ref{eq:MSE}) and QLIKE (Eq.~\ref{eq:QLIKE}) loss functions satisfy them.
 \begin{align}
-    L_{MSE}(\hat{\sigma}^2,h)&=(\hat{\sigma}^2-h) \tag{17} \label{eq:MSE}\\
+    L_{MSE}(\hat{\sigma}^2,h)&=(\hat{\sigma}^2-h)^2 \tag{17} \label{eq:MSE}\\
     L_{QLIKE}(\hat{\sigma}^2,h)&=\log h+\frac{\hat{\sigma}^2}{h} \tag{18} \label{eq:QLIKE}
 \end{align}
 
 \noindent where $\hat{\sigma^2}$ denotes the volatility proxy and $h$ is the conditional variance forecast.
 
-Between those candidates, we select QLIKE over MSE for two reasons presented by \textcite{Patton2011}. First, \textcite{Patton2009} shows that Diebold-Mariano-West tests of equal predictive accuracy -- which verifies whether one forecast is significantly more accurate than another, on average --  have higher power using QLIKE loss than under MSE loss. Second, since QLIKE uses standardized error $\hat{\sigma}^2 / h$ rather than raw error $\hat{\sigma}^2-h$, it is less sensitive to extreme observations, which is relevant in our case since heterogeneous volatility regimes are observed depending on sub-period. Results are therefore presented using the QLIKE loss function. As for volatility proxy, we retain realized volatility (Eq.~\ref{eq:rv}) rather than other proxies such as bipower variation (Eq.~\ref{eq:bv}): in our setting, the jump component (Eq.~\ref{eq:jump}) implies that BV would be a biased proxy whenever jumps are present, and would hence violate the assumption A1 required for Patton's robustness result. Moreover, all specifications are trained to predict $RV_{t+1}$ along standard HAR-RV recommendations (\cite{Corsi2009}), so RV is the natural choice for out-of-sample evaluation: using BV would lead to a mismatch between estimation and evaluation targets that could differ in scale. 
+Between those candidates, we select QLIKE over MSE for two reasons presented by \textcite{Patton2011}. First, \textcite{Patton2009} shows that Diebold-Mariano-West tests of equal predictive accuracy -- tests that verify whether one forecast is on average significantly more accurate than another --  have higher power when using QLIKE loss instead of MSE loss. Second, since QLIKE uses standardized error $\hat{\sigma}^2 / h$ rather than raw error $\hat{\sigma}^2-h$, it is less sensitive to extreme observations, which is relevant in our application since heterogeneous volatility regimes are observed depending on period. Our forecast results are therefore presented using the QLIKE loss function. As for our volatility proxy, we retain realized volatility (Eq.~\ref{eq:rv}) rather than other proxies such as bipower variation (Eq.~\ref{eq:bv}): in our setting, the jump component (Eq.~\ref{eq:jump}) implies that BV would be a biased proxy whenever jumps are present, and would hence violate the A1 assumption required for Patton's robustness result. Moreover, our specifications were designed to predict $RV_{t+1}$ along standard HAR-RV recommendations (\cite{Corsi2009}), hence why RV is the natural choice for out-of-sample evaluation: using BV would lead to a mismatch between estimation and evaluation targets that could differ in scale. 
 
-For each specification, we compute one-step-ahead out-of-sample forecasts of $RV_{t+1}$. We use an expanding window to estimate our coefficients: starting from an initial training set covering 80\% of the relevant chronological period, the model is re-estimated at each step $t$ using all data available up to $t$. Window is then extended by one observation and the procedure is repeated for the remaining 20\% of out-of-sample data. We then compute the QLIKE loss function for each forecast and report the average over the entire period. We experiment with individual variables added to the base HAR-RV model, as well as additive models that aren't shown here as they didn't have the highest out-of-sample performance. We also experiment with models regressing volume and Kyle's lambda alone on realized volatility, without the base HAR-RV component, although we follow the cascading structure over daily, weekly and monthly averages of Eq.~\ref{eq:HAR-RV}. Results are reported in Table~\ref{tab:forecast}. 
+For each specification, we compute one-step-ahead out-of-sample forecasts of $RV_{t+1}$. We use an expanding window to estimate our coefficients: starting from an initial training set covering 80\% of the relevant chronological period, the model is re-estimated at each step $t$ using all data available up to $t$. The window is then extended by one observation and the procedure is repeated for the remaining 20\% of the period: our out-of-sample data. We then compute the QLIKE loss function for each forecast and report the average over the entire period. We experiment with the base HAR-RV model, as well as both the individual and additive models presented earlier. Additive models that performed well in-sample aren't presented here as they had disappointing out-of-sample performance, a striking example of overfitting. We also experiment with models regressing volume and Kyle's lambda alone on realized volatility, without the base HAR-RV component, although we follow the cascading structure over daily, weekly and monthly averages of Eq.~\ref{eq:HAR-RV}. Results are reported in Table~\ref{tab:forecast}. 
 
 \begin{table}
 \centering
 \small
-\caption{Out-of-sample QLIKE forecast losses by model and sub-period}
+\caption{Out-of-sample QLIKE forecast losses by model and period}
 \vspace{4pt}
 \label{tab:forecast}
 \renewcommand{\arraystretch}{1.3}
@@ -387,22 +395,31 @@ Kyle        & -6.1353             & -5.3994             & -6.1518             & 
 \end{table}
 
 
-For Ethereum over the full period, base HAR-RV is the best model. All additions of individual variables worsen it, on the contrary to the improvement of individual variables found in Table~\ref{tab:additive_full}. For sub-periods, only volume and the jump component improve the model, with \textit{+volume+jump} being the best model for period 1, \textit{+jump} being the best model for period 2, and \textit{+volume} being the best model for period 3. However, for the first and last period, regressing cascading volume itself yields improved forecasting capacities compared to each periods best model. For period 2, regressing Kyle's lambda alone gives a higher QLIKE than \textit{+jump}, suggesting that this measure of illiquidity is a better indicator of RV in periods of low volatility, as trade-level data carries more information than aggregated, small-scale returns. 
+For Ethereum over the full period, base HAR-RV is the best model. All additions of individual variables worsen it, contrary to the improvement of individual variables found in Table~\ref{tab:coefs}. For underlying periods, only volume and the jump component improve the model with best performing models for period 1, 2 and 3 respectively being \textit{+volume}, \textit{+jump} and \textit{+volume}. However, for the first and last period, regressing cascading volume alone yields improved forecasting capacities compared to each period's best model. For period 2, regressing Kyle's lambda alone gives a lower (better) QLIKE than \textit{+jump}, suggesting that this measure of illiquidity is a better indicator of RV in periods of low volatility, as trade-level data carries more information than aggregated, small-scale returns. 
+% rajotuer le volume seul régressé à toutes les régressions précédentes
 
-For Bitcoin, only the jump component improves the base model over the full period. For sub-periods, solely volume and the jump component improve HAR-RV, with the best model being \textit{+volume} for the first period and \textit{+jump} for the second and last. Regressing volume alone still yields even higher results for period 1 and 3, while this time, Kyle's lambda alone worsens performance for period 2. Regressing volume alone yields better results than the HAR-RV with added volume features. In period 3 specifically, HAR-RV alone gives a QLIKE of -6.0362, while HAR-RV+volume gives a lower -5.9833, and volume alone gives an improved -6.0658. 
+For Bitcoin, only the jump component improves the base model over the full period. For each period, only volume and the jump component improve HAR-RV, with the best model being \textit{+volume} for the first period and \textit{+jump} for the second and last. Regressing volume alone still yields high results for period 1 and 3, even higher than those obtained when regressing HAR-RV with added volume cascading features, underlining how regressing volatility worsens forecasting performance for this specific period. In period 3 specifically, HAR-RV alone gives a QLIKE of -6.0362, while HAR-RV+volume gives a higher (worse) -5.9833, and volume alone gives a lower (better) -6.0658. This time, Kyle's lambda alone worsens performance for period 2.
 
-Volume's stronger performance when regressed alone in period of higher volatility (first and last sub-periods) confirms its enhanced explanatory power for periods of higher volatility, when its cascading horizons are taken into account. This is consistent with the volume-volatility relationship discussed in Section~\ref{sec:4.2.1}. However, Kyle's lambda forecasting capacities for volatility are more mixed: no conclusion can be drawn from its varying performance during periods of low-volatility across assets. More broadly, volume, Kyle's lambda and cross-asset volatility improved in-sample fit when added (Table~\ref{tab:additive_full}) but worsen out-of-sample forecasts for the full sample of both assets (Table~\ref{tab:forecast}). This discrepancy suggests these regressors may capture sample-specific patterns that are not generalizable. Consistent with the in-sample results of Section~\ref{sec:4.2.2}, forecasting performance shows no distinct pattern for Ethereum around the Merge beyond what is observed for Bitcoin. This once again reinforces our conclusion: the consensus mechanism change left the drivers of volatility unchanged.
+Volume's stronger performance when regressed alone in contexts of higher volatility (first and last periods) confirms its enhanced explanatory power for periods of higher volatility, when its cascading horizons are taken into account. This is consistent with the volume-volatility relationship discussed in Section~\ref{sec:4.2.1}. However, Kyle's lambda forecasting capacities for volatility are more mixed: no conclusion can be drawn from its varying performance across assets during periods of low volatility. More broadly, volume and Kyle's lambda improved in-sample fit when added (Table~\ref{tab:additive_full}) but worsen out-of-sample forecasts for the full sample of both assets (Table~\ref{tab:forecast}). This discrepancy suggests these regressors may capture sample-specific patterns that are not generalizable. Consistent with the in-sample results of Section~\ref{sec:4.2.2}, forecasting performance shows no distinct pattern for Ethereum around the Merge beyond what is observed for Bitcoin. This once again reinforces our conclusion: the consensus mechanism evolution left the drivers of volatility unchanged.
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-This report explores whether Ethereum's transition from PoW to PoS had an impact on spot trading dynamics, using Bitcoin as a counterfactual. The Merge itself is found to be largely irrelevant to trading behaviour: no clear related effect is identified across event analysis, cointegration testing, PoW-to-PoS capital flight hypothesis and HAR-RV modelling. On the other hand, Binance's temporary removal of trading fees -- a promotional stunt that happened shortly after the Merge -- impacted Bitcoin's trading metrics -- notably volume -- more than the protocol upgrade did for those of Ethereum. This is a reassuring finding for the Ethereum network: the Merge led to an energy-efficient and scalable protocol, safer according to \textcite{John2025}, without any adverse impact on trading activity. 
+% CONCLUSION: le merge n'a pas eu d'impact sur la vol, mais peut-être sur autre chose: spread, on chain fees, etc. 
+% on regresse les mesures de liquidité sur la volatilité, mais on ne fait pas l'inverse. Donc ce qu'on teste vraiment, c'est si le merge a altéré la volatilité de l'ETH, c'est tout. on ne vérifie pas si il y a un impact sur la liquidité, on l'utilise uniquement dans notre vérification de la vol.
 
-We also find that Ethereum-Bitcoin cointegration is unstable over sub-periods: present only before the 2024 introduction of Bitcoin spot ETFs, it suggests a decoupling between the two cryptocurrencies after this event. A basic visual analysis shows no evidence of capital flight between PoW and PoS cryptocurrencies around the Merge. In the HAR-RV model, lagged volume and Kyle's lambda are the strongest individual regressors for both assets. Volume outperforms the full additive specifications when regressed alone against realized volatility, but only in sub-periods of higher volatility. On the data side, our day-by-day streaming approach allowed us to use billions of aggregated trades needed for Kyle's lambda computation, and our bin reconstruction fits counterfactual Coinbase prices. 
+% refaire la conclusion
+% refaire les graphiques
+% résoudre le problème du proxy QLIKE
+% se pencher sur une analyse plus poussée, les données sont tops
 
-This remains an exploratory analysis: we do not estimate a difference-in-difference model and do not explore derivatives data, hence why our conclusions are descriptive and further modelling would be needed for causal results.
+This report explores whether Ethereum's transition from PoW to PoS had an impact on spot trading dynamics, using Bitcoin as a counterfactual. The Merge itself is found to be largely irrelevant to price and volatility dynamics: no clear related effect is identified across event analysis, cointegration testing, PoW-to-PoS capital flight hypothesis and HAR-RV volatility modelling. On the other hand, Binance's temporary removal of trading fees -- a promotional stunt that happened shortly after the Merge -- impacted Bitcoin's trading metrics -- notably volume -- more than the protocol upgrade did for those of Ethereum. This is a reassuring finding for the Ethereum network: the Merge led to an energy-efficient and scalable protocol, safer according to \textcite{John2025}, without any adverse impact on trading activity. 
 
-A natural next step would hence be a formal DiD design, isolating the Merge's effect on Ethereum. This raises the question of an appropriate cutoff date, given the progressive integration of information into metrics, between rumors, Merge announcement and the execution itself. Potential spill-over effects onto Bitcoin would need to be addressed as well. Such a design would require exchange data free of Bitcoin's fee-shift observed on Binance. Granularity wouldn't be a hurdle, as 5m candlesticks appear sufficient as long as Kyle's lambda and other trade-level indicators aren't included in the regression. A further analysis of cryptocurrency derivatives markets would also be valuable, as leverage and anticipation in pricing may lead to markets reacting more abruptly to a protocol shift than spot trading does. 
+We also find that Ethereum-Bitcoin cointegration is unstable over periods: present only before the 2024 introduction of Bitcoin spot ETFs, it suggests a decoupling between the two cryptocurrencies after this event. A basic visual analysis shows no evidence of capital flight between PoW and PoS cryptocurrencies around the Merge. In the HAR-RV model, lagged volume and Kyle's lambda are the strongest individual regressors for both assets. Volume outperforms the full additive specifications when regressed alone against realized volatility, but only in periods of higher volatility. On the data side, our day-by-day streaming approach allowed us to use billions of aggregated trades needed for Kyle's lambda computation, and our bin reconstruction fits counterfactual Coinbase prices. 
+
+This remains an exploratory analysis: we do not estimate a difference-in-difference model and do not explore derivatives data, which is why our conclusions are descriptive and further modelling would be needed for causal results.
+
+A natural next step would hence be a formal DiD design, isolating the Merge's effect on Ethereum. This raises the question of an appropriate cutoff date, given the progressive integration of information into metrics, between rumors, Merge announcement and the execution itself. Potential spill-over effects onto Bitcoin would need to be addressed as well. Such a design would require exchange data free of Bitcoin's fee-shift observed on Binance. Granularity wouldn't be a hurdle, as 5m candlesticks appear sufficient as long as Kyle's lambda and other trade-level indicators aren't included in the regression. A further analysis of cryptocurrency derivatives markets would also be valuable, as leverage and anticipation in pricing may lead to markets reacting more abruptly to a protocol shift than spot trading does. Finally, we only used illiquidity metrics in a visual analysis and as regressors for volatility, not as a variable that could be explained by other metrics.
 
 \setlength{\bibitemsep}{1em}
 \printbibliography
@@ -420,18 +437,18 @@ List of events linked to main volume spikes for ETHUSDT and BTCUSDT (2021-05 to 
 
     \item[2022] \hfill \\ 7. 2022-01-21 -- \textit{Anticipation of Fed rates hike} \\ 8. 2022-02-24 -- \textit{Market-wide selloff following Ukraine invasion} \\ 9. 2022-05-09 -- \textit{Beginning of the LUNA/UST depeg and Terra collapse} \\ 10. 2022-05-12 -- \textit{LUNA/UST depeg, Terra ecosystem collapse} \\ 11. 2022-06-13 -- \textit{Celsius blocks customer withdrawals} \\ 12. 2022-07-08 -- \textit{Binance launches zero fee bitcoin trading} \\ 13. 2022-08-12 -- \textit{Ethereum network; Mainnet Merge incoming (blog announcement)} \\ 14. 2022-08-24 -- \textit{Ethereum network; Mainnet Merge Announcement (official announcement)} \\ 15. 2022-09-13 -- \textit{US inflation higher than expected, reinforcing fear of Fed rates hike} \\ 16. 2022-09-15 -- \textit{Ethereum network; Paris upgrade (the Merge)} \\ 17. 2022-09-27 -- \textit{Bank of England stabilizing UK bond market fuels hopes of eased rates hike} \\ 18. 2022-11-08 -- \textit{FTX halts withdrawals, Binance announces then cancels FTX acquisition} 
 
-    \item [2023] \hfill \\ 19. 2023-01-12 -- \textit{US slowing inflation drives prices up} \\ 20. 2023-03-14 -- \textit{Fed protecting SVB and Signature Bank deposits eases banking contagion fears} \\ 21. 2023-03-22 -- \textit{Binance stops zero fee bitcoin trading} \\ 22. 2023-06-21 -- \textit{BlackRocks's Bitcoin ETF sparks institutional buying} \\ 23. 2023-08-17 -- \textit{Crypto sinks on rising US bond yields} \\ 24. 2023-10-24 -- \textit{Growing anticipation of imminent BlackRock spot ETF approval} \\ 25. 2023-11-09 -- \textit{Rally fueled by anticipation of spot Bitcoin ETF approval}
+    \item [2023] \hfill \\ 19. 2023-01-12 -- \textit{US slowing inflation drives prices up} \\ 20. 2023-03-14 -- \textit{Fed protecting SVB and Signature Bank deposits eases banking contagion fears} \\ 21. 2023-03-22 -- \textit{Binance stops zero fee bitcoin trading} \\ 22. 2023-06-21 -- \textit{BlackRock's Bitcoin ETF sparks institutional buying} \\ 23. 2023-08-17 -- \textit{Crypto sinks on rising US bond yields} \\ 24. 2023-10-24 -- \textit{Growing anticipation of imminent BlackRock spot ETF approval} \\ 25. 2023-11-09 -- \textit{Rally fueled by anticipation of spot Bitcoin ETF approval}
     
-    \item [2024] \hfill \\ 26. 2024-01-10 -- \textit{SEC approves first US spot Bitcoin ETFs} \\ 27. 2024-01-10 -- \textit{Inflows into new spot Bitcoin ETFs outpace Bitcoin supply} \\ 28. 2024-03-05 -- \textit{Bitcoin reaches ATH, followed by profit-taking} \\ 29. 2024-03-20 -- \textit{Rates are maintained but rate cuts are projected} \\ 30. 2024-04-13 -- \textit{Iranian drone attack on Israel} \\ 31. 2024-05-23 -- \textit{SEC approves filing for spot Ethereum ETFs} \\ 32. 2024-07-05 -- \textit{Mt. Gox exchange starts repaying \$9B in Bitcoin to creditors} \\ 33. 2024-08-05 -- \textit{Unwinding of the yen carry trade: VIX spike, Ethereum sales by Jump Trading} \\ 34. 2024-11-06 -- \textit{Trump's election sparks a crypto rally} \\ 35. 2024-11-11 -- \textit{Market rally pricing friendlier Trump administration after elections win} \\ 36. 2024-12-05 -- \textit{Bitcoin crosses \$100,000 after Trump names Paul Atkin as next SEC chair}
+    \item [2024] \hfill \\ 26. 2024-01-10 -- \textit{SEC approves first US spot Bitcoin ETFs} \\ 27. 2024-01-10 -- \textit{Inflows into new spot Bitcoin ETFs outpace Bitcoin supply} \\ 28. 2024-03-05 -- \textit{Bitcoin reaches ATH, followed by profit-taking} \\ 29. 2024-03-20 -- \textit{Rates are maintained but rate cuts are projected} \\ 30. 2024-04-13 -- \textit{Iranian drone attack on Israel} \\ 31. 2024-05-23 -- \textit{SEC approves filing for spot Ethereum ETFs} \\ 32. 2024-07-05 -- \textit{Mt. Gox exchange starts repaying \$9B in Bitcoin to creditors} \\ 33. 2024-08-05 -- \textit{Unwinding of the yen carry trade: VIX spike, Ethereum sales by Jump Trading} \\ 34. 2024-11-06 -- \textit{Trump's election sparks a crypto rally} \\ 35. 2024-11-11 -- \textit{Market rally pricing friendlier Trump administration after elections win} \\ 36. 2024-12-05 -- \textit{Bitcoin crosses \$100,000 after Trump names Paul Atkins as next SEC chair}
     
 \end{description} 
 
     \subsection{Correlation Analysis}
     \label{sec:appendixHeatmap}
 
-In Figure~\ref{fig:AppendixHeatmap}, daily metrics correlation are measured over 1338 days, with each day's estimate built from multiple intraday bin sizes (10ms, 1s and 5m). 
+In Figure~\ref{fig:AppendixHeatmap}, daily metrics correlations are measured over 1338 days, with each day's estimate built from multiple intraday bin sizes (10ms, 1s and 5m). 
 
-Across both assets, realized and range-based volatility estimators converge at 10ms. They then split into trade-based and range-based families capturing distinct volatility components at 1s, before reconverging at 5m. This behavior is consistent with high frequency noise imposing a common variance independent of estimator type (\cite{Hansen2006}; \cite{Bandi2008}). Once this noise disappears, a slight upside/downside asymmetry is observed for BTCUSDT only. Volatility and liquidity correlation reverses as scale increases, from correlation with realized amihud at 10ms bins to correlation with Kyle's lambda at 5m bins, while Amihud remains rather independent. Relationship of volatility with price is nonexistent at every scale, and that with volume peaks at 1s. 
+Across both assets, realized and range-based volatility estimators converge at 10ms. They then split into trade-based and range-based families capturing distinct volatility components at 1s, before reconverging at 5m. This behavior is consistent with high frequency noise imposing a common variance independent of estimator type (\cite{Hansen2006}; \cite{Bandi2008}). Once this noise disappears, a slight upside/downside asymmetry is observed for BTCUSDT only. Volatility and liquidity correlation reverses as scale increases, from correlation with realized Amihud at 10ms bins to correlation with Kyle's lambda at 5m bins, while Amihud remains rather independent. Relationship of volatility with price is nonexistent at every scale, and that with volume peaks at 1s. 
 
 Liquidity measures show a similar granularity dependence, varying depending on the asset. For BTCUSDT, correlation between Amihud and realized Amihud strengthens as bin size increases. Correlation of Amihud and volatility remains negative for all illiquidity measures for ETHUSDT. For both assets, Kyle's lambda correlation moves closer to that of realized Amihud as bin size reduces, suggesting that price impact and realized illiquidity reflect the same phenomenon at the trade level but diverge over longer intervals. As expected since they are both computed independently of bin size, Amihud and Kyle's lambda have a stable correlation with price and volume, while Realized Amihud becomes negatively correlated with volume as bin size increases. 
 
@@ -444,150 +461,150 @@ Liquidity measures show a similar granularity dependence, varying depending on t
 \end{figure}
 
     \clearpage % new page
-    \subsection{Additive Models by Sub-period}
+    \subsection{Additive Models by Period}
     \label{sec:appendixSubperiods}
 
 \begin{small}
 \renewcommand{\arraystretch}{1.2} 
 \begin{longtable}{l*{6}{c}}
-\caption{Additive HAR-RV models by sub-period}
+\caption{Additive HAR-RV models by Period}
 \label{tab:additive_subperiods}\\
 \multicolumn{7}{l}{\textbf{A.} ETHUSDT, Period 1 (n=386)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0013*** & \hfil -.0088 & \hfil -.0095 & \hfil -.0093 & \hfil -.0096 & \hfil -.0096 \\
-$RV_1$ & \hfil .0900 & \hfil .0146 & \hfil .0405 & \hfil .0379 & \hfil .0536 & \hfil .0536 \\
-$RV_5$ & \hfil .1860*** & \hfil .1834** & \hfil .2068** & \hfil .2085** & \hfil .2071** & \hfil .2071** \\
-$RV_{20}$ & \hfil .0517 & \hfil .0369 & \hfil -.0402 & \hfil -.0409 & \hfil -.0423 & \hfil -.0423 \\
-$vol_1$ & & \hfil .0008 & \hfil .0007 & \hfil .0007 & \hfil .0007 & \hfil .0007 \\
-$vol_5$ & & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 \\
-$vol_{20}$ & & \hfil -.0005 & \hfil -.0004 & \hfil -.0004 & \hfil -.0004 & \hfil -.0004 \\
-$kyle_1$ & & & \hfil -.0661 & \hfil -.0630 & \hfil -.0601 & \hfil -.0601 \\
-$kyle_5$ & & & \hfil -.3840 & \hfil -.3862 & \hfil -.3884 & \hfil -.3884 \\
-$kyle_{20}$ & & & \hfil .4373 & \hfil .4372 & \hfil .4395 & \hfil .4395 \\
-$jt$ & & & & \hfil .1935 & \hfil .1924 & \hfil .1924 \\
-cross\_vol & & & & & \hfil -.0293 & \hfil -.0293 \\
+const & \hfil .0015*** & \hfil -.0095 & \hfil -.0094 & \hfil -.0091 & \hfil -.0095 & \hfil -.0095 \\
+$RV_1$ & \hfil .0850 & \hfil .0035 & \hfil .0295 & \hfil .0246 & \hfil .0524 & \hfil .0524 \\
+$RV_5$ & \hfil .1793*** & \hfil .1696** & \hfil .1924** & \hfil .1957** & \hfil .1933** & \hfil .1933** \\
+$RV_{20}$ & \hfil .0613 & \hfil .0507 & \hfil -.0161 & \hfil -.0176 & \hfil -.0200 & \hfil -.0200 \\
+$vol_1$ & & \hfil .0009 & \hfil .0008 & \hfil .0007 & \hfil .0008 & \hfil .0008 \\
+$vol_5$ & & \hfil .0007 & \hfil .0007 & \hfil .0007 & \hfil .0007 & \hfil .0007 \\
+$vol_{20}$ & & \hfil -.0007 & \hfil -.0007 & \hfil -.0006 & \hfil -.0006 & \hfil -.0006 \\
+$kyle_1$ & & & \hfil -.0665 & \hfil -.0606 & \hfil -.0554 & \hfil -.0554 \\
+$kyle_5$ & & & \hfil -.3637 & \hfil -.3681 & \hfil -.3719 & \hfil -.3719 \\
+$kyle_{20}$ & & & \hfil .3942 & \hfil .3940 & \hfil .3981 & \hfil .3981 \\
+$jt$ & & & & \hfil .3729 & \hfil .3709 & \hfil .3709 \\
+cross\_vol & & & & & \hfil -.0520 & \hfil -.0520 \\
 fees & & & & & & \hfil .0000 \\
 \hline
-$R^2$ & \hfil .1318 & \hfil .1454 & \hfil .1500 & \hfil .1502 & \hfil .1502 & \hfil .1502 \\
-Adj. $R^2$ & \hfil .1250 & \hfil .1318 & \hfil .1297 & \hfil .1275 & \hfil .1252 & \hfil .1252 \\
-AIC & \hfil -3465.63 & \hfil -3465.73 & \hfil -3461.83 & \hfil -3459.91 & \hfil -3457.92 & \hfil -3457.92 \\
-BIC & \hfil -3449.81 & \hfil -3438.04 & \hfil -3422.27 & \hfil -3416.39 & \hfil -3410.45 & \hfil -3410.45 \\
+$R^2$ & \hfil .1279 & \hfil .1450 & \hfil .1494 & \hfil .1500 & \hfil .1501 & \hfil .1501 \\
+Adj. $R^2$ & \hfil .1210 & \hfil .1315 & \hfil .1290 & \hfil .1273 & \hfil .1251 & \hfil .1251 \\
+AIC & \hfil -3461.68 & \hfil -3463.36 & \hfil -3459.34 & \hfil -3457.62 & \hfil -3455.67 & \hfil -3455.67 \\
+BIC & \hfil -3445.86 & \hfil -3435.67 & \hfil -3419.78 & \hfil -3414.10 & \hfil -3408.19 & \hfil -3408.19 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{B.} ETHUSDT, Period 2 (n=577)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0003*** & \hfil -.0092*** & \hfil -.0110*** & \hfil -.0093*** & \hfil -.0088*** & \hfil -.0090*** \\
-$RV_1$ & \hfil .3276*** & \hfil .3069*** & \hfil .2950*** & \hfil .4988*** & \hfil .6018*** & \hfil .6030*** \\
-$RV_5$ & \hfil .1443** & \hfil .1463* & \hfil .2416*** & \hfil .1899** & \hfil .1877** & \hfil .1870** \\
-$RV_{20}$ & \hfil .1421** & \hfil -.1264 & \hfil -.2589** & \hfil -.2206** & \hfil -.2072** & \hfil -.2112** \\
-$vol_1$ & & \hfil .0000 & \hfil .0000 & \hfil -.0000 & \hfil .0000 & \hfil .0000 \\
-$vol_5$ & & \hfil .0001 & \hfil .0002 & \hfil .0002 & \hfil .0002 & \hfil .0002 \\
-$vol_{20}$ & & \hfil .0007** & \hfil .0008** & \hfil .0006* & \hfil .0005 & \hfil .0005 \\
-$kyle_1$ & & & \hfil -.1877 & \hfil -.0182 & \hfil .0183 & \hfil .0190 \\
-$kyle_5$ & & & \hfil -1.1307** & \hfil -1.1661*** & \hfil -1.1467*** & \hfil -1.1455*** \\
-$kyle_{20}$ & & & \hfil .1568 & \hfil .1214 & \hfil .1429 & \hfil .1572 \\
-$jt$ & & & & \hfil -1.1885*** & \hfil -1.1326*** & \hfil -1.1296*** \\
-cross\_vol & & & & & \hfil -.2164* & \hfil -.2202* \\
-fees & & & & & & \hfil -.0000 \\
+const & \hfil .0003*** & \hfil -.0092*** & \hfil -.0112*** & \hfil -.0092*** & \hfil -.0086*** & \hfil -.0085*** \\
+$RV_1$ & \hfil .3975*** & \hfil .3692*** & \hfil .3518*** & \hfil .5963*** & \hfil .7092*** & \hfil .7088*** \\
+$RV_5$ & \hfil .1394* & \hfil .1535* & \hfil .2667*** & \hfil .2047** & \hfil .2023** & \hfil .2025** \\
+$RV_{20}$ & \hfil .1483* & \hfil -.1240 & \hfil -.2770** & \hfil -.2310** & \hfil -.2163* & \hfil -.2147* \\
+$vol_1$ & & \hfil .0001 & \hfil .0001 & \hfil .0000 & \hfil .0001 & \hfil .0001 \\
+$vol_5$ & & \hfil -.0000 & \hfil .0001 & \hfil .0002 & \hfil .0002 & \hfil .0002 \\
+$vol_{20}$ & & \hfil .0007* & \hfil .0008* & \hfil .0006 & \hfil .0005 & \hfil .0005 \\
+$kyle_1$ & & & \hfil -.1576 & \hfil .0457 & \hfil .0857 & \hfil .0854 \\
+$kyle_5$ & & & \hfil -1.3680*** & \hfil -1.4105*** & \hfil -1.3892*** & \hfil -1.3896*** \\
+$kyle_{20}$ & & & \hfil .1877 & \hfil .1452 & \hfil .1689 & \hfil .1633 \\
+$jt$ & & & & \hfil -1.4253*** & \hfil -1.3639*** & \hfil -1.3651*** \\
+cross\_vol & & & & & \hfil -.2375 & \hfil -.2360 \\
+fees & & & & & & \hfil .0000 \\
 \hline
-$R^2$ & \hfil .3339 & \hfil .3546 & \hfil .3745 & \hfil .4055 & \hfil .4086 & \hfil .4087 \\
-Adj. $R^2$ & \hfil .3304 & \hfil .3478 & \hfil .3646 & \hfil .3950 & \hfil .3971 & \hfil .3961 \\
-AIC & \hfil -5978.70 & \hfil -5990.87 & \hfil -6002.95 & \hfil -6030.33 & \hfil -6031.36 & \hfil -6029.40 \\
-BIC & \hfil -5961.27 & \hfil -5960.36 & \hfil -5959.38 & \hfil -5982.39 & \hfil -5979.07 & \hfil -5972.75 \\
+$R^2$ & \hfil .3251 & \hfil .3407 & \hfil .3602 & \hfil .3936 & \hfil .3964 & \hfil .3964 \\
+Adj. $R^2$ & \hfil .3216 & \hfil .3337 & \hfil .3500 & \hfil .3829 & \hfil .3847 & \hfil .3836 \\
+AIC & \hfil -5804.50 & \hfil -5811.94 & \hfil -5823.26 & \hfil -5852.24 & \hfil -5852.93 & \hfil -5850.93 \\
+BIC & \hfil -5787.07 & \hfil -5781.44 & \hfil -5779.69 & \hfil -5804.31 & \hfil -5800.63 & \hfil -5794.28 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{C.} ETHUSDT, Period 3 (n=356)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0008*** & \hfil -.0073** & \hfil -.0069** & \hfil -.0061* & \hfil -.0062* & \hfil -.0062* \\
-$RV_1$ & \hfil .1043** & \hfil .0737 & \hfil .0646 & \hfil .1503 & \hfil .2230 & \hfil .2230 \\
-$RV_5$ & \hfil .1274 & \hfil .1270 & \hfil .1140 & \hfil .1040 & \hfil .1028 & \hfil .1028 \\
-$RV_{20}$ & \hfil -.0002 & \hfil -.2062 & \hfil -.1544 & \hfil -.1637 & \hfil -.1646 & \hfil -.1646 \\
-$vol_1$ & & \hfil .0001 & \hfil .0001 & \hfil .0001 & \hfil .0001 & \hfil .0001 \\
-$vol_5$ & & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 \\
+const & \hfil .0009*** & \hfil -.0065 & \hfil -.0062 & \hfil -.0053 & \hfil -.0054 & \hfil -.0054 \\
+$RV_1$ & \hfil .0921 & \hfil .0530 & \hfil .0454 & \hfil .1423 & \hfil .2233 & \hfil .2233 \\
+$RV_5$ & \hfil .1430 & \hfil .1600 & \hfil .1583 & \hfil .1470 & \hfil .1457 & \hfil .1457 \\
+$RV_{20}$ & \hfil -.0197 & \hfil -.2116 & \hfil -.1756 & \hfil -.1861 & \hfil -.1870 & \hfil -.1870 \\
+$vol_1$ & & \hfil .0002 & \hfil .0002 & \hfil .0001 & \hfil .0001 & \hfil .0001 \\
+$vol_5$ & & \hfil -.0001 & \hfil -.0002 & \hfil -.0002 & \hfil -.0002 & \hfil -.0002 \\
 $vol_{20}$ & & \hfil .0006 & \hfil .0006 & \hfil .0006 & \hfil .0006 & \hfil .0006 \\
-$kyle_1$ & & & \hfil .0321 & \hfil .0453 & \hfil .0434 & \hfil .0434 \\
-$kyle_5$ & & & \hfil .0811 & \hfil .0591 & \hfil .0626 & \hfil .0626 \\
-$kyle_{20}$ & & & \hfil -.1922 & \hfil -.1833 & \hfil -.1732 & \hfil -.1732 \\
-$jt$ & & & & \hfil -.4091 & \hfil -.4596 & \hfil -.4596 \\
-cross\_vol & & & & & \hfil -.1139 & \hfil -.1139 \\
+$kyle_1$ & & & \hfil .0277 & \hfil .0426 & \hfil .0405 & \hfil .0405 \\
+$kyle_5$ & & & \hfil .0323 & \hfil .0075 & \hfil .0113 & \hfil .0113 \\
+$kyle_{20}$ & & & \hfil -.1304 & \hfil -.1204 & \hfil -.1091 & \hfil -.1091 \\
+$jt$ & & & & \hfil -.4624 & \hfil -.5187 & \hfil -.5187 \\
+cross\_vol & & & & & \hfil -.1270 & \hfil -.1270 \\
 fees & & & & & & \hfil .0000 \\
 \hline
-$R^2$ & \hfil .0356 & \hfil .0529 & \hfil .0544 & \hfil .0559 & \hfil .0568 & \hfil .0568 \\
-Adj. $R^2$ & \hfil .0274 & \hfil .0367 & \hfil .0298 & \hfil .0285 & \hfil .0266 & \hfil .0266 \\
-AIC & \hfil -3732.72 & \hfil -3733.16 & \hfil -3727.71 & \hfil -3726.28 & \hfil -3724.60 & \hfil -3724.60 \\
-BIC & \hfil -3717.22 & \hfil -3706.04 & \hfil -3688.96 & \hfil -3683.66 & \hfil -3678.10 & \hfil -3678.10 \\
+$R^2$ & \hfil .0235 & \hfil .0345 & \hfil .0350 & \hfil .0364 & \hfil .0371 & \hfil .0371 \\
+Adj. $R^2$ & \hfil .0152 & \hfil .0179 & \hfil .0099 & \hfil .0085 & \hfil .0064 & \hfil .0064 \\
+AIC & \hfil -3606.97 & \hfil -3604.99 & \hfil -3599.20 & \hfil -3597.70 & \hfil -3595.98 & \hfil -3595.98 \\
+BIC & \hfil -3591.47 & \hfil -3577.87 & \hfil -3560.45 & \hfil -3555.08 & \hfil -3549.48 & \hfil -3549.48 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{D.} BTCUSDT, Period 1 (n=386)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0009*** & \hfil -.0080* & \hfil -.0093* & \hfil -.0087* & \hfil -.0084* & \hfil -.0084* \\
-$RV_1$ & \hfil .1036* & \hfil .0175 & \hfil .0483 & \hfil .0912 & \hfil .1178 & \hfil .1178 \\
-$RV_5$ & \hfil .1016 & \hfil .0346 & \hfil .0392 & \hfil .0147 & \hfil .0202 & \hfil .0202 \\
-$RV_{20}$ & \hfil .0812 & \hfil .0653 & \hfil .0019 & \hfil .0307 & \hfil .0335 & \hfil .0335 \\
-$vol_1$ & & \hfil .0005 & \hfil .0004 & \hfil .0005 & \hfil .0005 & \hfil .0005 \\
-$vol_5$ & & \hfil .0009 & \hfil .0011* & \hfil .0011* & \hfil .0011* & \hfil .0011* \\
-$vol_{20}$ & & \hfil -.0005 & \hfil -.0006 & \hfil -.0007 & \hfil -.0007 & \hfil -.0007 \\
-$kyle_1$ & & & \hfil -.0005 & \hfil -.0004 & \hfil -.0004 & \hfil -.0004 \\
-$kyle_5$ & & & \hfil -.0013 & \hfil -.0012 & \hfil -.0012 & \hfil -.0012 \\
-$kyle_{20}$ & & & \hfil .0018 & \hfil .0016 & \hfil .0016 & \hfil .0016 \\
-$jt$ & & & & \hfil -.7365* & \hfil -.7518* & \hfil -.7518* \\
-cross\_vol & & & & & \hfil -.0162 & \hfil -.0162 \\
+const & \hfil .0010*** & \hfil -.0074* & \hfil -.0080 & \hfil -.0074 & \hfil -.0071 & \hfil -.0071 \\
+$RV_1$ & \hfil .1004 & \hfil .0108 & \hfil .0393 & \hfil .0812 & \hfil .1107 & \hfil .1107 \\
+$RV_5$ & \hfil .0944 & \hfil .0211 & \hfil .0270 & \hfil .0031 & \hfil .0092 & \hfil .0092 \\
+$RV_{20}$ & \hfil .1005 & \hfil .0988 & \hfil .0507 & \hfil .0788 & \hfil .0820 & \hfil .0820 \\
+$vol_1$ & & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 \\
+$vol_5$ & & \hfil .0010 & \hfil .0011* & \hfil .0011* & \hfil .0011* & \hfil .0011* \\
+$vol_{20}$ & & \hfil -.0007 & \hfil -.0007 & \hfil -.0008 & \hfil -.0008 & \hfil -.0008 \\
+$kyle_1$ & & & \hfil -.0004 & \hfil -.0003 & \hfil -.0004 & \hfil -.0004 \\
+$kyle_5$ & & & \hfil -.0011 & \hfil -.0010 & \hfil -.0010 & \hfil -.0010 \\
+$kyle_{20}$ & & & \hfil .0015 & \hfil .0012 & \hfil .0012 & \hfil .0012 \\
+$jt$ & & & & \hfil -.7196 & \hfil -.7365 & \hfil -.7365 \\
+cross\_vol & & & & & \hfil -.0180 & \hfil -.0180 \\
 fees & & & & & & \hfil .0000 \\
 \hline
-$R^2$ & \hfil .0707 & \hfil .0977 & \hfil .1056 & \hfil .1123 & \hfil .1124 & \hfil .1124 \\
-Adj. $R^2$ & \hfil .0634 & \hfil .0834 & \hfil .0842 & \hfil .0886 & \hfil .0862 & \hfil .0862 \\
-AIC & \hfil -3871.90 & \hfil -3877.31 & \hfil -3874.70 & \hfil -3875.58 & \hfil -3873.62 & \hfil -3873.62 \\
-BIC & \hfil -3856.08 & \hfil -3849.62 & \hfil -3835.14 & \hfil -3832.07 & \hfil -3826.15 & \hfil -3826.15 \\
+$R^2$ & \hfil .0657 & \hfil .0912 & \hfil .0968 & \hfil .1025 & \hfil .1026 & \hfil .1026 \\
+Adj. $R^2$ & \hfil .0583 & \hfil .0768 & \hfil .0752 & \hfil .0786 & \hfil .0762 & \hfil .0762 \\
+AIC & \hfil -3827.61 & \hfil -3832.29 & \hfil -3828.69 & \hfil -3829.13 & \hfil -3827.17 & \hfil -3827.17 \\
+BIC & \hfil -3811.79 & \hfil -3804.60 & \hfil -3789.13 & \hfil -3785.62 & \hfil -3779.70 & \hfil -3779.70 \\
 \hline
 \\[64pt] % to skip to next page
 \multicolumn{7}{l}{\textbf{E.} BTCUSDT, Period 2 (n=577)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0003*** & \hfil -.0002 & \hfil .0000 & \hfil -.0001 & \hfil .0000 & \hfil -.0020 \\
-$RV_1$ & \hfil .2113*** & \hfil .2131*** & \hfil .2158*** & \hfil .4049*** & \hfil .0643 & \hfil -.0345 \\
-$RV_5$ & \hfil .2311*** & \hfil .1649* & \hfil .1521* & \hfil .1120 & \hfil .1124 & \hfil .0704 \\
-$RV_{20}$ & \hfil .0430 & \hfil .0837 & \hfil .0812 & \hfil .0770 & \hfil .0602 & \hfil .0239 \\
-$vol_1$ & & \hfil -.0000 & \hfil -.0000 & \hfil -.0000 & \hfil .0000 & \hfil .0000 \\
-$vol_5$ & & \hfil .0003 & \hfil .0002 & \hfil .0002 & \hfil .0001 & \hfil .0003 \\
-$vol_{20}$ & & \hfil -.0002 & \hfil -.0002 & \hfil -.0002 & \hfil -.0001 & \hfil -.0001 \\
-$kyle_1$ & & & \hfil -.0000 & \hfil -.0006 & \hfil .0001 & \hfil .0005 \\
-$kyle_5$ & & & \hfil .0009 & \hfil .0011 & \hfil .0008 & \hfil .0011 \\
-$kyle_{20}$ & & & \hfil -.0004 & \hfil -.0004 & \hfil -.0011 & \hfil -.0010 \\
-$jt$ & & & & \hfil -.9713*** & \hfil -.7172*** & \hfil -.5973*** \\
-cross\_vol & & & & & \hfil .1866*** & \hfil .2255*** \\
-fees & & & & & & \hfil -.0005** \\
+const & \hfil .0003*** & \hfil -.0002 & \hfil -.0001 & \hfil -.0002 & \hfil -.0001 & \hfil -.0020 \\
+$RV_1$ & \hfil .2394*** & \hfil .2388*** & \hfil .2395*** & \hfil .4521*** & \hfil .0542 & \hfil -.0369 \\
+$RV_5$ & \hfil .2648*** & \hfil .2067** & \hfil .1982* & \hfil .1532 & \hfil .1536 & \hfil .1148 \\
+$RV_{20}$ & \hfil .0509 & \hfil .0861 & \hfil .0907 & \hfil .0859 & \hfil .0663 & \hfil .0328 \\
+$vol_1$ & & \hfil -.0000 & \hfil -.0000 & \hfil -.0000 & \hfil .0000 & \hfil .0001 \\
+$vol_5$ & & \hfil .0002 & \hfil .0002 & \hfil .0002 & \hfil .0001 & \hfil .0002 \\
+$vol_{20}$ & & \hfil -.0002 & \hfil -.0002 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 \\
+$kyle_1$ & & & \hfil .0000 & \hfil -.0006 & \hfil .0002 & \hfil .0006 \\
+$kyle_5$ & & & \hfil .0005 & \hfil .0007 & \hfil .0004 & \hfil .0007 \\
+$kyle_{20}$ & & & \hfil -.0005 & \hfil -.0005 & \hfil -.0014 & \hfil -.0013 \\
+$jt$ & & & & \hfil -1.0921*** & \hfil -.7952*** & \hfil -.6846** \\
+cross\_vol & & & & & \hfil .2180*** & \hfil .2539*** \\
+fees & & & & & & \hfil -.0004 \\
 \hline
-$R^2$ & \hfil .1905 & \hfil .1955 & \hfil .1963 & \hfil .2263 & \hfil .2433 & \hfil .2486 \\
-Adj. $R^2$ & \hfil .1862 & \hfil .1870 & \hfil .1836 & \hfil .2127 & \hfil .2286 & \hfil .2326 \\
-AIC & \hfil -6462.87 & \hfil -6460.48 & \hfil -6455.05 & \hfil -6475.03 & \hfil -6485.85 & \hfil -6487.88 \\
-BIC & \hfil -6445.44 & \hfil -6429.97 & \hfil -6411.47 & \hfil -6427.09 & \hfil -6433.55 & \hfil -6431.23 \\
+$R^2$ & \hfil .1810 & \hfil .1842 & \hfil .1844 & \hfil .2122 & \hfil .2291 & \hfil .2324 \\
+Adj. $R^2$ & \hfil .1767 & \hfil .1757 & \hfil .1715 & \hfil .1982 & \hfil .2141 & \hfil .2161 \\
+AIC & \hfil -6275.31 & \hfil -6271.60 & \hfil -6265.71 & \hfil -6283.69 & \hfil -6294.25 & \hfil -6294.71 \\
+BIC & \hfil -6257.88 & \hfil -6241.09 & \hfil -6222.13 & \hfil -6235.76 & \hfil -6241.95 & \hfil -6238.06 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{F.} BTCUSDT, Period 3 (n=356)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0005*** & \hfil -.0039* & \hfil -.0031 & \hfil -.0030 & \hfil -.0029 & \hfil -.0029 \\
-$RV_1$ & \hfil .0653 & \hfil .0629 & \hfil .0990 & \hfil .0890 & \hfil .1544 & \hfil .1544 \\
-$RV_5$ & \hfil .1871 & \hfil .2499 & \hfil .0909 & \hfil .1410 & \hfil .1436 & \hfil .1436 \\
-$RV_{20}$ & \hfil .0752 & \hfil -.2383 & \hfil -.2587 & \hfil -.2641 & \hfil -.2668 & \hfil -.2668 \\
-$vol_1$ & & \hfil .0000 & \hfil .0000 & \hfil .0000 & \hfil .0000 & \hfil .0000 \\
-$vol_5$ & & \hfil -.0002 & \hfil -.0002 & \hfil -.0003 & \hfil -.0003 & \hfil -.0003 \\
-$vol_{20}$ & & \hfil .0006 & \hfil .0006 & \hfil .0006 & \hfil .0006 & \hfil .0006 \\
+const & \hfil .0005*** & \hfil -.0037 & \hfil -.0029 & \hfil -.0028 & \hfil -.0027 & \hfil -.0027 \\
+$RV_1$ & \hfil .0491 & \hfil .0437 & \hfil .0783 & \hfil .0675 & \hfil .1344 & \hfil .1344 \\
+$RV_5$ & \hfil .2114* & \hfil .3102* & \hfil .1585 & \hfil .2130 & \hfil .2156 & \hfil .2156 \\
+$RV_{20}$ & \hfil .0863 & \hfil -.2522 & \hfil -.2835 & \hfil -.2893 & \hfil -.2921 & \hfil -.2921 \\
+$vol_1$ & & \hfil .0000 & \hfil .0000 & \hfil .0001 & \hfil .0000 & \hfil .0000 \\
+$vol_5$ & & \hfil -.0003 & \hfil -.0003 & \hfil -.0003 & \hfil -.0004 & \hfil -.0004 \\
+$vol_{20}$ & & \hfil .0007* & \hfil .0006 & \hfil .0006 & \hfil .0006 & \hfil .0006 \\
 $kyle_1$ & & & \hfil -.0005 & \hfil -.0003 & \hfil -.0003 & \hfil -.0003 \\
-$kyle_5$ & & & \hfil .0020 & \hfil .0018 & \hfil .0018 & \hfil .0018 \\
-$kyle_{20}$ & & & \hfil .0000 & \hfil .0001 & \hfil .0000 & \hfil .0000 \\
-$jt$ & & & & \hfil -.8196 & \hfil -.8833 & \hfil -.8833 \\
-cross\_vol & & & & & \hfil -.0378 & \hfil -.0378 \\
+$kyle_5$ & & & \hfil .0019 & \hfil .0017 & \hfil .0017 & \hfil .0017 \\
+$kyle_{20}$ & & & \hfil .0002 & \hfil .0002 & \hfil .0002 & \hfil .0002 \\
+$jt$ & & & & \hfil -.8907 & \hfil -.9559 & \hfil -.9559 \\
+cross\_vol & & & & & \hfil -.0387 & \hfil -.0387 \\
 fees & & & & & & \hfil .0000 \\
 \hline
-$R^2$ & \hfil .0322 & \hfil .0425 & \hfil .0515 & \hfil .0555 & \hfil .0559 & \hfil .0559 \\
-Adj. $R^2$ & \hfil .0240 & \hfil .0260 & \hfil .0269 & \hfil .0281 & \hfil .0257 & \hfil .0257 \\
-AIC & \hfil -3970.03 & \hfil -3967.82 & \hfil -3965.20 & \hfil -3964.69 & \hfil -3962.86 & \hfil -3962.86 \\
-BIC & \hfil -3954.53 & \hfil -3940.69 & \hfil -3926.45 & \hfil -3922.07 & \hfil -3916.36 & \hfil -3916.36 \\
+$R^2$ & \hfil .0333 & \hfil .0433 & \hfil .0517 & \hfil .0563 & \hfil .0568 & \hfil .0568 \\
+Adj. $R^2$ & \hfil .0250 & \hfil .0269 & \hfil .0271 & \hfil .0290 & \hfil .0266 & \hfil .0266 \\
+AIC & \hfil -3963.04 & \hfil -3960.77 & \hfil -3957.91 & \hfil -3957.63 & \hfil -3955.80 & \hfil -3955.80 \\
+BIC & \hfil -3947.54 & \hfil -3933.65 & \hfil -3919.16 & \hfil -3915.01 & \hfil -3909.30 & \hfil -3909.30 \\
 \hline
 \multicolumn{7}{l}{\footnotesize * $p<.1$, ** $p<.05$, *** $p<.01$}
 \end{longtable}
