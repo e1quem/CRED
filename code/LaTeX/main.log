@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  19 SEP 2026 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.30)  20 SEP 2026 00:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -580,270 +580,68 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 25.
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-
-LaTeX Warning: Citation 'Nakamoto2008' on page 1 undefined on input line 45.
-
-
-LaTeX Warning: Citation 'AmoussouGuenou2026' on page 1 undefined on input line 45.
-
-
-LaTeX Warning: Citation 'Biais2019' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Citation 'AmoussouGuenou2024' on page 1 undefined on input line 47.
-
-[1
+ [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation 'Tsuyuguchi2025' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Liu2025' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Jain2023' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Hansen2024' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Bogousslavsky2023' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'Ranaldo2022' on page 2 undefined on input line 55.
-
-
-LaTeX Warning: Reference `sec:data' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:metrics' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:analysis' on page 2 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 57.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
-
-LaTeX Warning: Citation 'Makarov2020' on page 3 undefined on input line 70.
-
-
-LaTeX Warning: Citation 'Crepelliere2023' on page 3 undefined on input line 70.
-
-
-LaTeX Warning: Reference `sec:appendixEvents' on page 3 undefined on input line 75.
-
-
-LaTeX Warning: Citation 'Dumitrescu2025' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Reference `eq:rv' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Reference `eq:bv' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Barndorff2004' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Reference `eq:rs' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Barndorff2010' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Reference `eq:gk' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Garman1980' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Reference `eq:rgs' on page 3 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'Rogers1991' on page 3 undefined on input line 83.
-
-[3]
+) [2] [3]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 90.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-
-LaTeX Warning: Reference `eq:Amihud' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Citation 'Amihud2002' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Citation 'Ranaldo2022' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Reference `eq:RAmihud' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Reference `eq:Kyle' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Citation 'Kyle1985' on page 4 undefined on input line 96.
-
-
-LaTeX Warning: Reference `fig:signaturePlot' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Reference `sec:appendixHeatmap' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Andersen2001' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Bandi2006' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Andersen2007' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Patton2011' on page 4 undefined on input line 107.
-
-
-LaTeX Warning: Citation 'Haugom2014' on page 4 undefined on input line 107.
-
-[4]
-
-LaTeX Warning: Reference `fig:signaturePlot' on page 5 undefined on input line 109.
-
-<media/signaturePlot.png, id=60, 1075.8594pt x 458.31226pt>
+) [4]
+<media/signaturePlot.png, id=191, 1075.8594pt x 458.31226pt>
 File: media/signaturePlot.png Graphic file (type png)
 <use media/signaturePlot.png>
 Package pdftex.def Info: media/signaturePlot.png  used on input line 119.
 (pdftex.def)             Requested size: 455.24411pt x 193.93044pt.
-
-LaTeX Warning: Reference `fig:events' on page 5 undefined on input line 129.
-
-
-LaTeX Warning: Reference `sec:harrv' on page 5 undefined on input line 129.
-
-[5
+ [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.130 
       {/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./media/signaturePlot.png>]
-
-LaTeX Warning: Reference `fig:feeRegime' on page 6 undefined on input line 131.
-
-<media/events.png, id=74, 2016.333pt x 1004.553pt>
+<media/events.png, id=211, 2016.333pt x 1004.553pt>
 File: media/events.png Graphic file (type png)
 <use media/events.png>
 Package pdftex.def Info: media/events.png  used on input line 138.
 (pdftex.def)             Requested size: 455.24411pt x 226.7964pt.
-<media/feeRegime.png, id=75, 1293.633pt x 274.626pt>
+<media/feeRegime.png, id=212, 1293.633pt x 274.626pt>
 File: media/feeRegime.png Graphic file (type png)
 <use media/feeRegime.png>
 Package pdftex.def Info: media/feeRegime.png  used on input line 146.
 (pdftex.def)             Requested size: 455.24411pt x 96.64433pt.
-
-LaTeX Warning: Reference `fig:events' on page 6 undefined on input line 150.
-
-
-LaTeX Warning: Reference `fig:events' on page 6 undefined on input line 150.
-
-
-LaTeX Warning: Reference `fig:feeRegime' on page 6 undefined on input line 150.
-
-[6
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.151 
-      
+       <./media/events.png>] [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.151 
-       <./media/events.png> <./media/feeRegime.png>]
-
-LaTeX Warning: Citation 'Engle1987' on page 7 undefined on input line 155.
-
-
-LaTeX Warning: Citation 'Johansen1988' on page 7 undefined on input line 161.
-
-
-LaTeX Warning: Reference `tab:cointegration' on page 7 undefined on input line 173.
-
-
-LaTeX Warning: Reference `fig:events' on page 7 undefined on input line 173.
-
-[7]
-
-LaTeX Warning: Citation 'AmoussouGuenou2024' on page 8 undefined on input line 198.
-
-
-LaTeX Warning: Citation 'Corsi2009' on page 8 undefined on input line 207.
-
-
-LaTeX Warning: Citation 'Andersen2007' on page 8 undefined on input line 207.
-
-[8
+l.174 
+       <./media/feeRegime.png>] [8
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.211 \end{align}
-                 ]
-
-LaTeX Warning: Reference `eq:rv' on page 9 undefined on input line 213.
-
-
-LaTeX Warning: Citation 'Tseng2015' on page 9 undefined on input line 218.
-
-
-LaTeX Warning: Citation 'Clark1973' on page 9 undefined on input line 218.
-
-
-LaTeX Warning: Citation 'Gallant1992' on page 9 undefined on input line 218.
-
-
-LaTeX Warning: Citation 'Andersen1996' on page 9 undefined on input line 218.
-
-
-LaTeX Warning: Reference `eq:averages' on page 9 undefined on input line 220.
-
-
-LaTeX Warning: Reference `fig:volume' on page 9 undefined on input line 220.
-
-
-LaTeX Warning: Citation 'Hansen2024' on page 9 undefined on input line 220.
-
-<media/volume.png, id=108, 1004.553pt x 570.933pt>
+l.208 \begin{align}
+                   ]
+<media/volume.png, id=262, 1004.553pt x 570.933pt>
 File: media/volume.png Graphic file (type png)
 <use media/volume.png>
 Package pdftex.def Info: media/volume.png  used on input line 227.
 (pdftex.def)             Requested size: 455.24411pt x 258.73822pt.
-
-LaTeX Warning: Citation 'Andersen2007' on page 9 undefined on input line 238.
-
-
-LaTeX Warning: Reference `tab:coefs' on page 9 undefined on input line 243.
-
-[9]
-
-LaTeX Warning: Reference `tab:additive_full' on page 10 undefined on input line 268.
-
-
-LaTeX Warning: Reference `sec:appendixSubperiods' on page 10 undefined on input line 268.
-
-[10
+ [9] [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -853,147 +651,55 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has 
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.271 
-       <./media/volume.png>]
-
-LaTeX Warning: Citation 'Tseng2015' on page 11 undefined on input line 274.
-
-
-LaTeX Warning: Reference `sec:analysis' on page 11 undefined on input line 276.
-
-
-LaTeX Warning: Citation 'Patton2011' on page 11 undefined on input line 342.
-
-
-LaTeX Warning: Reference `eq:MSE' on page 11 undefined on input line 342.
-
-
-LaTeX Warning: Reference `eq:QLIKE' on page 11 undefined on input line 342.
-
-
-LaTeX Warning: Citation 'Patton2011' on page 11 undefined on input line 350.
-
-
-LaTeX Warning: Citation 'Patton2009' on page 11 undefined on input line 350.
-
-
-LaTeX Warning: Reference `eq:rv' on page 11 undefined on input line 350.
-
-
-LaTeX Warning: Reference `eq:bv' on page 11 undefined on input line 350.
-
-
-LaTeX Warning: Reference `eq:jump' on page 11 undefined on input line 350.
-
-
-LaTeX Warning: Citation 'Corsi2009' on page 11 undefined on input line 350.
-
-[11] [12
+       <./media/volume.png>] [11] [12
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.351 
-      ]
-
-LaTeX Warning: Reference `eq:HAR-RV' on page 13 undefined on input line 352.
-
-
-LaTeX Warning: Reference `tab:forecast' on page 13 undefined on input line 352.
-
-
-LaTeX Warning: Reference `tab:coefs' on page 13 undefined on input line 398.
-
-[13
+      ] [13
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.400 
-      ]
-
-LaTeX Warning: Reference `sec:4.2.1' on page 14 undefined on input line 403.
-
-
-LaTeX Warning: Reference `tab:additive_full' on page 14 undefined on input line 403.
-
-
-LaTeX Warning: Reference `tab:forecast' on page 14 undefined on input line 403.
-
-
-LaTeX Warning: Reference `sec:4.2.2' on page 14 undefined on input line 403.
-
-
-LaTeX Warning: Citation 'John2025' on page 14 undefined on input line 416.
-
-[14]
-
-LaTeX Warning: Empty bibliography on input line 425.
-
-[15]
-
-LaTeX Warning: Reference `fig:AppendixHeatmap' on page 16 undefined on input line 449.
-
-[16
+      ] [14] [15] [16] [17] [18
 
 ]
-
-LaTeX Warning: Citation 'Hansen2006' on page 17 undefined on input line 451.
-
-
-LaTeX Warning: Citation 'Bandi2008' on page 17 undefined on input line 451.
-
-<media/correlationHeatmap.png, id=163, 1293.633pt x 715.473pt>
+<media/correlationHeatmap.png, id=395, 1293.633pt x 715.473pt>
 File: media/correlationHeatmap.png Graphic file (type png)
 <use media/correlationHeatmap.png>
 Package pdftex.def Info: media/correlationHeatmap.png  used on input line 460.
 (pdftex.def)             Requested size: 455.24411pt x 251.78395pt.
-[17
+ [19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.463     \clearpage
-                     % new page <./media/correlationHeatmap.png>] [18
+                     % new page <./media/correlationHeatmap.png>] [20
 
-] [19] [20] (./main.aux)
+] [21] [22] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  78E7761B536AA641054B6BA7AE6F444F;3201.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 78E7761B536AA641054B6BA7AE6F444F;3201.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17963 strings out of 467168
- 310879 string characters out of 5409462
- 1226784 words of memory out of 5000000
- 46967 multiletter control sequences out of 15000+600000
- 638771 words of font info for 85 fonts, out of 8000000 for 9000
+ 18295 strings out of 467168
+ 319620 string characters out of 5409462
+ 1231352 words of memory out of 5000000
+ 47256 multiletter control sequences out of 15000+600000
+ 638939 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,67p,2043b,859s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (20 pages, 12301284 bytes).
+ 62i,10n,67p,2043b,1617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on main.pdf (22 pages, 12330344 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 551 PDF objects out of 1000 (max. 8388607)
+ 460 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 
