@@ -147,7 +147,7 @@ Figure~\ref{fig:feeRegime} illustrates this fee-related volume shift. Phase 1 co
 \end{figure}
 
 
-Plotting these events allows us to define three market periods shared by both assets, indicated by the grey shading in Figure~\ref{fig:events}. Period 1 (405 days) follows the DeFi summer and is characterized by increased volatility, as prices reach all-time-highs before plummeting, followed by coin collapses (Terra/LUNA, UST) and multiple crypto lenders and exchanges (Celsius Network, Voyager Digital) filing for bankruptcy. Period 2 (from event 11 to event 26, 577 days), is more stable and characterized by regulatory changes as the market moves more horizontally. Finally, the approval of Bitcoin spot ETFs marks the beginning of period 3 (356 days), during which institutional investors gain access to a more volatile market influenced by the outcome of the 2024 US presidential election. For period 2, relatively calmer than the rest of the sample, we expect a better fit of our volatility models, as less extreme price movements are present. Going forward, the term \textit{periods} will exclusively refer to the market-regimes described in Figure~\ref{fig:events}, while the word \textit{phases} will strictly be used for the fee-regimes of Figure~\ref{fig:feeRegime}. Beyond these shared contextual periods (53\% of Bitcoin-relevant events also affect Ethereum, and 72\% of Ethereum-relevant events also affect Bitcoin), we verify whether this visual impression of joint price movement holds statistically using cointegration tests. 
+Plotting these events allows us to define three market periods shared by both assets, indicated by the grey shading in Figure~\ref{fig:events}. Period 1 (450 days) follows the DeFi summer and is characterized by increased volatility, as prices reach all-time-highs before plummeting, followed by coin collapses (Terra/LUNA, UST) and multiple crypto lenders and exchanges (Celsius Network, Voyager Digital) filing for bankruptcy. Period 2 (from event 13 to event 26, 516 days) begins with the first blog announcement of the Merge; it is more stable and characterized by regulatory changes as the market moves more horizontally. Finally, the approval of Bitcoin spot ETFs marks the beginning of period 3 (356 days), during which institutional investors gain access to a more volatile market influenced by the outcome of the 2024 US presidential election. For period 2, relatively calmer than the rest of the sample, we expect a better fit of our volatility models, as less extreme price movements are present. Going forward, the term \textit{periods} will exclusively refer to the market-regimes described in Figure~\ref{fig:events}, while the word \textit{phases} will strictly be used for the fee-regimes of Figure~\ref{fig:feeRegime}. Beyond these shared contextual periods (53\% of Bitcoin-relevant events also affect Ethereum, and 72\% of Ethereum-relevant events also affect Bitcoin), we verify whether this visual impression of joint price movement holds statistically using cointegration tests. 
  
 
         \subsubsection{Cointegration Testing}
@@ -170,9 +170,9 @@ y_t &= \alpha + \beta x_t + u_t \tag{9}\\
 
 \noindent where $T$ is the sample size, $n$ is the number of variables and $\hat{\lambda_i}$ the estimated eigenvalues of $\Pi$. 
 
-According to both tests, the full sample presents no significant cointegration despite a 0.81 correlation (Table~\ref{tab:cointegration}). This suggests that this comovement doesn't reflect a stable long-run equilibrium relationship, that might be interrupted by shocks. This observation is evidenced in our event plots (Figure~\ref{fig:events}): despite over half of news being shared by both pairs, many events impacting Ethereum are missing from the Bitcoin plot, and the opposite holds true. For subperiods, the first one shows significant cointegration according to Engle-Granger (5\%), Johansen rank 0 (1\%) and Johansen rank 1 (5\%) tests, also highlighted by a 94\% correlation. Cointegration weakens but remains present over period 2, emphasized by significant Engle-Granger (5\%) and Johansen rank 0 (10\%) tests. Period 3 presents no cointegration and a 0.62 correlation.
+According to both tests, the full sample presents no significant cointegration despite a 0.81 correlation (Table~\ref{tab:cointegration}). This suggests that this comovement doesn't reflect a stable long-run equilibrium relationship, that might be interrupted by shocks. This observation is evidenced in our event plots (Figure~\ref{fig:events}): despite over half of news being shared by both pairs, many events impacting Ethereum are missing from the Bitcoin plot, and the opposite holds true. For subperiods, the first one shows significant cointegration according to Engle-Granger (5\%), Johansen rank 0 (1\%) tests, also highlighted by a 96\% correlation. Period 2 shows an almost identical pattern, with significant Engle-Granger (1\%) and Johansen rank 0 (5\%) tests, and a 93\% correlation. Period 3 presents no cointegration and a 0.62 correlation.
 
-Since the Merge occurs at the start of period 2, the persistence of cointegration over this period indicates that no clear break in the Ethereum-Bitcoin long-run relationship is to be noticed around this event: Engle-Granger cointegration significance remains, correlation is similar, only Johansen cointegration changes. Moreover, the disappearance of cointegration in period 3 could be coherent with a "Bitcoin decoupling" hypothesis that can be drawn from events of the third period. The arrival of crypto-ETFs as early as January of 2024 for Bitcoin and only six months later (in July of 2024) for Ethereum might have led to a temporary mismatch in investment vehicles, as financial institutions active on traditional markets could take part in Bitcoin trading only, leading to diverging market dynamics relative to Ethereum.
+Since period 2 begins with the first Merge announcement, and assuming that investors anticipation implement this information ahead of the actual event, the results between period 1 and 2 indicate that no clear break in the Ethereum-Bitcoin long-run relationship is to be noticed around this event: cointegration and correlation are essentially unchanged. Moreover, the disappearance of cointegration in period 3 could be coherent with a "Bitcoin decoupling" hypothesis that can be drawn from events of the third period. The arrival of crypto-ETFs as early as January of 2024 for Bitcoin and only six months later (in July of 2024) for Ethereum might have led to a temporary mismatch in investment vehicles, as financial institutions active on traditional markets could take part in Bitcoin trading only, leading to diverging market dynamics relative to Ethereum.
 
 \begin{table}[!htbp]
 \centering
@@ -185,8 +185,8 @@ Since the Merge occurs at the start of period 2, the persistence of cointegratio
 \textbf{Period}   & \textbf{Engle-Granger} & \textbf{Johansen (r$\le$0)}  & \textbf{Johansen (r$\le$1)}  & \textbf{Correlation} \\
 \hline
 Global  & Not significant                         & Not significant & Not significant & 0.81        \\
-Period 1 & **                                      & ***             & **              & 0.94        \\
-Period 2 & **                                      & *               & Not significant & 0.90        \\
+Period 1 & ***                                     & **               & Not significant & 0.96        \\
+Period 2 & ***                                     & **               & Not significant & 0.93        \\
 Period 3 & Not significant                         & Not significant & Not significant & 0.62  \\
 \hline      
 \end{tabular}
@@ -267,13 +267,13 @@ BTC & .130     & \textbf{.131} & .129  & \textbf{.133} & \textbf{.131}  & .130  
 
 Building on these results, we estimate additive models, summarized in Table~\ref{tab:additive_full} for the entire sample and in Appendix~\ref{sec:appendixSubperiods} for periods. We consider a cumulative \textit{base +volume +kyle +jt +cross\_vol +fees} approach based on the improvements observed with individual variables.
 
-For Ethereum over the full period, combined volume and Kyle's lambda improve fit with an .215 adjusted $R^2$, above that reached by the individual specifications, underlining that their respective effect remains when considered together. All further specifications marginally improve adjusted $R^2$ while deteriorating BIC: we hence retain the \textit{volume +Kyle} specification for Ethereum over the full sample. Across periods, feature choice becomes regime dependent. Periods 1 and 3 show overall weak fit, with the adjusted $R^2$ of the base HAR-RV being .121 and .015 respectively. Complexity is heavily penalized, with the best model being \textit{+volume} for both of these periods, while AIC and BIC suggest the base model would be preferred. Period 2 shows a much improved fit, with \textit{volume +Kyle +jump +cross\_volatility} reaching a .385 adjusted $R^2$. Those periodical results are consistent with our visual graphical analysis: the first and third periods show much higher volatility hence a lower fit, while the second shows a stable price trend with fewer volume or volatility spikes. 
+For Ethereum over the full period, combined volume and Kyle's lambda improve fit with an .215 adjusted $R^2$, above that reached by the individual specifications, underlining that their respective effect remains when considered together. All further specifications marginally improve adjusted $R^2$ while deteriorating BIC: we hence retain the \textit{volume +Kyle} specification for Ethereum over the full sample. Across periods, feature choice becomes regime dependent. Period 1 and 2 show similar HAR-RV fit, of .145 and .171 respectively. However, they diverge once additional regressors are introduced: period 1 penalizes complexity, with \textit{+volume} being the best model (.166), while fit continues to improve with complexity in period 2, reaching .240 for \textit{+volume +Kyle +jt}. Period 3 shows no exploitable fit (.015) with almost all coefficients being non-significant. These results suggest that additional regressors are only significant in period 2, while period 1 and 3 do not gain from added complexity. 
 
-For Bitcoin over the full period, the full specification \textit{volume +Kyle +jump component +cross\_volatility +fee} has the best performance for both $R^2$ and AIC. The dummy's coefficient (-.0008***) confirms its explanatory role once other factors are taken into account. The negative sign of the coefficient indicates that the fee-less period is associated with lower volatility, the opposite of our initial hypothesis. This result could suggest that the increased volume associated with the fee removal reflects a more liquid market, where higher volume smooths out otherwise erratic activity. Period analysis shows a pattern quite similar to that of Ethereum: the \textit{volume +Kyle +jump} model has the best performance for the first period, while period 2 favors the full specification, and period 3 shows negligible explanatory power with the base model being preferred by AIC and BIC. Over most periods, weekly and monthly Kyle's lambda coefficients move in opposite directions, suggesting that the price-impact-volatility relationship may not be stable over varying horizons.
+For Bitcoin over the full period, the full specification \textit{volume +Kyle +jump component +cross\_volatility +fee} has the best performance for both $R^2$ and AIC. The dummy's coefficient (-.0008***) confirms its explanatory role once other factors are taken into account. The negative sign of the coefficient indicates that the fee-less period is associated with lower volatility, the opposite of our initial hypothesis. This result could suggest that the increased volume associated with the fee removal reflects a more liquid market, where higher volume smooths out otherwise erratic activity. Period analysis analysis a pattern quite similar to that of Ethereum: the first period favors the full specification (.108), the second favors the \textit{+volume +Kyle +jt} model (.109), and period 3 shows negligible explanatory power, with the base model being preferred by AIC and BIC.
 
 Overall, past volatility and trading volume drive most of the explanatory power for both assets, as highlighted by \textcite{Tseng2015}. Microstructure metrics (Kyle's lambda, jump component) add marginal improvement, while cross-asset volatility spillovers and fee-regime effects matter only when controlling for other variables. The higher fit for the second period noticed for both pairs suggests that volatility dynamics are more predictable by our regression in low-volatility episodes. These findings can be compared to the forecasting performance of these models, explored in the next section.
 
-Since the Merge falls 94 days (16\%) after the start of period 2, these results also speak to our original question. If the consensus mechanism shift had impacted the mechanisms driving Ethereum's volatility, we would expect the explanatory power and the coefficients of our added regressors to shift between period 1 and 2 for Ethereum specifically, beyond what is observed for Bitcoin as a counterfactual. Instead, both cryptocurrencies show a similar improvement of fit over period 2. This suggests that this improved fit reflects the overall calmer market regime described in Section~\ref{sec:analysis} and that the drivers of Ethereum's volatility were not altered by the Merge, at least not when considering the variables we added as regressors.
+Since the first Merge announcement falls at the start of period 2, these results also speak to our original question. If the consensus mechanism shift had impacted the mechanisms driving Ethereum's volatility, we would expect the explanatory power and the coefficients of our added regressors to shift between period 1 and 2 for Ethereum specifically, beyond what is observed for Bitcoin as a counterfactual. Instead, both cryptocurrencies show a similar improvement of fit over period 2. This suggests that this improved fit reflects the overall calmer market regime described in Section~\ref{sec:analysis} and that the drivers of Ethereum's volatility were not altered by the Merge, at least not when considering the variables we added as regressors.
 
 
 
@@ -365,13 +365,13 @@ For each specification, we compute one-step-ahead out-of-sample forecasts of $RV
 \cline{2-5}
 \textbf{Model} & \textit{Full}    & \textit{1}          & \textit{2}          & \textit{3} \\
 \hline
-HAR-RV      & \textbf{-5.7029}    & -5.0732             & -6.2430             & -5.4564 \\
-+volume     & -5.5225             & \underline{-5.1888} & -6.0837             & \underline{-5.5136} \\
-+Kyle       & -5.6794             & -5.0630             & -6.2390             & -5.4509 \\
-+cross\_vol & -5.6991             & -5.0660             & -6.2323             & -5.4559 \\
-+jt         & \underline{-5.7009} & -5.0921             & \underline{-6.2537} & -5.4644 \\
-volume      & -5.4884             & \textbf{-5.2435}    & -6.0717             & \textbf{-5.5673} \\
-Kyle        & -5.6850             & -4.9338             & \textbf{-6.2944}    & -5.3841 \\
+HAR-RV      & \textbf{-5.7029}    & -4.6856             & -6.0968             & -5.4564 \\
++volume     & -5.5225             & -4.8247             & -5.9600             & \underline{-5.5136} \\
++Kyle       & -5.6794             & -4.7026             & -6.0839             & -5.4509 \\
++cross\_vol & -5.6991             & -4.6655             & -6.0925             & -5.4559 \\
++jt         & \underline{-5.7009} & \underline{-4.7199} & \underline{-6.1101} & -5.4644 \\
+volume      & -5.4884             & \textbf{-4.8537}    & -5.9504             & \textbf{-5.5673} \\
+Kyle        & -5.6850             & -4.3878             & \textbf{-6.1183}    & -5.3841 \\
 \hline
 \\[2pt]
 \multicolumn{5}{l}{\textbf{B.} BTCUSDT} \\
@@ -379,13 +379,13 @@ Kyle        & -5.6850             & -4.9338             & \textbf{-6.2944}    & 
 \cline{2-5}
 \textbf{Model} & \textit{Full}    & \textit{1}          & \textit{2}          & \textit{3} \\
 \hline
-HAR-RV      & -6.1551             & -5.5123             & \underline{-6.2215} & -6.0362 \\
-+volume     & -6.1519             & \underline{-5.5743} & -6.0238             & -5.9833 \\
-+Kyle       & -6.1226             & -5.4839             & -6.0784             & -6.0261 \\
-+cross\_vol & -6.1519             & -5.5004             & -6.2105             & -6.0247 \\
-+jt         & \underline{-6.1588} & -5.5193             & \textbf{-6.2299}    & \underline{-6.0386} \\
-volume      & \textbf{-6.1670}     & \textbf{-5.6179}    & -6.0668             & \textbf{-6.0658} \\
-Kyle        & -6.1353             & -5.3994             & -6.1518             & -6.0209 \\
+HAR-RV      & -6.1551             & -5.3999             & \underline{-6.0554} & -6.0362 \\
++volume     & -6.1519             & \textbf{-5.4447}    & -5.8261             & -5.9833 \\
++Kyle       & -6.1226             & -5.3878             & -5.8947             & -6.0261 \\
++cross\_vol & -6.1519             & -5.3563             & -6.0513             & -6.0247 \\
++jt         & \underline{-6.1588} & -5.3948             & \textbf{-6.0606}    & \underline{-6.0386} \\
+volume      & \textbf{-6.1670}     &\underline{-5.4144} & -5.7494             & \textbf{-6.0658} \\
+Kyle        & -6.1353             & -5.2680             & -5.9087             & -6.0209 \\
 \hline
 \end{tabular}
 \begin{tablenotes}
@@ -393,14 +393,14 @@ Kyle        & -6.1353             & -5.3994             & -6.1518             & 
 \item                            Bold indicates best, underlined indicates second best.
 \end{tablenotes}
 \end{table}
+% reste à changer l'analyse des coefficients période 1 et période 2 dans le texte
 
-
-For Ethereum over the full period, base HAR-RV is the best model. All additions of individual variables worsen it, contrary to the improvement of individual variables found in Table~\ref{tab:coefs}. For underlying periods, only volume and the jump component improve the model with best performing models for period 1, 2 and 3 respectively being \textit{+volume}, \textit{+jump} and \textit{+volume}. However, for the first and last period, regressing cascading volume alone yields improved forecasting capacities compared to each period's best model. For period 2, regressing Kyle's lambda alone gives a lower (better) QLIKE than \textit{+jump}, suggesting that this measure of illiquidity is a better indicator of RV in periods of low volatility, as trade-level data carries more information than aggregated, small-scale returns. 
+For Ethereum over the full period, base HAR-RV is the best model. All additions of individual variables worsen it, contrary to the improvement of individual variables found in Table~\ref{tab:coefs}. For underlying periods, only volume and the jump component improve the model with best performing models for period 1, 2 and 3 respectively being \textit{+volume}, \textit{+jt} and \textit{+volume}. However, for the first and last period, regressing cascading volume alone yields improved forecasting capacities compared to each period's best model. For period 2, regressing Kyle's lambda alone gives a lower (better) QLIKE than \textit{+jt}, suggesting that this measure of illiquidity is a better indicator of RV in periods of low volatility, as trade-level data carries more information than aggregated, small-scale returns. 
 % rajotuer le volume seul régressé à toutes les régressions précédentes
 
-For Bitcoin, only the jump component improves the base model over the full period. For each period, only volume and the jump component improve HAR-RV, with the best model being \textit{+volume} for the first period and \textit{+jump} for the second and last. Regressing volume alone still yields high results for period 1 and 3, even higher than those obtained when regressing HAR-RV with added volume cascading features, underlining how regressing volatility worsens forecasting performance for this specific period. In period 3 specifically, HAR-RV alone gives a QLIKE of -6.0362, while HAR-RV+volume gives a higher (worse) -5.9833, and volume alone gives a lower (better) -6.0658. This time, Kyle's lambda alone worsens performance for period 2.
+For Bitcoin, only the jump component improves the base model over the full period. For each period, volume and the jump component are the main drivers of improvement, \textit{+volume} for the first period and \textit{+jt} for the second and last. Regressing volume alone still yields high results for period 1 and 3, even higher than those obtained when regressing HAR-RV with added volume cascading features, underlining how regressing volatility worsens forecasting performance for this specific period. In period 3 specifically, HAR-RV alone gives a QLIKE of -6.0362, while HAR-RV+volume gives a higher (worse) -5.9833, and volume alone gives a lower (better) -6.0658. This time, Kyle's lambda alone worsens performance for period 2.
 
-Volume's stronger performance when regressed alone in contexts of higher volatility (first and last periods) confirms its enhanced explanatory power for periods of higher volatility, when its cascading horizons are taken into account. This is consistent with the volume-volatility relationship discussed in Section~\ref{sec:4.2.1}. However, Kyle's lambda forecasting capacities for volatility are more mixed: no conclusion can be drawn from its varying performance across assets during periods of low volatility. More broadly, volume and Kyle's lambda improved in-sample fit when added (Table~\ref{tab:additive_full}) but worsen out-of-sample forecasts for the full sample of both assets (Table~\ref{tab:forecast}). This discrepancy suggests these regressors may capture sample-specific patterns that are not generalizable. Consistent with the in-sample results of Section~\ref{sec:4.2.2}, forecasting performance shows no distinct pattern for Ethereum around the Merge beyond what is observed for Bitcoin. This once again reinforces our conclusion: the consensus mechanism evolution left the drivers of volatility unchanged.
+Volume's stronger performance when regressed alone in contexts of higher volatility (first and last periods) confirms its enhanced explanatory power for periods of higher volatility, when its cascading horizons are taken into account. This is consistent with the volume-volatility relationship discussed in Section~\ref{sec:4.2.1}. However, Kyle's lambda forecasting capacities for volatility are more mixed: no conclusion can be drawn from its varying performance across assets during periods of low volatility. More broadly, volume and Kyle's lambda improved in-sample fit when added (Table~\ref{tab:additive_full}) but worsen out-of-sample forecasts for the full sample of both assets (Table~\ref{tab:forecast}). This discrepancy suggests these regressors may capture sample-specific patterns that are not generalizable. Consistent with the in-sample results of Section~\ref{sec:4.2.2}, forecastingc performance shows no distinct pattern for Ethereum around the Merge beyond what is observed for Bitcoin. This once again reinforces our conclusion: the consensus mechanism evolution left the drivers of volatility unchanged.
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -469,50 +469,50 @@ Liquidity measures show a similar granularity dependence, varying depending on t
 \begin{longtable}{l*{6}{c}}
 \caption{Additive HAR-RV models by Period}
 \label{tab:additive_subperiods}\\
-\multicolumn{7}{l}{\textbf{A.} ETHUSDT, Period 1 (n=386)} \\
+\multicolumn{7}{l}{\textbf{A.} ETHUSDT, Period 1 (n=446)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0015*** & \hfil -.0095 & \hfil -.0094 & \hfil -.0091 & \hfil -.0095 & \hfil -.0095 \\
-$RV_1$ & \hfil .0850 & \hfil .0035 & \hfil .0295 & \hfil .0246 & \hfil .0524 & \hfil .0524 \\
-$RV_5$ & \hfil .1793*** & \hfil .1696** & \hfil .1924** & \hfil .1957** & \hfil .1933** & \hfil .1933** \\
-$RV_{20}$ & \hfil .0613 & \hfil .0507 & \hfil -.0161 & \hfil -.0176 & \hfil -.0200 & \hfil -.0200 \\
-$vol_1$ & & \hfil .0009 & \hfil .0008 & \hfil .0007 & \hfil .0008 & \hfil .0008 \\
-$vol_5$ & & \hfil .0007 & \hfil .0007 & \hfil .0007 & \hfil .0007 & \hfil .0007 \\
-$vol_{20}$ & & \hfil -.0007 & \hfil -.0007 & \hfil -.0006 & \hfil -.0006 & \hfil -.0006 \\
-$kyle_1$ & & & \hfil -.0665 & \hfil -.0606 & \hfil -.0554 & \hfil -.0554 \\
-$kyle_5$ & & & \hfil -.3637 & \hfil -.3681 & \hfil -.3719 & \hfil -.3719 \\
-$kyle_{20}$ & & & \hfil .3942 & \hfil .3940 & \hfil .3981 & \hfil .3981 \\
-$jt$ & & & & \hfil .3729 & \hfil .3709 & \hfil .3709 \\
-cross\_vol & & & & & \hfil -.0520 & \hfil -.0520 \\
-fees & & & & & & \hfil .0000 \\
+const & \hfil .0015*** & \hfil -.0086* & \hfil -.0089 & \hfil -.0087 & \hfil -.0093 & \hfil -.0130 \\
+$RV_1$ & \hfil .1523*** & \hfil .0436 & \hfil .0778 & \hfil .0724 & \hfil .1783 & \hfil .1991 \\
+$RV_5$ & \hfil .1761*** & \hfil .1457** & \hfil .1702** & \hfil .1729** & \hfil .1663** & \hfil .1677** \\
+$RV_{20}$ & \hfil .0364 & \hfil .0549 & \hfil -.0346 & \hfil -.0336 & \hfil -.0374 & \hfil -.0611 \\
+$vol_1$ & & \hfil .0010** & \hfil .0009* & \hfil .0009* & \hfil .0010* & \hfil .0011** \\
+$vol_5$ & & \hfil .0011 & \hfil .0011 & \hfil .0011 & \hfil .0011 & \hfil .0010 \\
+$vol_{20}$ & & \hfil -.0013* & \hfil -.0012 & \hfil -.0012 & \hfil -.0012 & \hfil -.0010 \\
+$kyle_1$ & & & \hfil -.1221 & \hfil -.1156 & \hfil -.0908 & \hfil -.0825 \\
+$kyle_5$ & & & \hfil -.4286 & \hfil -.4299 & \hfil -.4487 & \hfil -.4581 \\
+$kyle_{20}$ & & & \hfil .5236 & \hfil .5202 & \hfil .5380 & \hfil .5399 \\
+$jt$ & & & & \hfil .0991 & \hfil .0728 & \hfil .0683 \\
+cross\_vol & & & & & \hfil -.2050 & \hfil -.2516 \\
+fees & & & & & & \hfil -.0006 \\
 \hline
-$R^2$ & \hfil .1279 & \hfil .1450 & \hfil .1494 & \hfil .1500 & \hfil .1501 & \hfil .1501 \\
-Adj. $R^2$ & \hfil .1210 & \hfil .1315 & \hfil .1290 & \hfil .1273 & \hfil .1251 & \hfil .1251 \\
-AIC & \hfil -3461.68 & \hfil -3463.36 & \hfil -3459.34 & \hfil -3457.62 & \hfil -3455.67 & \hfil -3455.67 \\
-BIC & \hfil -3445.86 & \hfil -3435.67 & \hfil -3419.78 & \hfil -3414.10 & \hfil -3408.19 & \hfil -3408.19 \\
+$R^2$ & \hfil .1498 & \hfil .1774 & \hfil .1839 & \hfil .1840 & \hfil .1858 & \hfil .1876 \\
+Adj. $R^2$ & \hfil .1441 & \hfil .1662 & \hfil .1671 & \hfil .1652 & \hfil .1651 & \hfil .1650 \\
+AIC & \hfil -3993.45 & \hfil -4002.14 & \hfil -3999.70 & \hfil -3997.74 & \hfil -3996.71 & \hfil -3995.69 \\
+BIC & \hfil -3977.05 & \hfil -3973.44 & \hfil -3958.69 & \hfil -3952.64 & \hfil -3947.50 & \hfil -3942.38 \\
 \hline
 \\[2pt]
-\multicolumn{7}{l}{\textbf{B.} ETHUSDT, Period 2 (n=577)} \\
+\multicolumn{7}{l}{\textbf{B.} ETHUSDT, Period 2 (n=517)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0003*** & \hfil -.0092*** & \hfil -.0112*** & \hfil -.0092*** & \hfil -.0086*** & \hfil -.0085*** \\
-$RV_1$ & \hfil .3975*** & \hfil .3692*** & \hfil .3518*** & \hfil .5963*** & \hfil .7092*** & \hfil .7088*** \\
-$RV_5$ & \hfil .1394* & \hfil .1535* & \hfil .2667*** & \hfil .2047** & \hfil .2023** & \hfil .2025** \\
-$RV_{20}$ & \hfil .1483* & \hfil -.1240 & \hfil -.2770** & \hfil -.2310** & \hfil -.2163* & \hfil -.2147* \\
-$vol_1$ & & \hfil .0001 & \hfil .0001 & \hfil .0000 & \hfil .0001 & \hfil .0001 \\
-$vol_5$ & & \hfil -.0000 & \hfil .0001 & \hfil .0002 & \hfil .0002 & \hfil .0002 \\
-$vol_{20}$ & & \hfil .0007* & \hfil .0008* & \hfil .0006 & \hfil .0005 & \hfil .0005 \\
-$kyle_1$ & & & \hfil -.1576 & \hfil .0457 & \hfil .0857 & \hfil .0854 \\
-$kyle_5$ & & & \hfil -1.3680*** & \hfil -1.4105*** & \hfil -1.3892*** & \hfil -1.3896*** \\
-$kyle_{20}$ & & & \hfil .1877 & \hfil .1452 & \hfil .1689 & \hfil .1633 \\
-$jt$ & & & & \hfil -1.4253*** & \hfil -1.3639*** & \hfil -1.3651*** \\
-cross\_vol & & & & & \hfil -.2375 & \hfil -.2360 \\
-fees & & & & & & \hfil .0000 \\
+const & \hfil .0004*** & \hfil -.0083*** & \hfil -.0116*** & \hfil -.0097*** & \hfil -.0096*** & \hfil -.0070** \\
+$RV_1$ & \hfil .3646*** & \hfil .3671*** & \hfil .3521*** & \hfil .5651*** & \hfil .5918*** & \hfil .5499*** \\
+$RV_5$ & \hfil -.0091 & \hfil -.0128 & \hfil .0850 & \hfil .0353 & \hfil .0311 & \hfil .0407 \\
+$RV_{20}$ & \hfil .2108** & \hfil -.1182 & \hfil -.1385 & \hfil -.1112 & \hfil -.1099 & \hfil -.1429 \\
+$vol_1$ & & \hfil -.0001 & \hfil -.0000 & \hfil -.0001 & \hfil -.0001 & \hfil -.0002 \\
+$vol_5$ & & \hfil .0000 & \hfil -.0001 & \hfil .0001 & \hfil .0001 & \hfil -.0001 \\
+$vol_{20}$ & & \hfil .0007** & \hfil .0012*** & \hfil .0010*** & \hfil .0010** & \hfil .0009** \\
+$kyle_1$ & & & \hfil -.1775 & \hfil -.0067 & \hfil -.0004 & \hfil .0113 \\
+$kyle_5$ & & & \hfil -.6266 & \hfil -.7114 & \hfil -.7004 & \hfil -.6188 \\
+$kyle_{20}$ & & & \hfil -1.7171** & \hfil -1.5849** & \hfil -1.5897** & \hfil -2.0007*** \\
+$jt$ & & & & \hfil -1.1698*** & \hfil -1.1562*** & \hfil -1.1915*** \\
+cross\_vol & & & & & \hfil -.0491 & \hfil .0221 \\
+fees & & & & & & \hfil .0004*** \\
 \hline
-$R^2$ & \hfil .3251 & \hfil .3407 & \hfil .3602 & \hfil .3936 & \hfil .3964 & \hfil .3964 \\
-Adj. $R^2$ & \hfil .3216 & \hfil .3337 & \hfil .3500 & \hfil .3829 & \hfil .3847 & \hfil .3836 \\
-AIC & \hfil -5804.50 & \hfil -5811.94 & \hfil -5823.26 & \hfil -5852.24 & \hfil -5852.93 & \hfil -5850.93 \\
-BIC & \hfil -5787.07 & \hfil -5781.44 & \hfil -5779.69 & \hfil -5804.31 & \hfil -5800.63 & \hfil -5794.28 \\
+$R^2$ & \hfil .1711 & \hfil .1909 & \hfil .2219 & \hfil .2552 & \hfil .2554 & \hfil .2673 \\
+Adj. $R^2$ & \hfil .1662 & \hfil .1814 & \hfil .2081 & \hfil .2405 & \hfil .2392 & \hfil .2499 \\
+AIC & \hfil -5390.93 & \hfil -5397.43 & \hfil -5411.64 & \hfil -5432.29 & \hfil -5430.42 & \hfil -5436.75 \\
+BIC & \hfil -5373.94 & \hfil -5367.70 & \hfil -5369.16 & \hfil -5385.56 & \hfil -5379.44 & \hfil -5381.53 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{C.} ETHUSDT, Period 3 (n=356)} \\
@@ -538,50 +538,50 @@ AIC & \hfil -3606.97 & \hfil -3604.99 & \hfil -3599.20 & \hfil -3597.70 & \hfil 
 BIC & \hfil -3591.47 & \hfil -3577.87 & \hfil -3560.45 & \hfil -3555.08 & \hfil -3549.48 & \hfil -3549.48 \\
 \hline
 \\[2pt]
-\multicolumn{7}{l}{\textbf{D.} BTCUSDT, Period 1 (n=386)} \\
+\multicolumn{7}{l}{\textbf{D.} BTCUSDT, Period 1 (n=446)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0010*** & \hfil -.0074* & \hfil -.0080 & \hfil -.0074 & \hfil -.0071 & \hfil -.0071 \\
-$RV_1$ & \hfil .1004 & \hfil .0108 & \hfil .0393 & \hfil .0812 & \hfil .1107 & \hfil .1107 \\
-$RV_5$ & \hfil .0944 & \hfil .0211 & \hfil .0270 & \hfil .0031 & \hfil .0092 & \hfil .0092 \\
-$RV_{20}$ & \hfil .1005 & \hfil .0988 & \hfil .0507 & \hfil .0788 & \hfil .0820 & \hfil .0820 \\
-$vol_1$ & & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 & \hfil .0005 \\
-$vol_5$ & & \hfil .0010 & \hfil .0011* & \hfil .0011* & \hfil .0011* & \hfil .0011* \\
-$vol_{20}$ & & \hfil -.0007 & \hfil -.0007 & \hfil -.0008 & \hfil -.0008 & \hfil -.0008 \\
-$kyle_1$ & & & \hfil -.0004 & \hfil -.0003 & \hfil -.0004 & \hfil -.0004 \\
-$kyle_5$ & & & \hfil -.0011 & \hfil -.0010 & \hfil -.0010 & \hfil -.0010 \\
-$kyle_{20}$ & & & \hfil .0015 & \hfil .0012 & \hfil .0012 & \hfil .0012 \\
-$jt$ & & & & \hfil -.7196 & \hfil -.7365 & \hfil -.7365 \\
-cross\_vol & & & & & \hfil -.0180 & \hfil -.0180 \\
-fees & & & & & & \hfil .0000 \\
+const & \hfil .0010*** & \hfil .0012 & \hfil .0023 & \hfil .0024 & \hfil .0024 & \hfil -.0086* \\
+$RV_1$ & \hfil .1283** & \hfil .0565 & \hfil .0864 & \hfil .1299 & \hfil .1263 & \hfil -.0488 \\
+$RV_5$ & \hfil .1292* & \hfil .0538 & \hfil .0599 & \hfil .0396 & \hfil .0391 & \hfil -.0162 \\
+$RV_{20}$ & \hfil .0662 & \hfil .1734** & \hfil .1602* & \hfil .1781** & \hfil .1782** & \hfil .0553 \\
+$vol_1$ & & \hfil .0004 & \hfil .0003 & \hfil .0004 & \hfil .0004 & \hfil .0006* \\
+$vol_5$ & & \hfil .0009* & \hfil .0010* & \hfil .0009* & \hfil .0009* & \hfil .0014** \\
+$vol_{20}$ & & \hfil -.0013** & \hfil -.0014*** & \hfil -.0015*** & \hfil -.0015*** & \hfil -.0011** \\
+$kyle_1$ & & & \hfil -.0005 & \hfil -.0005 & \hfil -.0005 & \hfil -.0003 \\
+$kyle_5$ & & & \hfil -.0008 & \hfil -.0007 & \hfil -.0007 & \hfil -.0011 \\
+$kyle_{20}$ & & & \hfil .0007 & \hfil .0005 & \hfil .0005 & \hfil .0013 \\
+$jt$ & & & & \hfil -.6439* & \hfil -.6422* & \hfil -.5670 \\
+cross\_vol & & & & & \hfil .0022 & \hfil .0808 \\
+fees & & & & & & \hfil -.0016*** \\
 \hline
-$R^2$ & \hfil .0657 & \hfil .0912 & \hfil .0968 & \hfil .1025 & \hfil .1026 & \hfil .1026 \\
-Adj. $R^2$ & \hfil .0583 & \hfil .0768 & \hfil .0752 & \hfil .0786 & \hfil .0762 & \hfil .0762 \\
-AIC & \hfil -3827.61 & \hfil -3832.29 & \hfil -3828.69 & \hfil -3829.13 & \hfil -3827.17 & \hfil -3827.17 \\
-BIC & \hfil -3811.79 & \hfil -3804.60 & \hfil -3789.13 & \hfil -3785.62 & \hfil -3779.70 & \hfil -3779.70 \\
+$R^2$ & \hfil .0825 & \hfil .1003 & \hfil .1082 & \hfil .1143 & \hfil .1143 & \hfil .1324 \\
+Adj. $R^2$ & \hfil .0763 & \hfil .0880 & \hfil .0898 & \hfil .0939 & \hfil .0918 & \hfil .1083 \\
+AIC & \hfil -4432.21 & \hfil -4434.94 & \hfil -4432.87 & \hfil -4433.92 & \hfil -4431.92 & \hfil -4439.12 \\
+BIC & \hfil -4415.81 & \hfil -4406.24 & \hfil -4391.87 & \hfil -4388.82 & \hfil -4382.72 & \hfil -4385.81 \\
 \hline
 \\[64pt] % to skip to next page
-\multicolumn{7}{l}{\textbf{E.} BTCUSDT, Period 2 (n=577)} \\
+\multicolumn{7}{l}{\textbf{E.} BTCUSDT, Period 2 (n=517)} \\
 & \textbf{base} & \textbf{+volume} & \textbf{+kyle} & \textbf{+jt} & \textbf{+cross\_vol} & \textbf{+fees} \\
 \hline
-const & \hfil .0003*** & \hfil -.0002 & \hfil -.0001 & \hfil -.0002 & \hfil -.0001 & \hfil -.0020 \\
-$RV_1$ & \hfil .2394*** & \hfil .2388*** & \hfil .2395*** & \hfil .4521*** & \hfil .0542 & \hfil -.0369 \\
-$RV_5$ & \hfil .2648*** & \hfil .2067** & \hfil .1982* & \hfil .1532 & \hfil .1536 & \hfil .1148 \\
-$RV_{20}$ & \hfil .0509 & \hfil .0861 & \hfil .0907 & \hfil .0859 & \hfil .0663 & \hfil .0328 \\
-$vol_1$ & & \hfil -.0000 & \hfil -.0000 & \hfil -.0000 & \hfil .0000 & \hfil .0001 \\
-$vol_5$ & & \hfil .0002 & \hfil .0002 & \hfil .0002 & \hfil .0001 & \hfil .0002 \\
-$vol_{20}$ & & \hfil -.0002 & \hfil -.0002 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 \\
-$kyle_1$ & & & \hfil .0000 & \hfil -.0006 & \hfil .0002 & \hfil .0006 \\
-$kyle_5$ & & & \hfil .0005 & \hfil .0007 & \hfil .0004 & \hfil .0007 \\
-$kyle_{20}$ & & & \hfil -.0005 & \hfil -.0005 & \hfil -.0014 & \hfil -.0013 \\
-$jt$ & & & & \hfil -1.0921*** & \hfil -.7952*** & \hfil -.6846** \\
-cross\_vol & & & & & \hfil .2180*** & \hfil .2539*** \\
-fees & & & & & & \hfil -.0004 \\
+const & \hfil .0004*** & \hfil -.0009* & \hfil .0003 & \hfil -.0000 & \hfil .0000 & \hfil -.0001 \\
+$RV_1$ & \hfil .2171*** & \hfil .2370*** & \hfil .2562*** & \hfil .5433*** & \hfil .4906*** & \hfil .4855*** \\
+$RV_5$ & \hfil .1371 & \hfil .0800 & \hfil .0745 & \hfil .0193 & \hfil .0110 & \hfil .0089 \\
+$RV_{20}$ & \hfil -.0749 & \hfil -.2044 & \hfil -.3130* & \hfil -.3335* & \hfil -.3220* & \hfil -.3239* \\
+$vol_1$ & & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 & \hfil -.0001 \\
+$vol_5$ & & \hfil .0002 & \hfil .0001 & \hfil .0002 & \hfil .0001 & \hfil .0001 \\
+$vol_{20}$ & & \hfil .0000 & \hfil -.0000 & \hfil .0000 & \hfil .0000 & \hfil .0000 \\
+$kyle_1$ & & & \hfil -.0007 & \hfil -.0016 & \hfil -.0015 & \hfil -.0014 \\
+$kyle_5$ & & & \hfil .0007 & \hfil .0011 & \hfil .0013 & \hfil .0013 \\
+$kyle_{20}$ & & & \hfil .0027 & \hfil .0021 & \hfil .0019 & \hfil .0019 \\
+$jt$ & & & & \hfil -1.2135*** & \hfil -1.1760*** & \hfil -1.1700*** \\
+cross\_vol & & & & & \hfil .0331 & \hfil .0353 \\
+fees & & & & & & \hfil -.0000 \\
 \hline
-$R^2$ & \hfil .1810 & \hfil .1842 & \hfil .1844 & \hfil .2122 & \hfil .2291 & \hfil .2324 \\
-Adj. $R^2$ & \hfil .1767 & \hfil .1757 & \hfil .1715 & \hfil .1982 & \hfil .2141 & \hfil .2161 \\
-AIC & \hfil -6275.31 & \hfil -6271.60 & \hfil -6265.71 & \hfil -6283.69 & \hfil -6294.25 & \hfil -6294.71 \\
-BIC & \hfil -6257.88 & \hfil -6241.09 & \hfil -6222.13 & \hfil -6235.76 & \hfil -6241.95 & \hfil -6238.06 \\
+$R^2$ & \hfil .0719 & \hfil .0873 & \hfil .0929 & \hfil .1266 & \hfil .1270 & \hfil .1270 \\
+Adj. $R^2$ & \hfil .0665 & \hfil .0765 & \hfil .0768 & \hfil .1093 & \hfil .1079 & \hfil .1062 \\
+AIC & \hfil -5749.97 & \hfil -5752.59 & \hfil -5749.80 & \hfil -5767.37 & \hfil -5765.59 & \hfil -5763.60 \\
+BIC & \hfil -5732.98 & \hfil -5722.86 & \hfil -5707.32 & \hfil -5720.64 & \hfil -5714.61 & \hfil -5708.37 \\
 \hline
 \\[2pt]
 \multicolumn{7}{l}{\textbf{F.} BTCUSDT, Period 3 (n=356)} \\
@@ -612,3 +612,161 @@ BIC & \hfil -3947.54 & \hfil -3933.65 & \hfil -3919.16 & \hfil -3915.01 & \hfil 
 
 \end{setstretch}
 \end{document}
+
+
+
+ETHUSDT - rv - 1_5_20 - period1 - Additive (n = 446)
+
+========================================================================================================================
+                  base   +volume  +volume+kyle +volume+kyle+jt +volume+kyle+jt+cross_vol +volume+kyle+jt+cross_vol+dummy
+------------------------------------------------------------------------------------------------------------------------
+const          0.0015*** -0.0086* -0.0089      -0.0087         -0.0093                   -0.0130                        
+               (0.0002)  (0.0050) (0.0072)     (0.0073)        (0.0073)                  (0.0082)                       
+rv_1           0.1523*** 0.0436   0.0778       0.0724          0.1783                    0.1991                         
+               (0.0559)  (0.0683) (0.0797)     (0.0841)        (0.1377)                  (0.1394)                       
+rv_5           0.1761*** 0.1457** 0.1702**     0.1729**        0.1663**                  0.1677**                       
+               (0.0600)  (0.0701) (0.0822)     (0.0833)        (0.0836)                  (0.0836)                       
+rv_20          0.0364    0.0549   -0.0346      -0.0336         -0.0374                   -0.0611                        
+               (0.0460)  (0.0587) (0.0949)     (0.0951)        (0.0952)                  (0.0982)                       
+vol_1                    0.0010** 0.0009*      0.0009*         0.0010*                   0.0011**                       
+                         (0.0005) (0.0005)     (0.0005)        (0.0005)                  (0.0005)                       
+vol_5                    0.0011   0.0011       0.0011          0.0011                    0.0010                         
+                         (0.0008) (0.0008)     (0.0008)        (0.0008)                  (0.0008)                       
+vol_20                   -0.0013* -0.0012      -0.0012         -0.0012                   -0.0010                        
+                         (0.0007) (0.0008)     (0.0008)        (0.0008)                  (0.0009)                       
+kyle_1                            -0.1221      -0.1156         -0.0908                   -0.0825                        
+                                  (0.1777)     (0.1806)        (0.1824)                  (0.1826)                       
+kyle_5                            -0.4286      -0.4299         -0.4487                   -0.4581                        
+                                  (0.3565)     (0.3569)        (0.3574)                  (0.3576)                       
+kyle_20                           0.5236       0.5202          0.5380                    0.5399                         
+                                  (0.3538)     (0.3545)        (0.3550)                  (0.3551)                       
+jt                                             0.0991          0.0728                    0.0683                         
+                                               (0.4758)        (0.4766)                  (0.4767)                       
+cross_vol                                                      -0.2050                   -0.2516                        
+                                                               (0.2112)                  (0.2165)                       
+no_fee_dummy                                                                             -0.0006                        
+                                                                                         (0.0006)                       
+R-squared      0.1498    0.1774   0.1839       0.1840          0.1858                    0.1876                         
+R-squared Adj. 0.1441    0.1662   0.1671       0.1652          0.1651                    0.1650                         
+AIC            -3993.45  -4002.14 -3999.70     -3997.74        -3996.71                  -3995.69                       
+BIC            -3977.05  -3973.44 -3958.69     -3952.64        -3947.50                  -3942.38                       
+========================================================================================================================
+Standard errors in parentheses.
+* p<.1, ** p<.05, ***p<.01
+
+ETHUSDT - rv - 1_5_20 - period2 - Additive (n = 517)
+
+==========================================================================================================================
+                  base    +volume   +volume+kyle +volume+kyle+jt +volume+kyle+jt+cross_vol +volume+kyle+jt+cross_vol+dummy
+--------------------------------------------------------------------------------------------------------------------------
+const          0.0004*** -0.0083*** -0.0116***   -0.0097***      -0.0096***                -0.0070**                      
+               (0.0001)  (0.0025)   (0.0026)     (0.0026)        (0.0026)                  (0.0027)                       
+rv_1           0.3646*** 0.3671***  0.3521***    0.5651***       0.5918***                 0.5499***                      
+               (0.0529)  (0.0630)   (0.0668)     (0.0792)        (0.1104)                  (0.1106)                       
+rv_5           -0.0091   -0.0128    0.0850       0.0353          0.0311                    0.0407                         
+               (0.0863)  (0.1051)   (0.1143)     (0.1124)        (0.1132)                  (0.1124)                       
+rv_20          0.2108**  -0.1182    -0.1385      -0.1112         -0.1099                   -0.1429                        
+               (0.1033)  (0.1483)   (0.1516)     (0.1486)        (0.1488)                  (0.1482)                       
+vol_1                    -0.0001    -0.0000      -0.0001         -0.0001                   -0.0002                        
+                         (0.0002)   (0.0002)     (0.0002)        (0.0002)                  (0.0002)                       
+vol_5                    0.0000     -0.0001      0.0001          0.0001                    -0.0001                        
+                         (0.0003)   (0.0004)     (0.0003)        (0.0003)                  (0.0003)                       
+vol_20                   0.0007**   0.0012***    0.0010***       0.0010**                  0.0009**                       
+                         (0.0004)   (0.0004)     (0.0004)        (0.0004)                  (0.0004)                       
+kyle_1                              -0.1775      -0.0067         -0.0004                   0.0113                         
+                                    (0.2312)     (0.2292)        (0.2302)                  (0.2286)                       
+kyle_5                              -0.6266      -0.7114         -0.7004                   -0.6188                        
+                                    (0.4677)     (0.4584)        (0.4599)                  (0.4575)                       
+kyle_20                             -1.7171**    -1.5849**       -1.5897**                 -2.0007***                     
+                                    (0.7665)     (0.7512)        (0.7519)                  (0.7603)                       
+jt                                               -1.1698***      -1.1562***                -1.1915***                     
+                                                 (0.2457)        (0.2490)                  (0.2476)                       
+cross_vol                                                        -0.0491                   0.0221                         
+                                                                 (0.1412)                  (0.1424)                       
+no_fee_dummy                                                                               0.0004***                      
+                                                                                           (0.0001)                       
+R-squared      0.1711    0.1909     0.2219       0.2552          0.2554                    0.2673                         
+R-squared Adj. 0.1662    0.1814     0.2081       0.2405          0.2392                    0.2499                         
+AIC            -5390.93  -5397.43   -5411.64     -5432.29        -5430.42                  -5436.75                       
+BIC            -5373.94  -5367.70   -5369.16     -5385.56        -5379.44                  -5381.53                       
+==========================================================================================================================
+Standard errors in parentheses.
+* p<.1, ** p<.05, ***p<.01
+
+BTCUSDT - rv - 1_5_20 - period1 - Additive (n = 446)
+
+=========================================================================================================================
+                  base    +volume  +volume+kyle +volume+kyle+jt +volume+kyle+jt+cross_vol +volume+kyle+jt+cross_vol+dummy
+-------------------------------------------------------------------------------------------------------------------------
+const          0.0010*** 0.0012    0.0023       0.0024          0.0024                    -0.0086*                       
+               (0.0001)  (0.0024)  (0.0027)     (0.0027)        (0.0027)                  (0.0046)                       
+rv_1           0.1283**  0.0565    0.0864       0.1299          0.1263                    -0.0488                        
+               (0.0558)  (0.0719)  (0.0802)     (0.0839)        (0.1526)                  (0.1620)                       
+rv_5           0.1292*   0.0538    0.0599       0.0396          0.0391                    -0.0162                        
+               (0.0685)  (0.0872)  (0.0939)     (0.0945)        (0.0963)                  (0.0972)                       
+rv_20          0.0662    0.1734**  0.1602*      0.1781**        0.1782**                  0.0553                         
+               (0.0590)  (0.0771)  (0.0857)     (0.0861)        (0.0863)                  (0.0948)                       
+vol_1                    0.0004    0.0003       0.0004          0.0004                    0.0006*                        
+                         (0.0003)  (0.0003)     (0.0003)        (0.0003)                  (0.0003)                       
+vol_5                    0.0009*   0.0010*      0.0009*         0.0009*                   0.0014**                       
+                         (0.0005)  (0.0005)     (0.0005)        (0.0005)                  (0.0006)                       
+vol_20                   -0.0013** -0.0014***   -0.0015***      -0.0015***                -0.0011**                      
+                         (0.0005)  (0.0005)     (0.0005)        (0.0005)                  (0.0005)                       
+kyle_1                             -0.0005      -0.0005         -0.0005                   -0.0003                        
+                                   (0.0007)     (0.0007)        (0.0007)                  (0.0007)                       
+kyle_5                             -0.0008      -0.0007         -0.0007                   -0.0011                        
+                                   (0.0013)     (0.0013)        (0.0013)                  (0.0013)                       
+kyle_20                            0.0007       0.0005          0.0005                    0.0013                         
+                                   (0.0012)     (0.0012)        (0.0012)                  (0.0012)                       
+jt                                              -0.6439*        -0.6422*                  -0.5670                        
+                                                (0.3728)        (0.3778)                  (0.3752)                       
+cross_vol                                                       0.0022                    0.0808                         
+                                                                (0.0764)                  (0.0801)                       
+no_fee_dummy                                                                              -0.0016***                     
+                                                                                          (0.0005)                       
+R-squared      0.0825    0.1003    0.1082       0.1143          0.1143                    0.1324                         
+R-squared Adj. 0.0763    0.0880    0.0898       0.0939          0.0918                    0.1083                         
+AIC            -4432.21  -4434.94  -4432.87     -4433.92        -4431.92                  -4439.12                       
+BIC            -4415.81  -4406.24  -4391.87     -4388.82        -4382.72                  -4385.81                       
+=========================================================================================================================
+Standard errors in parentheses.
+* p<.1, ** p<.05, ***p<.01
+
+BTCUSDT - rv - 1_5_20 - period2 - Additive (n = 517)
+
+=========================================================================================================================
+                  base    +volume  +volume+kyle +volume+kyle+jt +volume+kyle+jt+cross_vol +volume+kyle+jt+cross_vol+dummy
+-------------------------------------------------------------------------------------------------------------------------
+const          0.0004*** -0.0009*  0.0003       -0.0000         0.0000                    -0.0001                        
+               (0.0001)  (0.0005)  (0.0009)     (0.0008)        (0.0009)                  (0.0016)                       
+rv_1           0.2171*** 0.2370*** 0.2562***    0.5433***       0.4906***                 0.4855***                      
+               (0.0525)  (0.0618)  (0.0685)     (0.0935)        (0.1477)                  (0.1610)                       
+rv_5           0.1371    0.0800    0.0745       0.0193          0.0110                    0.0089                         
+               (0.0917)  (0.1113)  (0.1241)     (0.1226)        (0.1239)                  (0.1269)                       
+rv_20          -0.0749   -0.2044   -0.3130*     -0.3335*        -0.3220*                  -0.3239*                       
+               (0.1302)  (0.1646)  (0.1813)     (0.1781)        (0.1800)                  (0.1817)                       
+vol_1                    -0.0001   -0.0001      -0.0001         -0.0001                   -0.0001                        
+                         (0.0001)  (0.0001)     (0.0001)        (0.0001)                  (0.0001)                       
+vol_5                    0.0002    0.0001       0.0002          0.0001                    0.0001                         
+                         (0.0002)  (0.0002)     (0.0002)        (0.0002)                  (0.0002)                       
+vol_20                   0.0000    -0.0000      0.0000          0.0000                    0.0000                         
+                         (0.0002)  (0.0002)     (0.0002)        (0.0002)                  (0.0002)                       
+kyle_1                             -0.0007      -0.0016         -0.0015                   -0.0014                        
+                                   (0.0010)     (0.0010)        (0.0011)                  (0.0011)                       
+kyle_5                             0.0007       0.0011          0.0013                    0.0013                         
+                                   (0.0021)     (0.0021)        (0.0021)                  (0.0021)                       
+kyle_20                            0.0027       0.0021          0.0019                    0.0019                         
+                                   (0.0024)     (0.0023)        (0.0024)                  (0.0024)                       
+jt                                              -1.2135***      -1.1760***                -1.1700***                     
+                                                (0.2746)        (0.2866)                  (0.2969)                       
+cross_vol                                                       0.0331                    0.0353                         
+                                                                (0.0717)                  (0.0769)                       
+no_fee_dummy                                                                              -0.0000                        
+                                                                                          (0.0003)                       
+R-squared      0.0719    0.0873    0.0929       0.1266          0.1270                    0.1270                         
+R-squared Adj. 0.0665    0.0765    0.0768       0.1093          0.1079                    0.1062                         
+AIC            -5749.97  -5752.59  -5749.80     -5767.37        -5765.59                  -5763.60                       
+BIC            -5732.98  -5722.86  -5707.32     -5720.64        -5714.61                  -5708.37                       
+=========================================================================================================================
+Standard errors in parentheses.
+* p<.1, ** p<.05, ***p<.01
